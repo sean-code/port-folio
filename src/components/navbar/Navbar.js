@@ -5,19 +5,19 @@ import './Navbar.css'
 function Navbar(){
     return(
         <nav className="main-navigation">
-            <div>
+            <div className="navbar">
                 <ul className="nav-list">
                     <li className="nav-list-item">
-                        <NavLink to='/'>Home</NavLink>
+                        <NavLink to='/' className="nav-link">Home</NavLink>
                     </li>
                     <li className="nav-list-item">
-                        <NavLink to='/about'>About Me</NavLink>
+                        <NavLink to='/about' className="nav-link">About Me</NavLink>
                     </li>
                     <li className="nav-list-item">
-                        <NavLink to='/service'>Services</NavLink>
+                        <NavLink to='/service' className="nav-link">Services</NavLink>
                     </li>
                     <li className="nav-list-item">
-                        <NavLink to='/contact'>Contact</NavLink>
+                        <NavLink to='/contact' className="nav-link">Contact</NavLink>
                     </li>
                     <li className="nav-list-item">
                         <button>Blog</button>
