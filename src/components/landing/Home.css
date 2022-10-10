@@ -12,8 +12,18 @@ img{
     height: 200px;
     width: 200px;
     justify-content: center;
-    margin: 5% 45% 5%;
+    margin: 5% 42% 5%;
     /* margin-bottom: 20%; */
     border-radius: 50%;
+}
 
+.Details{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 9%;
+    text-align: center;
+}
+
+.Details h1 span{
+    color: orange;
 }
