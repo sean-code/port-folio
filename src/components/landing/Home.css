@@ -1,19 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 .Home{
-    /* margin-top: 5%;
-    margin-bottom: 10%; */
+    margin-top: 2%;
+    margin-bottom: 10%;
 }
 
-img{
+.home-image img{
     height: 200px;
     width: 200px;
     justify-content: center;
-    margin: 5% 42% 5%;
-    /* margin-bottom: 20%; */
+    margin: 5% 42% 2%;
     border-radius: 50%;
 }
 
@@ -26,4 +26,14 @@ img{
 
 .Details h1 span{
     color: orange;
+}
+
+.Details img{
+    margin-top: 3%;
+    margin-bottom: inherit;
+    width: 2%;
+    padding: 18px;
+    margin-right: 20px;
+    background: rgb(11, 168, 11);
+    border-radius: 15%;
 }

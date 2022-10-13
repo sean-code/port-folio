@@ -8,9 +8,11 @@
   width: 30%;
   height: 50%;
   padding: 10px;
-  margin: 2% 10% 10% 10%;
+  margin: 2% 10% 5% 40%;
   background-color: #000;
-  box-shadow: 0 20px 0 0;
+  box-shadow: -1rem 0 3rem #000;
+  /* box-shadow: 0 10px 10px orange; */
+  padding-bottom: 10px;
 }
 
 .container h2 {
@@ -26,10 +28,10 @@
 }
 
 .container .row100 .col {
-  /* position: relative; */
+  position: relative;
   width: auto;
   padding: 0 10px;
-  margin: 30px 0 10px;
+  margin: 30px 10px 10px 10px;
   transition: 0.5s;
 }
 
@@ -42,7 +44,6 @@
 
 .container .row100 .inputBox input,
 .container .row100 .inputBox.textarea textarea {
-  position: absolute;
   width: 100%;
   height: 80%;
   background: transparent;
@@ -81,7 +82,7 @@
 
 .container .row100 .inputBox input:focus ~ .line,
 .container .row100 .inputBox input:valid ~ .line {
-  height: 100%;
+  height: 15%;
 }
 
 .container .row100 .inputBox.textarea {
@@ -99,5 +100,118 @@ input[type="submit"] {
   background: #0f4618;
   color: orange;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+/* Contact Cards */
+
+.container2{
+  position: relative;
+  height: 400px;
+  width: 500px;
+  left: calc(50% - 300px);
+  display: flex;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  padding: 25%;
+  height: 150px;
+  width: 900px;
+  background-color: #17141d;
+  border-radius: 70px;
+  box-shadow: -1rem 0 3rem #000;
+  margin-left: -50px;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -40px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: orange;
+  background-color: rgb(56, 49, 49);
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  padding: 5%;
+  border-radius: 18px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(11, 92, 18);
+  background: linear-gradient(90deg, rgb(35, 110, 16) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.circle a{
+  color: #8EFCBA;
+  background-color: rgb(56, 49, 49);
+  padding: 3%;
+  border-radius: 5%;
+  text-decoration: none;
+  font-size:x-large;
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #bd6d23;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
 }
