@@ -4,7 +4,7 @@ function Contact(){
     return(
         <>
             <div className="container">
-                <h2>Contact Me</h2>
+                <h2><u>Co</u>ntact Me</h2>
                 <div className="row100">
                     <div className="col">
                         <div className="inputBox">

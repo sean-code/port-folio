@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: fit-content;
+}
+
+.services{
+    margin-top: 5%;
+    color: #52ebd6;
+}
+
+.services h1{
+    text-align: center;
+    margin-bottom: 2%;
+    color: orange;
+}
+
+.services ul li{
+    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 20px 20px 30px 20px;
+    height: 100px;
+    width: 100px 0;
+    background:  rgb(56, 49, 49);
+    border-radius: 10%;
+    box-shadow: -1rem 0 3rem #000;
+}
+
+.services ul li:hover{
+    padding: 1%;
+    font-size: small;
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.services ul li p{
+    color: orange;
+}

@@ -5,6 +5,7 @@
 
 .main-navigation{
     background-color: rgba(10, 14, 29);
+    box-shadow: -1rem 2rem 3rem #000;
 }
 
 .nav-list-item{
@@ -14,6 +15,7 @@
     margin-left: 15px;
     margin-right: 60px;
     margin-top: 10px;
+    padding-bottom: 2%;
 }
 
 .nav-link{
@@ -24,6 +26,8 @@
 .nav-link:hover{
     color: #F61D1D;
     font-size: large;
+    text-decoration: underline;
+    text-shadow: -1rem 0 3rem rgb(114, 223, 12);
 }
 
 nav.main-navigation ul.nav-list {
@@ -39,12 +43,15 @@ button{
     color:orange;
     background-color: rgb(31, 78, 26);
     padding: 8px;
-    border: none;
+    border-style:groove;
     border-radius: 10px;
     font-size: larger;
+    font-weight: 800;
+    border-color: #000;
+    border-radius: 10px;
 }
 
-button:hover{
+.btn-1:hover{
     color:#F61D1D;
     font-size: x-large;
 }

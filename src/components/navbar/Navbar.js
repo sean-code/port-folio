@@ -20,7 +20,7 @@ function Navbar(){
                         <NavLink to='/contact' className="nav-link">Contact</NavLink>
                     </li>
                     <li className="nav-list-item">
-                        <button>Blog</button>
+                        <button className="btn-1">Blog</button>
                     </li>
                 </ul>
             </div>

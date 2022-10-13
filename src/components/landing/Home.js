@@ -29,6 +29,9 @@ function Home(){
                 </a>
                 <img src ={mail} />
             </div>
+            <button className='btn-2'>
+                Download CV
+            </button>
         </div>
     )
 }

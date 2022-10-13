@@ -6,7 +6,6 @@
 
 .Home{
     margin-top: 2%;
-    margin-bottom: 10%;
 }
 
 .home-image img{
@@ -15,12 +14,13 @@
     justify-content: center;
     margin: 5% 42% 2%;
     border-radius: 50%;
+    box-shadow: -2rem 0 3rem #000;
 }
 
 .Details{
-    color: #fff;
-    font-size: 20px;
-    padding-bottom: 9%;
+    color: #52ebd6;
+    font-size: 16px;
+    margin-bottom: 2%;
     text-align: center;
 }
 
@@ -29,11 +29,38 @@
 }
 
 .Details img{
-    margin-top: 3%;
-    margin-bottom: inherit;
+    margin-top: 1%;
+    margin-bottom: 1px;
     width: 2%;
     padding: 18px;
     margin-right: 20px;
     background: rgb(11, 168, 11);
     border-radius: 15%;
+    box-shadow: -2rem 0 3rem #000;
+}
+
+.Details img:hover{
+    transform: translateY(-10px);
+    transition: 0.9s ease-out;
+}
+
+.btn-2{
+    color: #000;
+    background: rgb(11, 168, 11);
+    padding: 8px;
+    border-style:groove;
+    border-color: #000;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 900;
+    margin-left: 45%;
+    margin-bottom: 20px;
+    box-shadow: -1rem 0 3rem #000;
+}
+.btn-2:hover{
+    transform: translateY(-5px);
+    transition: 0.9s ease-out; 
+    padding: 1%;
+    font-size: x-large;
+
 }
