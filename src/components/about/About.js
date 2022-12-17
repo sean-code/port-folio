@@ -23,7 +23,7 @@ function About(){
                 </p>
               </div>
               <div className="title">
-                <h3>What does he do?</h3>
+                <h3>How about me?</h3>
                 <p className="separator" />
               </div>
               <div className="desc">

@@ -6,7 +6,8 @@
     background: #fafafa;
     clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
     z-index: 5;
-    background: #fafafa url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Author_BG.jpg) center right no-repeat;
+    background: #fafafa url(https://i.ibb.co/bdy6VYW/Photo-Grid-1612801911556.jpg) 
+    center right no-repeat;
     background-attachment: fixed;
   }
   
