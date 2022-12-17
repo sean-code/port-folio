@@ -3,10 +3,10 @@
     min-height: 100vh;
     font-size: 1.4rem;
     position: relative;
-    background: #fafafa;
+    background: #312626;
     clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
     z-index: 5;
-    background: #fafafa url(https://i.ibb.co/bdy6VYW/Photo-Grid-1612801911556.jpg) 
+    background: #ffffff url(https://i.ibb.co/bdy6VYW/Photo-Grid-1612801911556.jpg) 
     center right no-repeat;
     background-attachment: fixed;
   }

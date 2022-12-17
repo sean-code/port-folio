@@ -42,10 +42,12 @@ function About(){
                 <h4 className="subtitle">Also a Biotechnologist.</h4>
                 <p>
                   I feel comfortable working with Bioinformatic tools
+                  namely: BLAST, MEGA-X, and Clustal.  You name it! 
+                  As I mentioned, I am a tech savvy and interacting with
+                  software is my thing!!
                 </p>
                 <p>
-                  User interfaces, brochures, books, branding... You name it! As I mentioned, creating
-                  pretty things is particularly important for me.
+                  Data Analysis tools(SPSS, and GraphPad Prism etc.) 
                 </p>
               </div>
             </article>
