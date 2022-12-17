@@ -20,7 +20,9 @@ function Navbar(){
                         <NavLink to='/contact' className="nav-link">Contact</NavLink>
                     </li>
                     <li className="nav-list-item">
+                        <a href='https://medium.com/@nganga_sean/seans-friend-s-future-past-bfe121d00d53' target='_blank'>
                         <button className="btn-1">Blog</button>
+                        </a>
                     </li>
                 </ul>
             </div>
