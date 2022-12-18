@@ -39,8 +39,9 @@ function About(){
                 </p>
               </div>
               <div className="desc">
-                <h4 className="subtitle">Also a Biotechnologist.</h4>
+                <h4 className="subtitle">Also a BioEngineer.</h4>
                 <p>
+                  I hold a Bachelor of Technology in Biotechnology.
                   I feel comfortable working with Bioinformatic tools
                   namely: BLAST, MEGA-X, and Clustal.
                   I also perform Whole-genome sequencing, Nucleotide Sequencing, sequence alignment,  .. You name it! 
