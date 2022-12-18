@@ -84,11 +84,10 @@
   }
   
   #projects .project .project-image {
-    width: 95%;
+    width: 100%;
     transform: scale(1.2);
     filter: saturate(0);
-    transition: all 200ms;
-    border-radius: 500%;
+    transition: all 300ms;
   }
   
   /* Project Details */
@@ -133,13 +132,13 @@
   }
   
   #projects .project-details .buttons a {
-    width: 49%;
+    width: 50%;
     padding: .5rem;
     border: none;
     border-bottom: 1px solid #f38200;
-    color: #252934;
-    background: #fafafa;
-    font-size: 1.2rem;
+    color: #f8f8f8;
+    background: green;
+    font-size: 1.5rem;
     text-align: center;
   }
   

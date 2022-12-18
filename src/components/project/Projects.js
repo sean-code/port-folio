@@ -10,9 +10,9 @@ function Projects(props){
               <p className="separator" />
               <p className="subtitle">
                 Here's a list of {' '}
-                <a href="https://github.com/sean-code" target="_blank">
+                <a href="https://github.com/sean-code" target={"_blank"}>
                     most
-                </a> 
+                </a>
                 {' '}of the projects I've worked on recently. All of these
                 were built during my coding camp adventure at {' '}
                 <a href="https://moringaschool.com/courses/software-engineering-course-online/?https://moringaschool.com/courses/data-science-course/?utm_source=google&utm_medium=cpc&utm_campaign=Feb_6th_2023&gclid=CjwKCAiAkfucBhBBEiwAFjbkr7FtFZqC4cATG5O-KWDVsc6QfXXttLrolPaIpprkTTMbfDJeGJ43ihoC5KwQAvD_BwE" target="_blank" rel="noopener noreferrer">
@@ -70,7 +70,7 @@ function Projects(props){
                 repo="https://github.com/sean-code/Client-Car-Review-App"
               >
                 <small>Built using React JS, , CSS, RubyOnRails(back-end)</small>
-                <p>An application where users can view car ratings,average market price, used car inventory, market car reviews, search for a car and add a new car in the system.</p>
+                <p>An application where users can view car ratings,average market price, used car inventory, market car reviews, search for a car and add a new car in the system</p>
               </Project>
             </div>
           </div>
