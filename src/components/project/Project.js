@@ -1,44 +1,46 @@
-import './Project.css';
+import './Project.css'
 
-function Projects(){
-    return(
-        <>
-            <div className="services">
-                 <h1><u>My</u> Projects</h1>
-                <ul>
-                    <li>
-                        <i className="fa-solid fa-computer"></i>
-                        <h2>Website Development</h2>
-                        <p>
-                            - 
-                        </p>
-                    </li>
-                    <li>
-                        <i className="fa-solid fa-compass-drafting"></i>
-                        <h2>Software Development</h2>
-                        <p>- </p>
-                    </li>
-                    <li>
-                        <i className="fa-solid fa-database"></i>
-                        <h2> Data Annotation</h2>
-                        <p>
-                            -Including data analysis
-                        </p>
-                    </li>
-                    <li>
-                        <i className="fa-solid fa-pen-ruler"></i>
-                        <h2>Branding</h2>
-                        <p>- Creating You Loyal Customers</p>
-                    </li>
-                    <li>
-                        <i className="fa-brands fa-uikit"></i>
-                        <h2>UI / UX Design</h2>
-                        <p>Both Mobile and Desktop</p>
-                    </li>
-                </ul> 
-            </div>
-        </>
-    )
-}
+function Project(props) {
+    const tech = {
+      sass: 'fab fa-sass',
+      css: 'fab fa-css3-alt',
+      js: 'fab fa-js-square',
+      react: 'fab fa-react',
+      vue: 'fab fa-vuejs',
+      d3: 'far fa-chart-bar',
+      node: 'fab fa-node'
+    };
+  
+    const link = props.link || 'http://';
+    const repo = props.repo || 'http://';
+  
+    return (
+      <div className="project">
+        <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
+          <img className="project-image" src={props.img} alt={'Screenshot of ' + props.title} />
+        </a>
+        <div className="project-details">
+          <div className="project-tile">
+            <p className="icons">
+              {props.tech.split(' ').map(t => (
+                <i className={tech[t]} key={t} />
+              ))}
+            </p>
+            {props.title}{' '}
+          </div>
+          {props.children}
+          <div className="buttons">
+            <a href={repo} target="_blank" rel="noopener noreferrer">
+              View source <i className="fas fa-external-link-alt" />
+            </a>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              Try it Live <i className="fas fa-external-link-alt" />
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  };
+  
 
-export default Projects;
+  export default Project;
