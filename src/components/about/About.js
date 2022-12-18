@@ -27,7 +27,7 @@ function About(){
                 <p className="separator" />
               </div>
               <div className="desc">
-                <h4 className="subtitle">I'm a programmer.</h4>
+                <h4 className="subtitle">I am a programmer.</h4>
                 <p>
                   For the front-end I usually work with HTML and Javascript, 
                   either standalone or including ReactJS framework. I also make the web pretty by incorporating Sass, 
@@ -42,12 +42,15 @@ function About(){
                 <h4 className="subtitle">Also a Biotechnologist.</h4>
                 <p>
                   I feel comfortable working with Bioinformatic tools
-                  namely: BLAST, MEGA-X, and Clustal.  You name it! 
-                  As I mentioned, I am a tech savvy and interacting with
-                  software is my thing!!
+                  namely: BLAST, MEGA-X, and Clustal.
+                  I also perform Whole-genome sequencing, Nucleotide Sequencing, sequence alignment,  .. You name it! 
+                  As I mentioned, I am a tech savvy and interacting with technological tools is important to me.
                 </p>
                 <p>
-                  Data Analysis tools(SPSS, and GraphPad Prism etc.) 
+                 Also proficient in Data Analysis tools(SPSS, and GraphPad Prism etc.) 
+                </p>
+                <p>
+                  Interacting with Software is my thing!!
                 </p>
               </div>
             </article>

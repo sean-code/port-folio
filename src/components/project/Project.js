@@ -1,10 +1,10 @@
-import './Service.css';
+import './Project.css';
 
-function Service(){
+function Projects(){
     return(
         <>
             <div className="services">
-                 <h1><u>My</u> Services</h1>
+                 <h1><u>My</u> Projects</h1>
                 <ul>
                     <li>
                         <i className="fa-solid fa-computer"></i>
@@ -41,4 +41,4 @@ function Service(){
     )
 }
 
-export default Service;
+export default Projects;

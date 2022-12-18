@@ -6,7 +6,7 @@
     background: #312626;
     clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
     z-index: 5;
-    background: #ffffff url(https://i.ibb.co/bdy6VYW/Photo-Grid-1612801911556.jpg) 
+    background: #000000 url(https://i.ibb.co/bdy6VYW/Photo-Grid-1612801911556.jpg) 
     center right no-repeat;
     background-attachment: fixed;
   }
@@ -34,11 +34,11 @@
   }
   
   #about .title h3 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   
   #about .separator {
-    background: #f300b4;
+    background: orange;
     width: 150px;
     height: 2px;
     margin: 1rem 0;
@@ -48,14 +48,15 @@
   #about .subtitle {
     font-size: 1.6rem;
     text-align: center;
-    color: inherit;
+    color: rgb(0, 0, 0);
     padding-bottom: 1.5rem;
   }
   
   #about p {
     padding-bottom: 1.5rem;
-    color: #555;
+    color: rgb(0, 0, 0);
     line-height: 1.9rem;
+    font-weight: 500;
   }
   
   #about .desc.full {
@@ -65,8 +66,8 @@
   
   #about .desc {
     grid-column-end: span 2;
-    background: #ffffffaa;
-    padding: 2rem;
+    background: #f8e005b0;
+    padding: 1.2rem;
     text-align: justify;
   }
   

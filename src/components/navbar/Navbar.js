@@ -6,7 +6,7 @@ function Navbar(){
     return(
         <nav className="header">
             <h1 className="logo">
-                <a href="#">Flexbox</a>
+                <a href="#">John S. Nganga</a>
             </h1>
             <ul className="main-nav">
                 <li className="nav-list-item">
@@ -16,7 +16,7 @@ function Navbar(){
                     <NavLink to='/about' className="nav-link">About Me</NavLink>
                 </li>
                 <li className="nav-list-item">
-                    <NavLink to='/service' className="nav-link">Services</NavLink>
+                    <NavLink to='/projects' className="nav-link">Projects</NavLink>
                 </li>
                 <li className="nav-list-item">
                     <NavLink to='/contact' className="nav-link">Contact</NavLink>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+	padding-top: .9em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #000000;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.logo a{
+    color: orange;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 0;
+	font-size: 1.45em;
+    font-family: 'Faster One', cursive;
+}
+
+.main-nav {
+	margin-top: 5px;
+    color: #0e2338;
+	font-size: .99em;
+}
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.main-nav a {
+    color: orange;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.main-nav a:hover {
+	color: green;
+    transform: translateY(-6px);
+    transition: 0.3s ease-out;
+}
+
+
+.btn-1{
+    color: orange;
+    font-size: large;
+    font-weight: 600;
+    background-color: green;
+    padding: 8px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    }
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
