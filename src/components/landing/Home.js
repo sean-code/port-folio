@@ -18,16 +18,18 @@ function Home(){
                     Here goes my official portfolio page.<br />
                     I'm a tech-enthusiast who curates experiences with technology
                 </h3>
-                <a href='https://www.linkedin.com/in/john-sean-kangethe/'>
+                <a href='https://www.linkedin.com/in/john-sean-kangethe/' target={'_blank'}>
                     <img src={linkedin} />
                 </a>
-                <a href='https://www.twitter.com/nganga_sea'>
+                <a href='https://www.twitter.com/nganga_sea' target={"_blank"}>
                     <img src={twitter} />     
                 </a>
-                <a href='https://www.instagram.com/its_ngangasean'>
+                <a href='https://www.instagram.com/its_ngangasean' target={"_blank"}>
                     <img src={instagram} />
                 </a>
-                <img src ={mail} />
+                <a href="https://t.me/sean_code">
+                    <img src ={mail} />
+                </a>
             </div>
             <button className='btn-2'>
                 Download CV
