@@ -44,7 +44,9 @@ function Contact(){
                 </div>
                 <div class="row100">
                     <div class="col">
-                        <input type="submit" value="Send" />
+                        <a href="https://t.me/sean_code" target="_blank">
+                            <input type="submit" value="Send" />
+                        </a>
                     </div>
                 </div>
             </div>

@@ -107,7 +107,7 @@ input[type="submit"] {
 .container2{
   position: relative;
   height: 400px;
-  width: 500px;
+  width: 400px;
   left: calc(50% - 300px);
   display: flex;
   margin-top: 10px;
@@ -213,4 +213,58 @@ svg {
 .card:hover .stroke {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 650px){
+
+  .container {
+    width: 45%;
+    height: 50%;
+    padding: 10px;
+    margin: auto 50px;
+    background-color: #000;
+    box-shadow: -1rem 0 3rem #000;
+    padding-bottom: 10px;
+  }
+
+  .container .row100 .inputBox.textarea {
+    width: 140%;
+    height: 100px;
+    padding: 10px 0;
+    background: #0f4618;
+  }
+
+
+  .container2{
+    margin: auto -100px;
+    position: relative;
+    height: 430px;
+    width: 500px;
+    left: calc(22% - 80px);
+    display: none;
+    margin-top: 80px;
+  }
+
+  .card {
+    display:none;
+    padding: 10%;
+    height: 250px;
+    width: 50px;
+    background-color: #17141d;
+    border-radius: 70px;
+    box-shadow: -1rem 0 3rem #000;
+    position: relative;
+    right: 100px;
+  }
+  
+
+
+
+
+
+
+
 }
