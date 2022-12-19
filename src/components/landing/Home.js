@@ -27,7 +27,7 @@ function Home(){
                 <a href='https://www.instagram.com/its_ngangasean' target={"_blank"}>
                     <img src={instagram} />
                 </a>
-                <a href="https://t.me/sean_code">
+                <a href="https://t.me/sean_code" target={"_blank"}>
                     <img src ={mail} />
                 </a>
             </div>
