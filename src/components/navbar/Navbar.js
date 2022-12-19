@@ -9,19 +9,19 @@ function Navbar(){
                 <a href="/home">John S. Nganga</a>
             </h1>
             <ul className="main-nav">
-                <li className="nav-list-item">
-                    <NavLink to='/home' className="nav-link">Home</NavLink>
+                <li>
+                    <NavLink to="/" className="nav-link">Home</NavLink>
                 </li>
-                <li className="nav-list-item">
+                <li>
                     <NavLink to='/about' className="nav-link">About Me</NavLink>
                 </li>
-                <li className="nav-list-item">
+                <li>
                     <NavLink to='/projects' className="nav-link">Projects</NavLink>
                 </li>
-                <li className="nav-list-item">
+                <li>
                     <NavLink to='/contact' className="nav-link">Contact</NavLink>
                 </li>
-                <li className="nav-list-item">
+                <li>
                     <a href='https://medium.com/@nganga_sean/seans-friend-s-future-past-bfe121d00d53' target={'_blank'}>
                         <button className="btn-1">Blog</button>
                     </a>

@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route path='*' element='Page Does Not Exist.. Click Home'/>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />}/>
           <Route path='/about' element={<About/>} />
