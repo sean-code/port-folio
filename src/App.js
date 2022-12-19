@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
 import Projects from './components/project/Projects';
 import Contact from './components/contact/Contact';
+import Error from './components/errorpage/Error';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='*' element='Page Does Not Exist.. Click Home'/>
+          <Route path='*' element={<Error />}/>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />}/>
           <Route path='/about' element={<About/>} />
