@@ -252,7 +252,7 @@
     .Details img{
         margin-top: 2%;
         margin-bottom: 1px;
-        width: 6%;
+        width: 2%;
         padding: 8px;
         margin-right: 20px;
         background: rgb(11, 168, 11);
@@ -262,13 +262,13 @@
     .btn-2{
         color: #000;
         background: rgb(11, 168, 11);
-        padding: 15px;
+        padding: 6px;
         border-style:groove;
         border-color: #000;
         border-radius: 10px;
         font-size: xx-large;
         font-weight: 900;
-        margin-left: 40%;
+        margin-left: 41%;
         margin-bottom: 700px;
         box-shadow: -1rem 0 3rem #000;
     }
