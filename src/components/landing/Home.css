@@ -64,6 +64,11 @@
     font-size: x-large;
 }
 
+.btn-2 a{
+    text-decoration: none;
+    color: #000;
+}
+
 
 
 /* Media Queries */

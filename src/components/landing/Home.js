@@ -32,7 +32,9 @@ function Home(){
                 </a>
             </div>
             <button className='btn-2'>
-                Download CV
+                <a href='https://docs.google.com/document/d/1LrfTMyCT-S8DgPljuiC2jGwIC10wyReFbGF-a8QlWRU/edit?usp=sharing' target='_blank'>
+                    Download CV
+                </a>
             </button>
         </div>
     )
