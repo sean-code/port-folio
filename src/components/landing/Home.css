@@ -237,7 +237,7 @@
 
 }
 
-@media (min-width: 901px) and (max-width: 1380px){
+@media (min-width: 901px) and (max-width: 2000px){
     .Home{
         margin-top: 10%;
     }
@@ -268,7 +268,7 @@
         border-radius: 10px;
         font-size: xx-large;
         font-weight: 900;
-        margin-left: 41%;
+        margin-left: 42%;
         margin-bottom: 700px;
         box-shadow: -1rem 0 3rem #000;
     }
