@@ -78,6 +78,19 @@ function Projects(props){
               </Project>
 
               <Project
+                title="Vallie's Estate"
+                img={'https://sean-code.github.io/TryRealEstate/assets/images/image%201.png'}
+                tech="js node css"
+                link="https://sean-code.github.io/TryRealEstate/"
+                repo="https://github.com/sean-code/TryRealEstate"
+              >
+                <small>Built using HTML, and CSS</small>
+                <p>
+                  This project is a webpage that displays the business operations of a real estate company by the name of Vallie's Estate. 
+                  This was my first ever project to test my UI skills and apply the basic HTML, CSS, and Figma design skills to practicality
+                </p>
+              </Project>
+              <Project
                 title="Car-Reviewing-Site"
                 img={'https://i.ibb.co/sKBr6gh/Screenshot-from-2022-12-18-16-07-51.png'}
                 tech="js d3 css"
