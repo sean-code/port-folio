@@ -181,7 +181,7 @@
     .Details img{
         margin-top: 1%;
         margin-bottom: 1px;
-        width: 7%;
+        width: 3%;
         padding: 10px;
         margin-right: 20px;
         background: rgb(11, 168, 11);
@@ -219,7 +219,7 @@
     .Details img{
         margin-top: 2%;
         margin-bottom: 1px;
-        width: 6%;
+        width: 5%;
         padding: 8px;
         margin-right: 20px;
         background: rgb(11, 168, 11);
@@ -229,14 +229,14 @@
     .btn-2{
         color: #000;
         background: rgb(11, 168, 11);
-        padding: 15px;
+        padding: 4px;
         border-style:groove;
         border-color: #000;
         border-radius: 10px;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: 900;
-        margin-left: 40%;
-        margin-bottom: 500px;
+        margin-left: 38%;
+        margin-bottom: 400px;
         box-shadow: -1rem 0 3rem #000;
     }
 
@@ -271,7 +271,7 @@
         border-style:groove;
         border-color: #000;
         border-radius: 10px;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: 900;
         margin-left: 42%;
         margin-bottom: 700px;
@@ -305,14 +305,14 @@
     .btn-2{
         color: #000;
         background: rgb(11, 168, 11);
-        padding: 4px;
+        padding: 5px;
         border-style:groove;
         border-color: #000;
         border-radius: 10px;
-        font-size: xx-large;
-        font-weight: 900;
+        font-size: x-large;
+        font-weight: 800;
         margin-left: 43%;
-        margin-bottom: 200px;
+        margin-bottom: 160px;
         box-shadow: -1rem 0 3rem #000;
     }
 }

@@ -13,9 +13,9 @@ function Projects(props){
                 <a href="https://github.com/sean-code" target={"_blank"}>
                     most
                 </a>
-                {' '}of the projects I've worked on recently. All of these
-                were built during my coding camp adventure at {' '}
-                <a href="https://moringaschool.com/courses/software-engineering-course-online/?https://moringaschool.com/courses/data-science-course/?utm_source=google&utm_medium=cpc&utm_campaign=Feb_6th_2023&gclid=CjwKCAiAkfucBhBBEiwAFjbkr7FtFZqC4cATG5O-KWDVsc6QfXXttLrolPaIpprkTTMbfDJeGJ43ihoC5KwQAvD_BwE" target="_blank" rel="noopener noreferrer">
+                {' '}of the projects I've worked on recently. Some
+                were built during my coding adventure at {' '}
+                <a href="https://moringaschool.com/courses/software-engineering-course-online/?https://moringaschool.com/courses/data-science-course/?utm_source=google&utm_medium=cpc&utm_campaign=Feb_6th_2023&gclid=CjwKCAiAkfucBhBBEiwAFjbkr7FtFZqC4cATG5O-KWDVsc6QfXXttLrolPaIpprkTTMbfDJeGJ43ihoC5KwQAvD_BwE" target="_blank">
                     Moringa School
                 </a>
                 , where I've been coding for almost 10 months non-stop until I completed all the projects
