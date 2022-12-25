@@ -62,6 +62,21 @@ function Projects(props){
                 <p>
                     A website that displays professionally created UI inspired by my favorite Marvel's Avengers</p>
               </Project>
+
+              <Project
+                title="Tic Tac Game"
+                img={'https://github.com/sean-code/tic-tac/raw/main/screenshot.gif'}
+                tech="js node css"
+                link="https://sean-code.github.io/tic-tac/"
+                repo="https://github.com/sean-code/tic-tac/"
+              >
+                <small>Built using React JS, CSS </small>
+                <p>
+                  A simulated development of a digitized tic tac game for entertainment. Play against the computer.
+                  This classic game contributes to children's developmental growth in numerous ways including their understanding of predictability and problem solving.
+                </p>
+              </Project>
+
               <Project
                 title="Car-Reviewing-Site"
                 img={'https://i.ibb.co/sKBr6gh/Screenshot-from-2022-12-18-16-07-51.png'}
