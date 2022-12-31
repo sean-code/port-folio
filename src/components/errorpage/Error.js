@@ -40,7 +40,7 @@ function Error(){
                 </div>
                 <div className="error__nav e-nav">
                    <NavLink to='/'> 
-                    <a href="#" target="_self" className="e-nav__link"></a>
+                    <a href="https://sean-code.github.io/port-folio/" target="_self" className="e-nav__link"></a>
                    </NavLink>
                 </div>
             </div>
