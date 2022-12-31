@@ -6,7 +6,7 @@ function Navbar(){
     return(
         <nav className="header">
             <h1 className="logo">
-                <a href="https://sean-code.github.io/port-folio/">John S. Nganga</a>
+                <a href="index.html">John S. Nganga</a>
             </h1>
             <ul className="main-nav">
                 <li>
