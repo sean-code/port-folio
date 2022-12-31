@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <Home />
         <Routes>
           <Route path='*' element={<Error />}/>
           <Route path='/' element={<Home />} />
