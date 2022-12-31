@@ -4,9 +4,8 @@ import './Error.css';
 function Error(){
     return(
         <>
-            <h1>Error Page</h1>
 
-            {/* dust particel */}
+            {/* dust particles */}
             <div>
             <div className="starsec"></div>
             <div className="starthird"></div>
@@ -34,9 +33,10 @@ function Error(){
             {/* Content  */}
             <div className="error__content">
                 <div className="error__message message">
-                <h1 className="message__title">Welcome to My Portfolio</h1>
-                <p className="message__text">Hi, visitor. Welcome to my Personal Website. Kindly use the Navigation Bar
-                at the top of this page to explore more about me </p>
+                <h1 className="message__title">Thanks For Landing</h1>
+                <p className="message__text">Kindly use the Navigation Bar
+                at the top of this page to explore. </p>
+                <p className="click">You can also click the button below</p>
                 </div>
                 <div className="error__nav e-nav">
                 <a href="/home" target="_self" className="e-nav__link"></a>
