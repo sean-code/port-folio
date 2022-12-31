@@ -1,11 +1,12 @@
 import React from "react";
 import './Error.css';
+import {NavLink} from 'react-router-dom';
 
 function Error(){
     return(
         <>
-
             {/* dust particles */}
+
             <div>
             <div className="starsec"></div>
             <div className="starthird"></div>
@@ -13,8 +14,7 @@ function Error(){
             <div className="starfifth"></div>
             </div>
 
-            {/* <!--Dust particle end---> */}
-
+            {/* Dust particle end */}
 
             <div className="lamp__wrap">
             <div className="lamp">
@@ -39,7 +39,9 @@ function Error(){
                 <p className="click">You can also click the button below</p>
                 </div>
                 <div className="error__nav e-nav">
-                    <a href="http://sean-code.github.io/home" target="_self" className="e-nav__link"></a>
+                   <NavLink to='/'> 
+                    <a href="#" target="_self" className="e-nav__link"></a>
+                   </NavLink>
                 </div>
             </div>
 
