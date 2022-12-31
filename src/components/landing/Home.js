@@ -15,20 +15,19 @@ function Home(){
             <div className='Details'>
                 <h1>Howdy, I'm <span>John Nganga</span></h1>
                 <h3>
-                    Here goes my official portfolio page.<br />
-                    I'm a tech-enthusiast who curates experiences with technology
+                    I'm a tech-enthusiast who curates experience with technology
                 </h3>
                 <a href='https://www.linkedin.com/in/john-sean-kangethe/' target={'_blank'}>
-                    <img src={linkedin} />
+                    <img src={linkedin} alt='img'/>
                 </a>
                 <a href='https://www.twitter.com/nganga_sea' target={"_blank"}>
-                    <img src={twitter} />     
+                    <img src={twitter} alt='img' />     
                 </a>
                 <a href='https://www.instagram.com/its_ngangasean' target={"_blank"}>
-                    <img src={instagram} />
+                    <img src={instagram} alt='img' />
                 </a>
                 <a href="https://t.me/sean_code" target={"_blank"}>
-                    <img src ={mail} />
+                    <img src ={mail} alt='img' />
                 </a>
             </div>
             <button className='btn-2'>

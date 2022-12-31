@@ -54,7 +54,7 @@
     font-size: larger;
     font-weight: 900;
     margin-left: 45%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: -1rem 0 3rem #000;
 }
 .btn-2:hover{
@@ -72,7 +72,7 @@
 
 
 /* Media Queries */
-@media only screen and (max-width: 400px){
+@media (max-width: 400px){
     .Home{
         margin-top: 10%;
     }
@@ -112,11 +112,29 @@
         font-size: larger;
         font-weight: 900;
         margin-left: 35%;
-        margin-bottom: 35px;
+        margin-bottom: 210px;
         box-shadow: -1rem 0 3rem #000;
     }
 }
 
+
+
+/* @media (min-height: 668px) and (max-height: 896px){
+    .btn-2{
+        color: #000;
+        background: rgb(11, 168, 11);
+        padding: 8px;
+        border-style:groove;
+        border-color: #000;
+        border-radius: 10px;
+        font-size: larger;
+        font-weight: 900;
+        margin-left: 35%;
+        margin-bottom: 180px;
+        box-shadow: -1rem 0 3rem #000;
+    }
+
+} */
 
 
 @media (min-width: 401px) and (max-width: 500px) {
@@ -159,7 +177,7 @@
         font-size: larger;
         font-weight: 900;
         margin-left: 35%;
-        margin-bottom: 30%;
+        margin-bottom: 80%;
         box-shadow: -1rem 0 3rem #000;
     }
 }
@@ -198,7 +216,7 @@
         font-size: larger;
         font-weight: 900;
         margin-left: 35%;
-        margin-bottom: 150px;
+        margin-bottom: 135px;
         box-shadow: -1rem 0 3rem #000;
     }
 }
@@ -249,7 +267,7 @@
 
     .Details{
         color: #fafafa;
-        font-size: 22px;
+        font-size: 18px;
         margin-bottom: 2%;
         text-align: center;
     }
@@ -287,7 +305,7 @@
 
     .Details{
         color: #fafafa;
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 2%;
         text-align: center;
     }
