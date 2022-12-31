@@ -235,14 +235,14 @@
         border-radius: 10px;
         font-size: x-large;
         font-weight: 900;
-        margin-left: 38%;
+        margin-left: 41%;
         margin-bottom: 400px;
         box-shadow: -1rem 0 3rem #000;
     }
 
 }
 
-@media (min-width: 901px) and (max-width: 2000px){
+@media (min-width: 901px) and (max-width: 1099px){
     .Home{
         margin-top: 10%;
     }
@@ -273,7 +273,7 @@
         border-radius: 10px;
         font-size: x-large;
         font-weight: 900;
-        margin-left: 42%;
+        margin-left: 43%;
         margin-bottom: 700px;
         box-shadow: -1rem 0 3rem #000;
     }
@@ -311,7 +311,7 @@
         border-radius: 10px;
         font-size: x-large;
         font-weight: 800;
-        margin-left: 43%;
+        margin-left: 45%;
         margin-bottom: 160px;
         box-shadow: -1rem 0 3rem #000;
     }
