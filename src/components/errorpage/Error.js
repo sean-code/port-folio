@@ -39,7 +39,7 @@ function Error(){
                 <p className="click">You can also click the button below</p>
                 </div>
                 <div className="error__nav e-nav">
-                    <a href="https://sean-code.github.io/port-folio/" target="_self" className="e-nav__link"></a>
+                    <a href="http://sean-code.github.io/home" target="_self" className="e-nav__link"></a>
                 </div>
             </div>
 
