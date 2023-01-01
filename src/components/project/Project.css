@@ -30,7 +30,7 @@
   /* Heading */
   #projects .heading .title {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     line-height: 0.1rem;
   }
   
@@ -42,12 +42,12 @@
   }
   
   #projects .heading .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     color: #fafafa;
-    width: 70%;
-    filter: saturate(1);
-    transform: scale(1.05);
+    width: 68%;
+    margin: 0 auto;
+    text-align: justify;
   }
   
   /* Single Project */
