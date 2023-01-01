@@ -10,7 +10,7 @@ function Projects(props){
               <p className="separator" />
               <p className="subtitle">
                 Here's a list of {' '}
-                <a href="https://github.com/sean-code" target={"_blank"}>
+                <a href="https://github.com/sean-code?tab=repositories" target={"_blank"}>
                     most
                 </a>
                 {' '}of the projects I've worked on recently. Some
@@ -22,23 +22,6 @@ function Projects(props){
                 required to get my Software Engineering Certification.
               </p>
             </div>
-            <div className="projects-wrapper">
-              <Project
-                title="Personal Profile Card."
-                img={'https://sean-code.github.io/profile-card/img/13A0A243-165A-43B5-8741-D2C1FD3DA9CA.jpg'}
-                tech="js css react node"
-                link="https://sean-code.github.io/profile-card/"
-                repo="https://github.com/sean-code/profile-card"
-              >
-                <small>
-                  Built using HTML, CSS, SCSS, SASS
-                </small>
-                <p>
-                  This is a personal profile card website that I created which lets the users check 
-                  me out on Social Media platforms and even reach out to me
-                with messages and replies.
-                </p>
-              </Project>
               <Project
                 title="Music Life+"
                 img={'https://i.ibb.co/R713vWz/Screenshot-from-2022-12-18-15-21-20.png'}
@@ -61,6 +44,24 @@ function Projects(props){
                 <small>Built using JavaScript, SASS, HTML, CSS </small>
                 <p>
                     A website that displays professionally created UI inspired by my favorite Marvel's Avengers</p>
+              </Project>
+
+              <div className="projects-wrapper">
+              <Project
+                title="Personal Profile Card."
+                img={'https://sean-code.github.io/profile-card/img/13A0A243-165A-43B5-8741-D2C1FD3DA9CA.jpg'}
+                tech="js css react node"
+                link="https://sean-code.github.io/profile-card/"
+                repo="https://github.com/sean-code/profile-card"
+              >
+                <small>
+                  Built using HTML, CSS, SCSS, SASS
+                </small>
+                <p>
+                  This is a personal profile card website that I created which lets the users check 
+                  me out on Social Media platforms and even reach out to me
+                with messages and replies.
+                </p>
               </Project>
 
               <Project
@@ -99,6 +100,19 @@ function Projects(props){
               >
                 <small>Built using React JS, , CSS, RubyOnRails(back-end)</small>
                 <p>An application where users can view car ratings,average market price, used car inventory, market car reviews, search for a car and add a new car in the system</p>
+              </Project>
+
+              <Project
+                title="Superheroes API"
+                img={'https://github.com/sean-code/Superheroes-Back-end/raw/main/imgs/heroes.png'}
+                tech="Ruby on Rails, Postgres, Railway"
+                link="https://theboys-production.up.railway.app/heroes"
+                repo="https://github.com/sean-code/Superheroes-Back-end"
+              >
+                <small>Ruby on Rails, Postgres, Railway</small>
+                <p>
+                Here goes a rails API comprising heroes, hero_powers(joint table) and powers. The characters used are from the comic and Amazon Prime's TV show entitled THE BOYS.
+                </p>
               </Project>
             </div>
           </div>

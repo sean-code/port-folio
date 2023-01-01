@@ -42,7 +42,7 @@
   }
   
   #projects .heading .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #fafafa;
     width: 70%;
@@ -82,7 +82,7 @@
     filter: saturate(1);
     transform: scale(1.05);
   }
-  
+
   #projects .project .project-image {
     width: 100%;
     transform: scale(1.2);
