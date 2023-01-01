@@ -42,12 +42,12 @@
   }
   
   #projects .heading .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     color: #fafafa;
-    width: 80%;
-    margin: 0 auto;
-    text-align: justify;
+    width: 70%;
+    filter: saturate(1);
+    transform: scale(1.05);
   }
   
   /* Single Project */
