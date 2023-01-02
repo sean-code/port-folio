@@ -17,7 +17,7 @@ function Contact(){
                     <div className="col">
 
                 {/* CREATE FORM */}
-                    <form action='https://app.headlessforms.cloud/api/v1/form-submission/JgbXegaT6O' method='POST' onSubmit={alert('Success')}>
+                    <form action='https://app.headlessforms.cloud/api/v1/form-submission/JgbXegaT6O' method='POST' onSubmit={handleSubmit}>
                         <div className='col'>
                             <div className='inputBox'>
                                 <input type="text" placeholder= 'First Name' name=" FirstName" required="required" />
