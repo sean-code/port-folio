@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/landing/Home';
 import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
@@ -10,7 +10,7 @@ import Error from './components/errorpage/Error';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path='*' element={<Error />}/>
@@ -19,7 +19,7 @@ function App() {
           <Route path='/projects' element={<Projects/>} />
           <Route path='/contact' element={<Contact/>} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
