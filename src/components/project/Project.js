@@ -15,6 +15,7 @@ function Project(props) {
     const repo = props.repo || 'http://';
   
     return (
+      
       <div className="project">
         <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
           <img className="project-image" src={props.img} alt={'Screenshot of ' + props.title} />
