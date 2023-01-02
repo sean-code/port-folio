@@ -9,7 +9,7 @@
   height: 50%;
   padding: 10px;
   margin: 2% 10% 5% 40%;
-  background-color: #000;
+  background-color: rgba(157, 81, 11, 0.097);
   box-shadow: -1rem 0 3rem #000;
   padding-bottom: 10px;
 }
@@ -91,7 +91,7 @@
   background: #0f4618;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   border: none;
   padding: 7px 35px;
   cursor: pointer;
