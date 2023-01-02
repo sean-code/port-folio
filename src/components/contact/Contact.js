@@ -2,12 +2,10 @@ import './Contact.css';
 
 
 function Contact(){
-    const handleSubmit = event => {
-        event.preventDefault();
-
-        alert('Message Sent Successfully')
-    }
-
+    // const handleSubmit = event => {
+    //     event.preventDefault('onLoad');
+    //     alert('Message Sent Successfully')
+    // }
 
     return(
         <>
