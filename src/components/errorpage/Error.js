@@ -33,7 +33,7 @@ function Error(){
             {/* Content  */}
             <div className="error__content">
                 <div className="error__message message">
-                <h1 className="message__title">OOPs!! Page Does Not Exist</h1>
+                <h1 className="message__title">Thanks For Landing</h1>
                 <p className="message__text">Kindly use the Navigation Bar
                 at the top of this page to explore. </p>
                 <p className="click">You can also click the button below</p>
