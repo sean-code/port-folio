@@ -1,6 +1,12 @@
 import './Contact.css';
 
+
 function Contact(){
+    const handleSubmit = event => {
+        event.preventDefault();
+
+        alert('Message Sent Successfully')
+    }
 
 
     return(
@@ -11,7 +17,7 @@ function Contact(){
                     <div className="col">
 
                 {/* CREATE FORM */}
-                    <form action='https://app.headlessforms.cloud/api/v1/form-submission/JgbXegaT6O' method='POST'>
+                    <form action='https://app.headlessforms.cloud/api/v1/form-submission/JgbXegaT6O' method='POST' onSubmit={alert('Success')}>
                         <div className='col'>
                             <div className='inputBox'>
                                 <input type="text" placeholder= 'First Name' name=" FirstName" required="required" />
