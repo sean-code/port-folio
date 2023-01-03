@@ -100,7 +100,7 @@ function Projects(props){
               >
                 <small>Built using HTML, and CSS</small>
                 <p>
-                  This project is a webpage that displays the business operations of a real estate company by the name of Vallie's Estate. 
+                  This is a web application that displays the business operations of a real estate company by the name of Vallie's Estate. 
                   This was my first ever project to test my UI skills and apply the basic HTML, CSS, and Figma design skills to practicality
                 </p>
               </Project>
