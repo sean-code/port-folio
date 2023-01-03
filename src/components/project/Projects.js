@@ -13,12 +13,12 @@ function Projects(props){
                 <a href="https://github.com/sean-code?tab=repositories" target={"_blank"}>
                     most
                 </a>
-                {' '}of the projects I've worked on recently. Some
+                {' '}of the projects I've worked on. Some
                 were built during my coding adventure at {' '}
                 <a href="https://moringaschool.com/courses/software-engineering-course-online/?https://moringaschool.com/courses/data-science-course/?utm_source=google&utm_medium=cpc&utm_campaign=Feb_6th_2023&gclid=CjwKCAiAkfucBhBBEiwAFjbkr7FtFZqC4cATG5O-KWDVsc6QfXXttLrolPaIpprkTTMbfDJeGJ43ihoC5KwQAvD_BwE" target="_blank">
                     Moringa School
                 </a>
-                , where I've been coding for almost 10 months non-stop until I completed all the projects
+                , where I took coding for a year+ non-stop until I completed all the projects
                 required to get my Software Engineering Certification.
               </p>
             </div>
@@ -46,21 +46,34 @@ function Projects(props){
                     A website that displays professionally created UI inspired by my favorite Marvel's Avengers</p>
               </Project>
 
+              <Project
+                title="Movie Search + App"
+                img={'https://previews.123rf.com/images/ylivdesign/ylivdesign1304/ylivdesign130400043/19244692-green-movie-logo-on-a-white-background.jpg'}
+                tech="React js, react node"
+                link="https://sean-code.github.io/Movie-Search/#/"
+                repo="https://github.com/sean-code/Movie-Search"
+              >
+                <small>Built using React js, react node, OMDB, CSS, Bootstrap</small>
+                <p>A website application that provides a user with the ability to search all categories of movies. 
+                  The idea is to provide entertainment to the user. Furthermore, a user is able to compile a list of favorite movies. All of this among other amazing UI features are meant for entertainment. 
+                  The Project was done for the purpose of learning and to grasp hands-on skills in website application development using React JS, and as well interaction with a 
+                  public application programming interface as part of my Software Engineering journey.</p>
+              </Project>
+
               <div className="projects-wrapper">
               <Project
                 title="Personal Profile Card."
                 img={'https://sean-code.github.io/profile-card/img/13A0A243-165A-43B5-8741-D2C1FD3DA9CA.jpg'}
-                tech="js css react node"
-                link="https://sean-code.github.io/profile-card/"
-                repo="https://github.com/sean-code/profile-card"
+                tech="React js, react node"
+                link="https://sean-code.github.io/Movie-Search/#/"
+                repo="https://github.com/sean-code/Movie-Search"
               >
                 <small>
                   Built using HTML, CSS, SCSS, SASS
                 </small>
                 <p>
                   This is a personal profile card website that I created which lets the users check 
-                  me out on Social Media platforms and even reach out to me
-                with messages and replies.
+                  me out on Social Media platforms and even reach out to me via messaging.
                 </p>
               </Project>
 
@@ -80,7 +93,7 @@ function Projects(props){
 
               <Project
                 title="Vallie's Estate"
-                img={'https://sean-code.github.io/TryRealEstate/assets/images/image%201.png'}
+                img={'https://img.freepik.com/premium-vector/real-estate-logo_74869-159.jpg?w=740'}
                 tech="js node css"
                 link="https://sean-code.github.io/TryRealEstate/"
                 repo="https://github.com/sean-code/TryRealEstate"
