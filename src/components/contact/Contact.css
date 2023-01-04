@@ -113,7 +113,7 @@ button[type="submit"] {
   margin-top: 10px;
 }
 
-.card {
+.card-con {
   display: flex;
   padding: 25%;
   height: 150px;
@@ -127,16 +127,16 @@ button[type="submit"] {
   left: 0px;
 }
 
-.card:not(:first-child) {
+.card-con:not(:first-child) {
     margin-left: -40px;
 }
 
-.card:hover {
+.card-con:hover {
   transform: translateY(-20px);
   transition: 0.4s ease-out;
 }
 
-.card:hover ~ .card {
+.card-con:hover ~ .card-con {
   position: relative;
   left: 50px;
   transition: 0.4s ease-out;
@@ -178,7 +178,7 @@ button[type="submit"] {
   transition: 0.6s ease-out;
 }
 
-.card:hover .filledbar {
+.card-con:hover .filledbar {
   width: 120px;
   transition: 0.4s ease-out;
 }
@@ -210,7 +210,7 @@ svg {
   stroke-width: 2px;
 }
 
-.card:hover .stroke {
+.card-con:hover .stroke {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
 }
@@ -248,7 +248,7 @@ svg {
     margin-top: 80px;
   }
 
-  .card {
+  .card-con {
     display:none;
     padding: 10%;
     height: 250px;

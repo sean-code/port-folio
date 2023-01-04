@@ -64,7 +64,7 @@ function Contact(){
 
                     {/* Contact me stickers */}
             <div className='container2'>
-                <div className="card">
+                <div className="card-con">
                     <a href='https://www.twitter.com/nganga_sea' target='_blank'>
                         <h3 className="title">Twitter</h3>
                     </a>
@@ -81,7 +81,7 @@ function Contact(){
                         </svg>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card-con">
                     <a href='https://github.com/sean-code' target='_blank'>
                         <h3 className="title">GitHub</h3>
                     </a>
@@ -98,7 +98,7 @@ function Contact(){
                         </svg>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card-con">
                     <a href='https://www.instagram.com/its_ngangasean' target='_blank'>
                         <h3 className="title">Instagram</h3>
                     </a>
@@ -115,7 +115,7 @@ function Contact(){
                     </svg>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card-con">
                     <a href="mailto:email@example.com" target='_blank'>
                         <h3 className="title">Email</h3>
                     </a>
