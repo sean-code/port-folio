@@ -55,7 +55,7 @@ ul{
 }
 
 .main-nav a:hover {
-	color: green;
+	color: rgb(5, 255, 5);
     transform: translateY(-6px);
     transition: 0.3s ease-out;
 }
