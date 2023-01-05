@@ -4,6 +4,7 @@ import mail from './mail.svg';
 import linkedin from './linkedin.svg';
 import instagram from './instagram.svg';
 import twitter from './twitter.svg';
+import Type from './Type';
 
 
 function Home(){
@@ -25,8 +26,9 @@ function Home(){
                 </div>
                 <div className='Details'>
                     <h1>Howdy, I'm <span>John Nganga</span></h1>
+                        <Type />
                     <h3>
-                        I'm a tech-enthusiast who curates experience with technology
+                        <i>A tech-enthusiast who curates experience with technology</i>
                     </h3>
                     <a href='https://www.linkedin.com/in/john-sean-kangethe/' target={'_blank'}>
                         <img src={linkedin} alt='img'/>

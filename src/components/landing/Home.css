@@ -5,14 +5,14 @@
 }
 
 .Home{
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .home-image img{
     height: 200px;
     width: 200px;
     justify-content: center;
-    margin: 5% 42% 2%;
+    margin: 1% 42% 2%;
     border-radius: 50%;
     box-shadow: -2rem 0 3rem #000;
 }
@@ -24,8 +24,19 @@
     text-align: center;
 }
 
+.Details h1{
+    font-size: 28px;
+}
+
 .Details h1 span{
     color: orange;
+}
+
+.type-effect{
+    color: rgb(0, 231, 0);
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 
 .Details img{
@@ -91,6 +102,10 @@
         text-align: center;
     }
 
+    .Details h1{
+        font-size: 22px;
+    }
+
     .Details img{
         margin-top: 1%;
         margin-bottom: 1px;
@@ -112,7 +127,7 @@
         font-size: larger;
         font-weight: 900;
         margin-left: 35%;
-        margin-bottom: 210px;
+        margin-bottom: 200px;
         box-shadow: -1rem 0 3rem #000;
     }
 }
@@ -156,11 +171,15 @@
         text-align: center;
     }
 
+    .Details h1{
+        font-size: 20px;
+    }
+
     .Details img{
         margin-top: 1%;
         margin-bottom: 1px;
         width: 8%;
-        padding: 10px;
+        padding: 6px;
         margin-right: 20px;
         background: rgb(11, 168, 11);
         border-radius: 15%;
@@ -177,7 +196,7 @@
         font-size: larger;
         font-weight: 900;
         margin-left: 35%;
-        margin-bottom: 80%;
+        margin-bottom: 74%;
         box-shadow: -1rem 0 3rem #000;
     }
 }
@@ -330,7 +349,7 @@
         font-size: x-large;
         font-weight: 800;
         margin-left: 45%;
-        margin-bottom: 160px;
+        margin-bottom: 150px;
         box-shadow: -1rem 0 3rem #000;
     }
 }
