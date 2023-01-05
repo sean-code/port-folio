@@ -22,12 +22,15 @@ h4 {
 
 .project-title {
   font-size: 25px;
+  font-weight: 800;
   text-align: center;
   color: orange;
+  margin-top: 20px;
 }
 
 .project-subtitle {
-  font-size: 2em;
+  font-size: 20px;
+  color: orange;
 }
 
 /*
@@ -51,14 +54,17 @@ I reused your grid-styling here to make it easier to follow for you. I usually o
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(auto-fit,   minmax(210px, 1fr));
-  gap: 1.8em;
+  gap: 1.8em; 
 }
+
+/* Gap is the space between Cards */
 
 /*
 CARD-STYLES
 */
 .card {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px 10px rgba(135, 73, 15, 0.2);
+  background-color: #23321d;
 }
 
 /*
@@ -88,6 +94,35 @@ Focus is added in addition for people who use their keyboard for various reasons
 }
 
 .card-content__title {
-  font-size: 1.5em;
+  color: orange;
+  font-size: 1.7em;
+  font-weight: 600;
   margin: 0.5em 0 1em;
+}
+
+.card-content__text{
+  font-size: 1.4em;
+}
+
+.view-button{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+}
+
+.view-button p a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: orange;
+  padding: 7px;
+  border: 1px solid #f38c04;
+  border-radius: 5px;
+ 
+}
+
+small{
+  font-size: 1.1rem;
+  color: orange;
 }
