@@ -157,7 +157,7 @@ function Projects(){
                     This data is displayed in form of JSON</p>
                     <div className='view-button'>
                       <p>
-                        <a href="theboys-production.up.railway.app/heroes" target="_blank">
+                        <a href="https://theboys-production.up.railway.app/heroes" target="_blank">
                           View App
                         </a>
                       </p>

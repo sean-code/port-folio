@@ -45,7 +45,7 @@ function Home(){
                     </a>
                 </div>
                 <button className='btn-2'>
-                    <a href='https://docs.google.com/document/d/1LrfTMyCT-S8DgPljuiC2jGwIC10wyReFbGF-a8QlWRU/edit?usp=sharing' target='_blank'>
+                    <a href='https://docs.google.com/document/d/11M4rc5qdHJ2QNv2IGZMazRzli-xQE5j75vhAbg_RQfw/edit?usp=sharing' target='_blank'>
                         View Resume
                     </a>
                 </button>
