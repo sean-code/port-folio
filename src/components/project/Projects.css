@@ -130,10 +130,10 @@ small{
 
 
 
-@media (min-width: 1280px) and (max-width: 1300px){
+@media (min-width: 1280px) and (max-width: 1370px){
   .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,   minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit,   minmax(280px, 1fr));
     gap: 1.8em; 
   }
 }
