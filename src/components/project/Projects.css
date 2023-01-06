@@ -129,14 +129,26 @@ small{
 
 
 
+/* Optimizing Media Queries */
 
-@media (min-width: 1280px) and (max-width: 1370px){
+
+@media (min-width: 1200px) and (max-width: 1300px){
   .portfolio-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,   minmax(280px, 1fr));
     gap: 1.8em; 
   }
 }
+
+
+@media (min-width: 1301px) and (max-width: 1400px){
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,   minmax(275px, 1fr));
+    gap: 1.8em; 
+  }
+}
+
 
 
 
