@@ -317,9 +317,55 @@
 }
 
 
-@media (min-width: 1100px) and (max-width: 2000px){
+@media (min-width: 1100px) and (max-width: 1370px){
     .Home{
         margin-top: 6%;
+    }
+
+    .Details{
+        color: #fafafa;
+        font-size: 20px;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .Details img{
+        margin-top: 2%;
+        margin-bottom: 1px;
+        width: 2%;
+        padding: 8px;
+        margin-right: 20px;
+        background: rgb(11, 168, 11);
+        border-radius: 15%;
+        box-shadow: -2rem 0 3rem rgba(243, 132, 6, 0.151);
+    }
+    .btn-2{
+        color: #000;
+        background: rgb(11, 168, 11);
+        padding: 5px;
+        border-style:groove;
+        border-color: #000;
+        border-radius: 10px;
+        font-size: x-large;
+        font-weight: 800;
+        margin-left: 45%;
+        margin-bottom: 150px;
+        box-shadow: -1rem 0 3rem #000;
+    }
+}
+
+
+@media (min-width: 1370px) and (max-width: 2000px){
+    .Home{
+        margin-top: 6%;
+    }
+
+    .home-image img{
+        height: 150px;
+        width: 150px;
+        margin: auto 885px;
+        border-radius: 50%;
+        box-shadow: -2rem 0 3rem #000;
     }
 
     .Details{
