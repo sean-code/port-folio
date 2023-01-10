@@ -7,14 +7,17 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Software Developer",
-          "Deep Learning Engineer",
+          "Software Engineer",
           "Full Stack Developer",
+          "Bioinformatician Graduate",
+          "UI/UX Designer",
+          "Deep Learning Engineer",
+          
           "Open Source Contributor",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 10,
       }}
     />
     </div>
