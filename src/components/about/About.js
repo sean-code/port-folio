@@ -2,6 +2,7 @@ import React from "react";
 import './About.css'
 
 
+
 function About(){
     return (
         <section id="about">
@@ -57,6 +58,7 @@ function About(){
             </article>
           </div>
         </section>
+        
       );
 }
 
