@@ -137,10 +137,10 @@ function Projects(){
                     <small>Built using React JS, , CSS, RubyOnRails(back-end)</small>
                     <p className="card-content__text">An application where users can view car ratings,average market price, used car inventory, market car reviews, search for a car and add a new car in the system</p>
                     <div className='view-button'>
-                      <p><a href="https://sean-code.github.io/Client-Car-Review-App/" target="_blank">
+                      <p><a href="https://sean-code.github.io/cars/" target="_blank">
                         View App
                         </a></p>
-                      <p><a href="https://github.com/sean-code/Client-Car-Review-App" target="_blank">
+                      <p><a href="https://github.com/sean-code/cars" target="_blank">
                         View Repo
                       </a></p>
                     </div>
