@@ -30,8 +30,7 @@ function Home(){
                     <h3>
                         <i>A tech-enthusiast who curates experience with technology</i>
                     </h3>
-                    <a href='https://www.linkedin.com/in/john-sean-nganga
-' target={'_blank'}>
+                    <a href='https://www.linkedin.com/in/john-sean-nganga' target={'_blank'}>
                         <img src={linkedin} alt='img'/>
                     </a>
                     <a href='https://www.twitter.com/nganga_sea' target={"_blank"}>
