@@ -1,270 +1,74 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display-swap');
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 30%;
-  height: 50%;
-  padding: 10px;
-  margin: 2% 10% 5% 40%;
-  background-color: rgba(157, 81, 11, 0.097);
-  box-shadow: -1rem 0 3rem #000;
-  padding-bottom: 10px;
-}
-
-.container h2 {
-  width: 100%;
-  color: orange;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.container .row100 {
-  width: 100%;
-}
-
-.container .row100 .col {
-  position: relative;
-  width: auto;
-  padding: 0 10px;
-  margin: 30px 10px 10px 10px;
-  transition: 0.5s;
-}
-
-.container .row100 .inputBox {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  color: orange;
-}
-
-.container .row100 .inputBox input,
-.container .row100 .inputBox.textarea textarea {
-  width: 100%;
-  height: 80%;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  padding: 0 10px;
-  z-index: 1;
-  color: #fff;
-}
-
-.container .row100 .inputBox .text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 40px;
-  font-size: 18px;
-  padding: 0 10px;
-  display: block;
-  transition: 0.5s;
-  pointer-events: none;
-}
-
-
-.container .row100 .inputBox .line {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: #0f4618;
-  transition: 0.5s;
-  border-radius: 5px;
-}
-
-.container .row100 .inputBox input:focus ~ .line,
-.container .row100 .inputBox input:valid ~ .line {
-  height: 15%;
-}
-
-.container .row100 .inputBox.textarea {
-  width: 100%;
-  height: 100px;
-  padding: 10px 0;
-  background: #0f4618;
-}
-
-button[type="submit"] {
-  border: none;
-  padding: 7px 35px;
-  cursor: pointer;
-  outline: none;
-  background: #0f4618;
-  color: orange;
-  font-size: 18px;
-  border-radius: 10px;
-}
-
-/* Contact Cards */
-
-.container2{
-  position: relative;
-  height: 400px;
-  width: 400px;
-  left: calc(50% - 300px);
-  display: flex;
-  margin-top: 10px;
-}
-
-.card-con {
-  display: flex;
-  padding: 25%;
-  height: 150px;
-  width: 900px;
-  background-color: #17141d;
-  border-radius: 70px;
-  box-shadow: -1rem 0 3rem #000;
-  margin-left: -50px;
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-}
-
-.card-con:not(:first-child) {
-    margin-left: -40px;
-}
-
-.card-con:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-}
-
-.card-con:hover ~ .card-con {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
-}
-
-.title {
-  color: orange;
-  background-color: rgb(56, 49, 49);
-  font-weight: 300;
-  position: absolute;
-  left: 20px;
-  top: 15px;
-  padding: 5%;
-  border-radius: 18px;
-}
-
-.bar {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  height: 5px;
-  width: 150px;
-}
-
-.emptybar {
-  background-color: #2e3033;
-  width: 100%;
-  height: 100%;
-}
-
-.filledbar {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(11, 92, 18);
-  background: linear-gradient(90deg, rgb(35, 110, 16) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
-  transition: 0.6s ease-out;
-}
-
-.card-con:hover .filledbar {
-  width: 120px;
-  transition: 0.4s ease-out;
-}
-
-.circle {
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 60px);
-}
-
-.circle a{
-  color: #52ebd6;
-  background-color: rgb(56, 49, 49);
-  padding: 3%;
-  border-radius: 5%;
-  text-decoration: none;
-  font-size:x-large;
-}
-
-.stroke {
-  stroke: white;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: #bd6d23;
-  stroke-width: 2px;
-}
-
-.card-con:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
-}
-
-
-/* Media Queries */
-
-@media only screen and (max-width: 650px){
-
-  .container {
-    width: 45%;
-    height: 50%;
-    padding: 10px;
-    margin: auto 50px;
-    background-color: #000;
-    box-shadow: -1rem 0 3rem #000;
-    padding-bottom: 10px;
+.contact {
+    background: rgba(0, 0, 0, 0.3)url('./img/color-sharp.png');
+    padding: 60px 0 200px 0;
+    background-blend-mode: darken;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-
-  .container .row100 .inputBox.textarea {
-    width: 140%;
-    height: 100px;
-    padding: 10px 0;
-    background: #0f4618;
+  .contact img {
+    width: 92%;
   }
-
-
-  .container2{
-    margin: auto -100px;
+  .contact h2 {
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 30px;
+  }
+  .contact form input, .contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.345);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form input:focus, .contact form textarea:focus {
+    background: rgba(255, 255, 255, 0.752);
+    color: #121212;
+  }
+  .contact form input::placeholder, .contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+    color: #121212;
+    opacity: 0.8;
+  }
+  .contact form button {
+    font-weight: 700;
+    color: rgb(44, 39, 39);
+    background-color: #fff;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
     position: relative;
-    height: 430px;
-    width: 500px;
-    left: calc(22% - 80px);
-    display: none;
-    margin-top: 80px;
+    transition: 0.3s ease-in-out;
   }
-
-  .card-con {
-    display:none;
-    padding: 10%;
-    height: 250px;
-    width: 50px;
-    background-color: #17141d;
-    border-radius: 70px;
-    box-shadow: -1rem 0 3rem #000;
+  .contact form button span {
+    z-index: 1;
     position: relative;
-    right: 100px;
   }
-  
-
-
-
-
-
-
-
-}
+  .contact form button:hover {
+    color: rgba(255, 255, 255, 0.894);
+  }
+  .contact form button::before {
+    content: "";
+    background: #41033bac;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form button:hover::before {
+    width: 100%;
+  }

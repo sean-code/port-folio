@@ -1,65 +1,50 @@
-import React from "react";
-import './About.css'
+import 'react-multi-carousel/lib/styles.css';
+import colorSharp from "./img/color-sharp.png"
 
 
 
-function About(){
-    return (
-        <section id="about">
-          <div className="wrapper">
-            <article>
-              <div className="title">
-                <h3>Who's this guy?</h3>
-                <p className="separator" />
-              </div>
-              <div className="desc full">
-                <h4 className="subtitle">My name is John Nganga.</h4>
-                <p>
-                  I am a Software Engineer, Full-Stack Developer(Front-end and Back-end), and also a BioEngineer
-                  based in Nairobi, Kenya. 
-                </p>
-                <p>
-                    I am a tech enthusiast who really enjoys solving problems as well as making things pretty and easy to use. 
-                    I can't stop learning new things; the more, the merrier, the better. I also love photography and skating.
-                </p>
-              </div>
-              <div className="title">
-                <h3>How about me?</h3>
-                <p className="separator" />
-              </div>
-              <div className="desc">
-                <h4 className="subtitle">I am a programmer.</h4>
-                <p>
-                  For the front-end I usually work with HTML and Javascript, 
-                  either standalone or including ReactJS framework. I also make the web pretty by incorporating Sass, 
-                  CSS, and Bootstrap.
-                </p>
-                <p>
-                  For the back-end I also work with Javascript - NodeJS. But, of 
-                  course, whenever the project requires Ruby, I do Ruby-on-Rails, SQLITE3, and POSTGRES.
-                </p>
-              </div>
-              <div className="desc">
-                <h4 className="subtitle">Also a BioEngineer.</h4>
-                <p>
-                  I hold a Bachelor of Technology in Biotechnology.
-                  I feel comfortable working with Bioinformatic tools
-                  namely: BLAST, MEGA-X, and Clustal.
-                  I also perform Whole-genome sequencing, Nucleotide Sequencing, sequence alignment,  .. You name it! 
-                  As I mentioned, I am a tech savvy and interacting with technological tools is important to me.
-                </p>
-                <p>
-                 Also proficient in Data Analysis tools(SPSS, and GraphPad Prism etc.) 
-                </p>
-                <p>
-                  Interacting with Software is my thing!!
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
-        
-      );
+export const About = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+  return (
+    <section className="skill" id="skills" style={{marginBottom: '10%'}}>
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <div className="skill-bx wow zoomIn">
+                        <h2>About</h2>
+                        <p>
+                          Hello, I'm John S. Nganga Kangethe. I fell in love with programming and
+                          started this career path.<br />I now curate experiences with technology
+                        </p>
+                        <h2>Education</h2>
+                          <li>Bachelor of Technology</li>
+                          <li>Diploma Computer Science</li>
+                          <li>Cert. Software Engineering</li>
+                          <li>Cert. Network Fundamentals</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img className="background-image-left" src={colorSharp} alt="Image" />
+    </section>
+  )
 }
-
-export default About;

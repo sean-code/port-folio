@@ -1,0 +1,149 @@
+
+
+/*
+This is a common way to prevent content touching the side of the screen e.g. mobile phones
+*/
+.main-main{
+  background:rgba(0, 0, 0, 0.6) url('./img/color-sharp.png');
+  background-blend-mode: darken;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  max-width: max-content;
+  margin-left: 20px;
+  color: #fafafa;
+  padding: 0.2em;
+}
+
+article {
+  margin: 0 auto;
+}
+
+.project-title .project-subtitle h3 h4 {
+  font-weight: 300;
+}
+
+.project-title {
+  font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.project-subtitle {
+  font-size: 20px;
+  color: rgba(173, 44, 242, 0.898);
+}
+
+/*
+Most well designed websites use lots of spacing to make content easier to consume. It will ultimately depend on the design you want/need to achieve
+*/
+.main-container p {
+  line-height: 1.1;
+  font-size: 20px;
+}
+
+.card-preview > img {
+  display: block;
+  max-width: 100%;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,   minmax(250px, 1fr));
+  gap: 2.5em; 
+}
+
+/*CARD-STYLES*/
+.card {
+  background: rgba(71, 53, 80, 0.319);
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  padding: 1px !important;
+  opacity: 0.93 !important;
+}
+
+.card-preview {
+  overflow: hidden;
+}
+
+.card-preview__img {
+  transition: 0.2s;
+}
+
+.card:hover .card-preview__img,
+.card:focus .card-preview__img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-content__title {
+  color: rgba(218, 184, 237, 0.898);
+  font-size: 1.7em;
+  font-weight: 600;
+  margin: 0.5em 0 1em;
+}
+
+.card-content__text{
+  font-size: 1.4em;
+}
+
+.view-button{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+}
+
+.view-button p a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: rgba(232, 186, 237, 0.918);
+  padding: 7px;
+  border: 1px solid rgba(139, 25, 205, 0.898);
+  border-radius: 5px;
+ 
+}
+
+small{
+  font-size: 1.6rem;
+  color: rgba(218, 184, 237, 0.898);
+}
+
+
+
+/* Optimizing Media Queries */
+
+
+@media (min-width: 1200px) and (max-width: 1300px){
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,   minmax(280px, 1fr));
+    gap: 1.8em; 
+  }
+}
+
+
+@media (min-width: 1301px) and (max-width: 1400px){
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,   minmax(275px, 1fr));
+    gap: 1.8em; 
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 2000px){
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,   minmax(350px, 1fr));
+    gap: 1.8em; 
+  }
+
+}

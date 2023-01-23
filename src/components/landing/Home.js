@@ -1,56 +1,85 @@
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { ArrowRightCircle, Type } from 'react-bootstrap-icons';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import profile from './assets/img/profile1.png';
 import './Home.css';
-import display from './profile.jpeg';
-import mail from './mail.svg';
-import linkedin from './linkedin.svg';
-import instagram from './instagram.svg';
-import twitter from './twitter.svg';
-import Type from './Type';
 
+export const Home = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = [ "Software Engineer", "Full Stack Developer", "UI/UX Designer", "Bioinformatician Graduate", "UI/UX Designer", "Open Source Contributor" ];
+  const period = 500;
 
-function Home(){
-    return(
-        <>
-            {/* dust particles */}
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
 
-            <div>
-                <div className="starsec"></div>
-                <div className="starthird"></div>
-                <div className="starfourth"></div>
-                <div className="starfifth"></div>
-            </div>
+    return () => { clearInterval(ticker) };
+  }, [text])
 
-            {/* Rest of Page */}
-            <div className='Home'>
-                <div className='home-image'>
-                    <img src={display} alt='display-photo'/>
-                </div>
-                <div className='Details'>
-                    <h1>Howdy, I'm <span>John Nganga</span></h1>
-                        <Type />
-                    <h3>
-                        <i>A tech-enthusiast who curates experience with technology</i>
-                    </h3>
-                    <a href='https://www.linkedin.com/in/john-sean-nganga' target={'_blank'}>
-                        <img src={linkedin} alt='img'/>
-                    </a>
-                    <a href='https://www.twitter.com/nganga_sea' target={"_blank"}>
-                        <img src={twitter} alt='img' />     
-                    </a>
-                    <a href='https://www.instagram.com/its_ngangasean' target={"_blank"}>
-                        <img src={instagram} alt='img' />
-                    </a>
-                    <a href="https://t.me/sean_code" target={"_blank"}>
-                        <img src ={mail} alt='img' />
-                    </a>
-                </div>
-                <button className='btn-2'>
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta(prevDelta => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex(prevIndex => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(250);
+    } else {
+      setIndex(prevIndex => prevIndex + 1);
+    }
+  }
+
+  return (
+    <section className="banner" id="home">
+      <Container>
+        <Row className="aligh-items-center">
+          <Col xs={12} md={6} xl={7}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <span className="tagline">Welcome to my Portfolio</span>
+                <h1 style={{fontSize:'40px'}}>{`Howdy, I'm John Nganga`}<br/></h1>
+                <h1 style={{fontSize:'50px'}}><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
+                  <button className="resume">
                     <a href='https://docs.google.com/document/d/11M4rc5qdHJ2QNv2IGZMazRzli-xQE5j75vhAbg_RQfw/edit?usp=sharing' target='_blank'>
                         View Resume
                     </a>
-                </button>
-            </div>
-        </>
-    )
+                  </button>
+                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+              </div>}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={profile} alt="Header Img"
+                  style={{height:'380px', width: '380px', borderRadius: '50%'}} />
+                </div>}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  )
 }
-
-export default Home;
