@@ -12,7 +12,7 @@ This is a common way to prevent content touching the side of the screen e.g. mob
 }
 
 .main-container {
-  max-width: max-content;
+  /* max-width: max-content; */
   margin-left: 20px;
   color: #fafafa;
   padding: 0.2em;
