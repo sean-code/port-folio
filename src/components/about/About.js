@@ -1,5 +1,6 @@
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "./img/color-sharp.png"
+import colorSharp from "./img/color-sharp.png";
+import './About.css';
 
 
 
