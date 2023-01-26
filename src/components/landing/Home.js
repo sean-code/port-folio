@@ -4,6 +4,7 @@ import { ArrowRightCircle, Type } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import profile from './assets/img/profile1.png';
+import CV from './assets/CV.pdf'
 import './Home.css';
 
 export const Home = () => {
@@ -57,12 +58,15 @@ export const Home = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1 style={{fontSize:'40px'}}>{`Howdy, I'm John Nganga`}<br/></h1>
-                <h1 style={{fontSize:'50px'}}><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1 style={{fontSize:'30px'}}>{`Howdy, I'm John Nganga`}<br/></h1>
+                <h1 style={{fontSize:'40px'}}><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
                   <button className="resume">
-                    <a href='https://docs.google.com/document/d/11M4rc5qdHJ2QNv2IGZMazRzli-xQE5j75vhAbg_RQfw/edit?usp=sharing' target='_blank'>
+                    <a href='https://docs.google.com/document/d/11M4rc5qdHJ2QNv2IGZMazRzli-xQE5j75vhAbg_RQfw/edit?usp=sharing' target='_blank'style={{'fontSize':'16px' }}>
                         View Resume
+                    </a>
+                    <a href={CV} download target='_blank' style={{'fontSize':'16px' }}>
+                        Download Resume
                     </a>
                   </button>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
@@ -74,7 +78,7 @@ export const Home = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src={profile} alt="Header Img"
-                  style={{height:'380px', width: '380px', borderRadius: '50%'}} />
+                  style={{height:'360px', width: '360px', borderRadius: '50%'}} />
                 </div>}
             </TrackVisibility>
           </Col>

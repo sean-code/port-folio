@@ -39,8 +39,14 @@
     color: #fff;
     border: 1px solid #fff;
     padding: 10px;
+    margin-right: 10px;
 
   }
+  .resume a:hover{
+    background: #fff;
+    color: #000;
+  }
+  
   .banner button {
     color: #fff;
     font-weight: 700;
@@ -77,3 +83,13 @@
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
   }
+
+
+
+  /* Media Queries */
+
+  @media (max-width: 460px){
+    .banner img {
+      width: 20px;
+    }
+}
