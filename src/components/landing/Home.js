@@ -13,7 +13,7 @@ export const Home = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer", "Full Stack Developer", "UI/UX Designer", "Bioinformatician", "UI/UX Designer", "Open Source Contributor" ];
+  const toRotate = [ "Software Engineer", "Full Stack Developer", "UI/UX Designer", "Open Source Contributor", "Bioinformatician"];
   const period = 500;
 
   useEffect(() => {
