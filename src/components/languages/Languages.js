@@ -39,39 +39,39 @@ export const Languages = () => {
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-                        <Col className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiJavascript />
                           <p>Javascript</p>
                         </Col>
-                        <Col className="tech-icons"> 
+                        <Col xs={3} md={4} lg={true} className="tech-icons"> 
                           <SiHtml5 />
                           <p>HTML5</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiCss3 />
                           <p>CSS3</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiBootstrap />
                           <p>Bootstrap</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiSass />
                           <p>SASS</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiReact />
                           <p>Reactjs</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiTypescript />
                           <p>Typescript</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiFigma />
                           <p>Figma</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiMiro />
                           <p>Miro</p>
                         </Col>
@@ -80,27 +80,27 @@ export const Languages = () => {
                                     {/* Second Tab */}
                     <Tab.Pane eventKey="second">
                       <Row>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiRuby />
                           <p>Ruby</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiRubyonrails />
                           <p>Ruby on Rails</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiPython />
                           <p>Python</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiSqlite />
                           <p>SQLITE</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiPostgresql />
                           <p>Postgres</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiMysql />
                           <p>MYSQL</p>
                         </Col>
@@ -109,35 +109,35 @@ export const Languages = () => {
                                     {/* Third tab */}
                     <Tab.Pane eventKey="third">
                       <Row>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiUbuntu />
                           <p>Linux Ubuntu</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiWindows />
                           <p>Windows</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiMacos />
                           <p>Mac OS</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiGithub />
                           <p>GitHub</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiNetlify />
                           <p>Netlify</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiHeroku />
                           <p>Heroku</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiVercel />
                           <p>Vercel</p>
                         </Col>
-                        <Col className="tech-icons">
+                        <Col xs={2} md={2} lg={true} className="tech-icons">
                           <SiMicrosoftazure />
                           <p>Microsoft Azure</p>
                         </Col>
