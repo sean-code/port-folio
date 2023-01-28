@@ -25,6 +25,7 @@ export const Contact = () => {
         'RNmyh5prDgdsS6W8n'
       )
       .then((response) => {
+        alert("Message Was Successfully Sent");
         console.log('message sent', response.status, response.text);
       })
       .catch((err) => {
@@ -77,19 +78,19 @@ export const Contact = () => {
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="sender_name1" value={sender_name1} onChange={handleName1} placeholder="First Name" />
+                      <input type="text" name="sender_name1" required value={sender_name1} onChange={handleName1} placeholder="First Name" />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="sender_name2" value={sender_name2} onChange={handleName2} placeholder="Last Name" />
+                      <input type="text" name="sender_name2" required value={sender_name2} onChange={handleName2} placeholder="Last Name" />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" name="sender_email" value={sender_email} onChange={handleEmail} placeholder="Email Address"  />
+                      <input type="email" name="sender_email" required value={sender_email} onChange={handleEmail} placeholder="Email Address"  />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel" name="sender_phone" value={sender_phone} onChange={handlePhone} placeholder="Phone No." />
+                      <input type="tel" name="sender_phone" required value={sender_phone} onChange={handlePhone} placeholder="Phone No." />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" name="message" value={message} onChange={handleMessage} placeholder="Message"></textarea>
+                      <textarea rows="6" name="message" required value={message} onChange={handleMessage} placeholder="Message"></textarea>
                       <button type="submit"><span>Send</span></button>
                     </Col>
                   </Row>
