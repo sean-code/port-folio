@@ -3,46 +3,60 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "./img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import './Contact.css'
+import './Contact.css';
+import { send } from "emailjs-com";
+// import { response } from "express";
+
 
 export const Contact = () => {
-  const formInitialDetails = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: ''
-  }
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
+    const [sender_name1, set_sender_name1] = useState('');
+    const [sender_name2, set_sender_name2] = useState('');
+    const [sender_email, set_sender_email] = useState('');
+    const [sender_phone, set_sender_phone] = useState('');
+    const [message, set_message] = useState('');
 
-  const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      send(
+        'service_sp5wyz3',
+        'template_9ve4a9b',
+        {sender_name1, sender_name2, sender_phone, sender_email, message},
+        'RNmyh5prDgdsS6W8n'
+      )
+      .then((response) => {
+        console.log('message sent', response.status, response.text);
       })
-  }
+      .catch((err) => {
+        console.log('failed', err)
+      })
+      // Clear Form After Send
+      set_sender_name1('');
+      set_sender_name2('');
+      set_sender_email('');
+      set_sender_phone('');
+      set_message('');
+    }
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setButtonText("Sending...");
-  //   let response = await fetch("http://localhost:5000/contact", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json;charset=utf-8",
-  //     },
-  //     body: JSON.stringify(formDetails),
-  //   });
-  //   setButtonText("Send");
-  //   let result = await response.json();
-  //   setFormDetails(formInitialDetails);
-  //   if (result.code == 200) {
-  //     setStatus({ succes: true, message: 'Message sent successfully'});
-  //   } else {
-  //     setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-  //   }
-  // };
+    const handleName1 = (e) => {
+      set_sender_name1(e.target.value)
+
+    }
+    const handleName2 = (e) => {
+      set_sender_name2(e.target.value)
+    }
+
+    const handleEmail = (e) => {
+      set_sender_email(e.target.value)
+    }
+
+    const handlePhone = (e) => {
+      set_sender_phone(e.target.value)
+    }
+    const handleMessage = (e) => {
+      set_message(e.target.value)
+    }
+
 
   return (
     <section className="contact" id="connect">
@@ -60,30 +74,24 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <form action='https://app.headlessforms.cloud/api/v1/form-submission/JgbXegaT6O' method='POST'>
+                <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name='FirstName' value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                      <input type="text" name="sender_name1" value={sender_name1} onChange={handleName1} placeholder="First Name" />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name='LastName'  value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" name="sender_name2" value={sender_name2} onChange={handleName2} placeholder="Last Name" />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" name='Email' value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                      <input type="email" name="sender_email" value={sender_email} onChange={handleEmail} placeholder="Email Address"  />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel" name='Tel'  value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
+                      <input type="tel" name="sender_phone" value={sender_phone} onChange={handlePhone} placeholder="Phone No." />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      <textarea rows="6" name="message" value={message} onChange={handleMessage} placeholder="Message"></textarea>
+                      <button type="submit"><span>Send</span></button>
                     </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </Col>
-                    }
                   </Row>
                 </form>
               </div>}
