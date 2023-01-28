@@ -38,7 +38,7 @@ export const About = () => {
                         </p>
                         <h2>Education</h2>
                           <li>Bachelor of Technology</li>
-                          <li>Diploma Computer Science</li>
+                          <li>Diploma in Computer Science</li>
                           <li>Cert. Software Engineering</li>
                           <li>Cert. Network Fundamentals</li>
                     </div>

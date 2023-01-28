@@ -4,7 +4,7 @@ import { ArrowRightCircle, Type } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import profile from './assets/img/profile1.png';
-import Resume from './assets/Resume.pdf'
+import Resume from './assets/Resume.pdf';
 import './Home.css';
 
 export const Home = () => {
