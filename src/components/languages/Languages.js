@@ -80,27 +80,27 @@ export const Languages = () => {
                                     {/* Second Tab */}
                     <Tab.Pane eventKey="second">
                       <Row>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiRuby />
                           <p>Ruby</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiRubyonrails />
                           <p>Ruby on Rails</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiPython />
                           <p>Python</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiSqlite />
                           <p>SQLITE</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiPostgresql />
                           <p>Postgres</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiMysql />
                           <p>MYSQL</p>
                         </Col>
@@ -109,35 +109,35 @@ export const Languages = () => {
                                     {/* Third tab */}
                     <Tab.Pane eventKey="third">
                       <Row>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiUbuntu />
                           <p>Linux Ubuntu</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiWindows />
                           <p>Windows</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiMacos />
                           <p>Mac OS</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiGithub />
                           <p>GitHub</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiNetlify />
                           <p>Netlify</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiHeroku />
                           <p>Heroku</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiVercel />
                           <p>Vercel</p>
                         </Col>
-                        <Col xs={2} md={2} lg={true} className="tech-icons">
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiMicrosoftazure />
                           <p>Microsoft Azure</p>
                         </Col>
