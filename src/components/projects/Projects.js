@@ -10,7 +10,8 @@ function Project(){
             <article>
               <section className="section-portfolio">
                 <div className="portfolio-container">
-                  <div className="card">
+                  
+                  {/* <div className="card">
                     <div className="card-preview">
                       <img src="https://i.pinimg.com/564x/7e/c1/11/7ec111864f7539dce5362ccf235b61a4.jpg" alt="placeholder" className="card-preview__img" />
                     </div>
@@ -27,7 +28,7 @@ function Project(){
                           </a></p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="card">
                     <div className="card-preview">
@@ -132,7 +133,7 @@ function Project(){
                     <div className="card-preview">
                       <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Q2Fyc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
-                      <h4 className="card-content__title">Car-Reviewing-Site</h4>
+                      <h4 className="card-content__title">Car-Rental-Site</h4>
                       <small>Built using React JS, , CSS, RubyOnRails(back-end)</small>
                       <p className="card-content__text">Application where users can hire cars and make payments via card or M-Pesa</p>
                       <div className='view-button'>
