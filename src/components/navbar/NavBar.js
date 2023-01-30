@@ -5,6 +5,7 @@ import navIcon1 from './assets/img/nav-icon1.svg';
 import twitter from './assets/img/twitter.svg';
 import telegram from './assets/img/mail.svg';
 import instagram from './assets/img/nav-icon3.svg';
+import github from './assets/img/github.svg'
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 import './NavBar.css'
@@ -50,16 +51,19 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
+                <a href='https://github.com/sean-code' target={"_blank"}>
+                  <img src={github} alt="github" />
+                </a>
                 <a href="https://www.linkedin.com/in/john-sean-nganga" target={'_blank'}>
-                  <img src={navIcon1} alt="" />
+                  <img src={navIcon1} alt="linkedin" />
                 </a>
                 <a href='https://www.twitter.com/nganga_sea' target={"_blank"}>
-                  <img src={twitter} alt="" />
+                  <img src={twitter} alt="twitter" />
                 </a>
                 <a href='https://www.instagram.com/its_ngangasean' target={"_blank"}>
-                  <img src={instagram} alt="" />
+                  <img src={instagram} alt="instagram" />
                 </a>
-                <a href="https://t.me/sean_code" target={"_blank"}><img src={telegram} alt="" /></a>
+                <a href="https://t.me/sean_code" target={"_blank"}><img src={telegram} alt="telegram" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Contact Me</span></button>
