@@ -11,6 +11,7 @@ function Project(){
               <section className="section-portfolio">
                 <div className="portfolio-container">
                   
+                  
                   {/* <div className="card">
                     <div className="card-preview">
                       <img src="https://i.pinimg.com/564x/7e/c1/11/7ec111864f7539dce5362ccf235b61a4.jpg" alt="placeholder" className="card-preview__img" />
