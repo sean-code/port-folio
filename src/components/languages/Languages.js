@@ -4,7 +4,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Languages.css';
 import { 
-  SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, 
+  SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, SiAngular,
   SiTypescript, SiSass, SiRuby, SiRubyonrails, SiPython,
   SiSqlite, SiPostgresql, SiMysql, SiFigma, SiMiro,
   SiUbuntu, SiWindows, SiMacos, SiGithub, SiNetlify,
@@ -62,6 +62,10 @@ export const Languages = () => {
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiReact />
                           <p>Reactjs</p>
+                        </Col>
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
+                          <SiAngular />
+                          <p>Angular</p>
                         </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiTypescript />
