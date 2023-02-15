@@ -27,7 +27,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
         <div className="newsletter-bx wow slideInUp">
           <Row>
             <Col lg={12} md={6} xl={5}>
-              <h3>"Imagine, Connect, Manifest" - John Nganga<br></br></h3>
+              <h3>"Imagine, Connect, Discover" - John Nganga<br></br></h3>
             </Col>
           </Row>
         </div>
