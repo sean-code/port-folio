@@ -4,7 +4,7 @@ import { ArrowRightCircle, Type } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import profile from './assets/img/profile1.png';
-import Resume from './assets/Resume.pdf';
+import CV from './assets/Resume.pdf';
 import './Home.css';
 
 export const Home = () => {
@@ -62,10 +62,10 @@ export const Home = () => {
                 <h1 style={{fontSize:'40px'}}><span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
                   <button className="resume">
-                    <a href='https://drive.google.com/file/d/12DY2WgYtoN8J_BPUuvCpXejxvN6inyZq/view?usp=sharing' target='_blank'style={{'fontSize':'16px' }}>
+                    <a href='https://drive.google.com/file/d/1jfdBt1U9lzU3V3Fni8W2U-8mV-zgVLTr/view?usp=sharing' target='_blank'style={{'fontSize':'16px' }}>
                         View Resume
                     </a>
-                    <a href={Resume} download target='_blank' style={{'fontSize':'16px' }}>
+                    <a href={CV} download target='_blank' style={{'fontSize':'16px' }}>
                         Download Resume
                     </a>
                   </button>
