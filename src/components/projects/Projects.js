@@ -81,7 +81,7 @@ function Project(){
                       <small>Built using React js, react node, OMDB, CSS, Bootstrap</small>
                       <p className="card-content__text">A website application that provides a user with the ability to search all categories of movies.</p>
                     <div className='view-button'>
-                        <p><a href="sean-code.github.io/scholathon/#/" target="_blank">
+                        <p><a href="https://sean-code.github.io/scholathon/#/" target="_blank">
                           View App
                           </a>
                         </p>
@@ -135,7 +135,7 @@ function Project(){
                       <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Q2Fyc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Car-Rental-Site</h4>
-                      <small>Built using React JS, , CSS, RubyOnRails(back-end)</small>
+                      <small>Built using React JS, CSS, Ruby On Rails(backend)</small>
                       <p className="card-content__text">Application where users can hire cars and make payments via card or M-Pesa</p>
                       <div className='view-button'>
                         <p><a href="https://sean-code.github.io/cars/" target="_blank">
@@ -193,12 +193,12 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/955056936/photo/cinema-tickets.jpg?b=1&s=170667a&w=0&k=20&c=XbrHLSzdkqCs5Db9CkM3L70cYamnaOA-0kcAi8kqaqQ=" />
+                      <img src="https://media.istockphoto.com/id/1446047204/photo/user-buying-movie-tickets-online.jpg?b=1&s=170667a&w=0&k=20&c=Dq98OAYI13Ba1b8NXdVotWPqsAonxb61s-q0prfHArc=" alt='ticket-thumbnail'/>
                       </div>
                     <div className="card-content">
-                      <h4 className="card-content__title">Cinema Tickets Backend</h4>
+                      <h4 className="card-content__title">Cinema Tickets API</h4>
                       <small>Built using Ruby on Rails, Procfile, Sinatra, Railway </small>
-                      <p className="card-content__text">Allows users to book tickets for the current showing movies at a local movie theater</p>
+                      <p className="card-content__text">A backend that allows users to book tickets for the current showing movies at a local movie theater</p>
                       <div className='view-button'>
                         <p>
                           <a href="https://theater-production.up.railway.app/movies" target="_blank">
