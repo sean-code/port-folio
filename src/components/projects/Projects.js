@@ -81,7 +81,7 @@ function Project(){
                       <small>Built using React js, react node, OMDB, CSS, Bootstrap</small>
                       <p className="card-content__text">A website application that provides a user with the ability to search all categories of movies.</p>
                     <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/Movie-Search/#/" target="_blank">
+                        <p><a href="sean-code.github.io/scholathon/#/" target="_blank">
                           View App
                           </a>
                         </p>
@@ -154,7 +154,7 @@ function Project(){
                     <div className="card-content">
                       <h4 className="card-content__title">Superheroes API</h4>
                       <small>Ruby on Rails, Postgres, Railway</small>
-                      <p className="card-content__text">An API comprising superheroes and their powers, inspired by TV show THE BOYS.
+                      <p className="card-content__text">An API comprising superheroes and their powers, adapted from TV show THE BOYS
                       </p>
                       <div className='view-button'>
                         <p>
@@ -187,6 +187,29 @@ function Project(){
                         <p><a href="https://github.com/sean-code/carreview" target="_blank">
                           View Repo
                           </a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="card">
+                    <div className="card-preview">
+                      <img src="https://media.istockphoto.com/id/955056936/photo/cinema-tickets.jpg?b=1&s=170667a&w=0&k=20&c=XbrHLSzdkqCs5Db9CkM3L70cYamnaOA-0kcAi8kqaqQ=" />
+                      </div>
+                    <div className="card-content">
+                      <h4 className="card-content__title">Cinema Tickets Backend</h4>
+                      <small>Built using Ruby on Rails, Procfile, Sinatra, Railway </small>
+                      <p className="card-content__text">Allows users to book tickets for the current showing movies at a local movie theater</p>
+                      <div className='view-button'>
+                        <p>
+                          <a href="https://theater-production.up.railway.app/movies" target="_blank">
+                          View App
+                          </a>
+                        </p>
+                        <p>
+                          <a href="https://github.com/sean-code/Theater" target="_blank">
+                          View Repo
+                          </a>
+                        </p>
                       </div>
                     </div>
                   </div>
