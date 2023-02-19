@@ -32,13 +32,37 @@ function Project(){
                   </div> */}
 
                   <div className="card">
+                      <div className="card-preview">
+                        <img src="https://media.istockphoto.com/id/1287186696/photo/food-delivery-app-order-with-phone-online-mobile-service-for-take-away-burger-and-pizza.jpg?b=1&s=170667a&w=0&k=20&c=rpyHqkxeuH5P4xdFFcvE-bjet3GMdGo7qwUoswFwlXU=&resize=400x250" alt="placeholder" className="card-preview__img" />
+                      </div>
+                      <div className="card-content">
+                        <h4 className="card-content__title">Vitamu Meals App</h4>
+                        <small>Built using JavaScript, SCSS, HTML</small>
+                        <p className="card-content__text">An application professionally created to allow its users
+                        view and order meals from Vitamu Meals Restaurant</p>
+                        <div className='view-button'>
+                        <p>
+                          <a href="https://sean-code.github.io/Vitamu-Foods/" target="_blank">
+                          View App
+                          </a>
+                        </p>
+                        <p>
+                          <a href="https://github.com/sean-code/Vitamu-Foods/tree/main" target="_blank">
+                          View Repo
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="card">
                     <div className="card-preview">
-                      <img src="https://cdn.dribbble.com/users/1508697/screenshots/5982299/media/5f4678715c4592134ed1dafa26379695.png?compress=1&resize=400x300" alt="placeholder" className="card-preview__img" />
+                      <img src="https://cdn.dribbble.com/users/1508697/screenshots/5982299/media/5f4678715c4592134ed1dafa26379695.png?compress=1&resize=400x250" alt="placeholder" className="card-preview__img" />
                       </div>
                     <div className="card-content">
                       <h4 className="card-content__title">Marvel Stars UI</h4>
                       <small>Built using JavaScript, SASS, HTML, CSS </small>
-                      <p className="card-content__text">Displays professionally created UI inspired by my favorite Marvel's Avengers.</p>
+                      <p className="card-content__text">Displays professionally created UI, adopted from Avengers, Marvel's comic </p>
                       <div className='view-button'>
                         <p>
                           <a href="https://sean-code.github.io/Marvel-UI/" target="_blank">
@@ -56,30 +80,11 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://i.pinimg.com/564x/81/b1/55/81b15579cdbbc14014b61dc0a52da142.jpg" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title"> Display Profile Card</h4>
-                      <small>Built using HTML, CSS, SCSS, SASS</small>
-                      <p className="card-content__text">A personal profile card website that I created which lets the users check 
-                    me out on Social Media platforms and even reach out to me via messaging.</p>
-                    <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/profile-card/" target="_blank">
-                          View App
-                        </a></p>
-                        <p><a href="https://github.com/sean-code/profile-card" target="_blank">
-                          View Repo
-                        </a></p>
-                    </div>
-                    </div>
-                  </div>
-
-                  <div className="card">
-                    <div className="card-preview">
-                      <img src="https://i.pinimg.com/564x/23/d3/56/23d356ae859cc121d6a2de86fa5fce87.jpg" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://1.bp.blogspot.com/-xzS25QPUwb8/XsU6CAVeCqI/AAAAAAAABhc/werBZz9wg6ANR-OF9TzE_RhKQiK8ST7AACLcBGAsYHQ/s1600/movie.webp" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Movie Search App</h4>
                       <small>Built using React js, react node, OMDB, CSS, Bootstrap</small>
-                      <p className="card-content__text">A website application that provides a user with the ability to search all categories of movies.</p>
+                      <p className="card-content__text">A website application that provides a user with the ability to search all categories of movies</p>
                     <div className='view-button'>
                         <p><a href="https://sean-code.github.io/scholathon/#/" target="_blank">
                           View App
@@ -95,7 +100,7 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://i.pinimg.com/564x/dc/92/23/dc9223bee87ae7104f2db4a91afbe158.jpg" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://media.istockphoto.com/id/1412860559/photo/woman-playing-tic-tac-toe-game-on-green-chalkboard-top-view.jpg?s=612x612&w=0&k=20&c=RUrmvRAbQqXPBdC8EnksBQZYzxjx9sznfDTy3Jkyqkk=&resize=30x90" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Tic Tac Game</h4>
                       <small>Built using React JS, CSS </small>
@@ -108,6 +113,24 @@ function Project(){
                         <p><a href="https://github.com/sean-code/tic-tac/" target="_blank">
                           View Repo
                           </a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="card">
+                    <div className="card-preview">
+                      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Q2Fyc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="placeholder" className="card-preview__img" /></div>
+                    <div className="card-content">
+                      <h4 className="card-content__title">Car-Rental-Site</h4>
+                      <small>Built using React JS, CSS, Ruby On Rails(backend)</small>
+                      <p className="card-content__text">Application where users can hire cars and make payments via card or M-Pesa</p>
+                      <div className='view-button'>
+                        <p><a href="https://sean-code.github.io/cars/" target="_blank">
+                          View App
+                          </a></p>
+                        <p><a href="https://github.com/sean-code/cars" target="_blank">
+                          View Repo
+                        </a></p>
                       </div>
                     </div>
                   </div>
@@ -132,19 +155,20 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Q2Fyc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://i.pinimg.com/564x/81/b1/55/81b15579cdbbc14014b61dc0a52da142.jpg" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
-                      <h4 className="card-content__title">Car-Rental-Site</h4>
-                      <small>Built using React JS, CSS, Ruby On Rails(backend)</small>
-                      <p className="card-content__text">Application where users can hire cars and make payments via card or M-Pesa</p>
-                      <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/cars/" target="_blank">
+                      <h4 className="card-content__title"> Display Profile Card</h4>
+                      <small>Built using HTML, CSS, SCSS, SASS</small>
+                      <p className="card-content__text">A personal profile card website that I created which lets the users check 
+                    me out on Social Media platforms and even reach out to me via messaging </p>
+                    <div className='view-button'>
+                        <p><a href="https://sean-code.github.io/profile-card/" target="_blank">
                           View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/cars" target="_blank">
+                        </a></p>
+                        <p><a href="https://github.com/sean-code/profile-card" target="_blank">
                           View Repo
                         </a></p>
-                      </div>
+                    </div>
                     </div>
                   </div>
 
