@@ -238,6 +238,25 @@ function Project(){
                     </div>
                   </div>
 
+                  <div className="card">
+                    <div className="card-preview">
+                      <img src="https://media.istockphoto.com/id/1391720775/photo/woman-using-computer-on-table-with-new-email-message-on-laptop-communication-connection.jpg?b=1&s=170667a&w=0&k=20&c=wsQQvAn0UujKadfw5OVNikLGc_r4-o9ee1l63iXdhh4=" alt="placeholder" className="card-preview__img" /></div>
+                    <div className="card-content">
+                      <h4 className="card-content__title">Personal Notes API</h4>
+                      <small>Built using Ruby on Rails, PostgreSQL</small>
+                      <p className="card-content__text">An API backend that allows users to create, read, update and delete notes.
+                      It has a login system, where users can register and log in, and the notes are saved to a PostgreSQL database</p>
+                      <div className='view-button'>
+                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
+                          View App
+                          </a></p>
+                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
+                          View Repo
+                        </a></p>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </section>
             </article>
