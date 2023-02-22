@@ -83,7 +83,7 @@ function Project(){
                       <img src="https://1.bp.blogspot.com/-xzS25QPUwb8/XsU6CAVeCqI/AAAAAAAABhc/werBZz9wg6ANR-OF9TzE_RhKQiK8ST7AACLcBGAsYHQ/s1600/movie.webp" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Movie Search App</h4>
-                      <small>Built using React js, react node, OMDB, CSS, Bootstrap</small>
+                      <small>Built using React js, Redux, react node, OMDB, CSS, Bootstrap</small>
                       <p className="card-content__text">A website application that provides a user with the ability to search all categories of movies</p>
                     <div className='view-button'>
                         <p><a href="https://sean-code.github.io/scholathon/#/" target="_blank">
