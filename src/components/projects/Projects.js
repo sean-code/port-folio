@@ -178,7 +178,7 @@ function Project(){
                     <div className="card-content">
                       <h4 className="card-content__title">Superheroes API</h4>
                       <small>Ruby on Rails, Postgres, Railway</small>
-                      <p className="card-content__text">An API comprising superheroes and their powers, adapted from TV show THE BOYS
+                      <p className="card-content__text">An API comprising superheroes and their powers, adopted from TV show THE BOYS
                       </p>
                       <div className='view-button'>
                         <p>
