@@ -100,6 +100,24 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
+                      <img src="https://media.istockphoto.com/id/467103541/photo/car-rental-sign.jpg?s=612x612&w=0&k=20&c=pjd-9j9Q2SttZHyARb7VEnWMRvA3XHgywGg7gwIq3vQ=" alt="placeholder" className="card-preview__img" /></div>
+                    <div className="card-content">
+                      <h4 className="card-content__title">Car-Rental-Site</h4>
+                      <small>Built using React JS, CSS, Ruby On Rails(backend)</small>
+                      <p className="card-content__text">Application where users can hire cars and make payments via card or M-Pesa</p>
+                      <div className='view-button'>
+                        <p><a href="https://sean-code.github.io/cars/" target="_blank">
+                          View App
+                          </a></p>
+                        <p><a href="https://github.com/sean-code/cars" target="_blank">
+                          View Repo
+                        </a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="card">
+                    <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1412860559/photo/woman-playing-tic-tac-toe-game-on-green-chalkboard-top-view.jpg?s=612x612&w=0&k=20&c=RUrmvRAbQqXPBdC8EnksBQZYzxjx9sznfDTy3Jkyqkk=&resize=30x90" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Tic Tac Game</h4>
@@ -119,29 +137,11 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Q2Fyc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Car-Rental-Site</h4>
-                      <small>Built using React JS, CSS, Ruby On Rails(backend)</small>
-                      <p className="card-content__text">Application where users can hire cars and make payments via card or M-Pesa</p>
-                      <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/cars/" target="_blank">
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/cars" target="_blank">
-                          View Repo
-                        </a></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card">
-                    <div className="card-preview">
-                      <img src="https://i.pinimg.com/564x/35/5b/a4/355ba4b30a8b11e819fc8cccc128e72f.jpg" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://media.istockphoto.com/id/1371000384/photo/model-homes-home-loans-home-equity-loans-home-model-insurance-and-a-pen-on-the-table-to-plan.jpg?s=612x612&w=0&k=20&c=mG6en8p_CVh8IMIovhB11KC0nQFYlyxjIV7e7S6Q2g0=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Vallie's Estate</h4>
                       <small>Built using HTML, and CSS</small>
-                      <p className="card-content__text">Displays the business operations of a real estate company by the name of Vallie's Estate.</p>
+                      <p className="card-content__text">Displays the business operations of a real estate company by the name Vallie's Estate.</p>
                       <div className='view-button'>
                         <p><a href="https://sean-code.github.io/TryRealEstate/" target="_blank">
                           View App
@@ -155,11 +155,11 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://i.pinimg.com/564x/81/b1/55/81b15579cdbbc14014b61dc0a52da142.jpg" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://media.istockphoto.com/id/1401202177/vector/man-and-woman-head-silhouettes-avatar-profile-icons-avatar-profile-picture-icon-set.jpg?s=612x612&w=0&k=20&c=OY87cmC1Zm0Ic_4ZA8KhiRn6tVHG-xJy5Ni5TpEtm28=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title"> Display Profile Card</h4>
                       <small>Built using HTML, CSS, SCSS, SASS</small>
-                      <p className="card-content__text">A personal profile card website that I created which lets the users check 
+                      <p className="card-content__text">A personal profile card  that lets users check 
                     me out on Social Media platforms and even reach out to me via messaging </p>
                     <div className='view-button'>
                         <p><a href="https://sean-code.github.io/profile-card/" target="_blank">
@@ -174,7 +174,7 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8QmFja2VuZCUyMGFwcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://images.unsplash.com/photo-1556707752-481d500a2c58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VwZXJoZXJvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Superheroes API</h4>
                       <small>Ruby on Rails, Postgres, Railway</small>
@@ -244,12 +244,12 @@ function Project(){
                     <div className="card-content">
                       <h4 className="card-content__title">Personal Notes API</h4>
                       <small>Built using Ruby on Rails, PostgreSQL</small>
-                      <p className="card-content__text">An API backend that allows users to create, read, update and delete notes.
+                      <p className="card-content__text">An API that allows users to create, read, update and delete notes.
                       It has a login system, where users can register and log in, and the notes are saved to a PostgreSQL database</p>
                       <div className='view-button'>
-                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
+                        {/* <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
                           View App
-                          </a></p>
+                          </a></p> */}
                         <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
                           View Repo
                         </a></p>
