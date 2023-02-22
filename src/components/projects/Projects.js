@@ -80,7 +80,7 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://1.bp.blogspot.com/-xzS25QPUwb8/XsU6CAVeCqI/AAAAAAAABhc/werBZz9wg6ANR-OF9TzE_RhKQiK8ST7AACLcBGAsYHQ/s1600/movie.webp" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://media.istockphoto.com/id/1223790224/photo/interface-of-video-distribution-service-subscription-service-streaming-video-communication.jpg?s=612x612&w=0&k=20&c=h854WiwSGwreSAGHhJWA-rSHjgjGKXI5C2JE_QzgGDM=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Movie Search App</h4>
                       <small>Built using React js, Redux, react node, OMDB, CSS, Bootstrap</small>
@@ -102,7 +102,7 @@ function Project(){
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/467103541/photo/car-rental-sign.jpg?s=612x612&w=0&k=20&c=pjd-9j9Q2SttZHyARb7VEnWMRvA3XHgywGg7gwIq3vQ=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
-                      <h4 className="card-content__title">Car-Rental-Site</h4>
+                      <h4 className="card-content__title">Car Rental</h4>
                       <small>Built using React JS, CSS, Ruby On Rails(backend)</small>
                       <p className="card-content__text">Application where users can hire cars and make payments via card or M-Pesa</p>
                       <div className='view-button'>
