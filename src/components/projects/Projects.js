@@ -81,25 +81,21 @@ function Project(){
                     </div>
                   </div>
 
+
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://cdn.dribbble.com/users/1508697/screenshots/5982299/media/5f4678715c4592134ed1dafa26379695.png?compress=1&resize=400x250" alt="placeholder" className="card-preview__img" />
-                      </div>
+                      <img src="https://media.istockphoto.com/id/467103541/photo/car-rental-sign.jpg?s=612x612&w=0&k=20&c=pjd-9j9Q2SttZHyARb7VEnWMRvA3XHgywGg7gwIq3vQ=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
-                      <h4 className="card-content__title">Marvel Stars UI</h4>
-                      <small>Built using JavaScript, SASS, HTML, CSS </small>
-                      <p className="card-content__text">Displays professionally created UI, adopted from Avengers, Marvel's comic </p>
+                      <h4 className="card-content__title">Car Rental</h4>
+                      <small>Built using React JS, CSS, Ruby On Rails (backend)</small>
+                      <p className="card-content__text">Full stack application that users can hire cars and make payments via Debit Card or via M-Pesa</p>
                       <div className='view-button'>
-                        <p>
-                          <a href="https://sean-code.github.io/Marvel-UI/" target="_blank">
+                        <p><a href="https://sean-code.github.io/cars/" target="_blank">
                           View App
-                          </a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/sean-code/Marvel-UI/" target="_blank">
+                          </a></p>
+                        <p><a href="https://github.com/sean-code/cars" target="_blank">
                           View Repo
-                          </a>
-                        </p>
+                        </a></p>
                       </div>
                     </div>
                   </div>
@@ -126,21 +122,45 @@ function Project(){
 
                   <div className="card">
                     <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/467103541/photo/car-rental-sign.jpg?s=612x612&w=0&k=20&c=pjd-9j9Q2SttZHyARb7VEnWMRvA3XHgywGg7gwIq3vQ=" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://media.istockphoto.com/id/1371000384/photo/model-homes-home-loans-home-equity-loans-home-model-insurance-and-a-pen-on-the-table-to-plan.jpg?s=612x612&w=0&k=20&c=mG6en8p_CVh8IMIovhB11KC0nQFYlyxjIV7e7S6Q2g0=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
-                      <h4 className="card-content__title">Car Rental</h4>
-                      <small>Built using React JS, CSS, Ruby On Rails(backend)</small>
-                      <p className="card-content__text">Application where users can hire cars and make payments via card or M-Pesa</p>
+                      <h4 className="card-content__title">Vallie's Estate</h4>
+                      <small>Built using HTML, and CSS</small>
+                      <p className="card-content__text">Displays the business operations of a real estate company by the name Vallie's Estate.</p>
                       <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/cars/" target="_blank">
+                        <p><a href="https://sean-code.github.io/TryRealEstate/" target="_blank">
                           View App
                           </a></p>
-                        <p><a href="https://github.com/sean-code/cars" target="_blank">
+                        <p><a href="https://github.com/sean-code/TryRealEstate" target="_blank">
                           View Repo
                         </a></p>
                       </div>
                     </div>
                   </div>
+
+                  <div className="card">
+                    <div className="card-preview">
+                      <img src="https://cdn.dribbble.com/users/1508697/screenshots/5982299/media/5f4678715c4592134ed1dafa26379695.png?compress=1&resize=400x250" alt="placeholder" className="card-preview__img" />
+                      </div>
+                    <div className="card-content">
+                      <h4 className="card-content__title">Marvel Stars UI</h4>
+                      <small>Built using JavaScript, SASS, HTML, CSS </small>
+                      <p className="card-content__text">Displays professionally created UI, adopted from Avengers, Marvel's comic </p>
+                      <div className='view-button'>
+                        <p>
+                          <a href="https://sean-code.github.io/Marvel-UI/" target="_blank">
+                          View App
+                          </a>
+                        </p>
+                        <p>
+                          <a href="https://github.com/sean-code/Marvel-UI/" target="_blank">
+                          View Repo
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
 
                   <div className="card">
                     <div className="card-preview">
@@ -157,24 +177,6 @@ function Project(){
                         <p><a href="https://github.com/sean-code/tic-tac/" target="_blank">
                           View Repo
                           </a></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card">
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1371000384/photo/model-homes-home-loans-home-equity-loans-home-model-insurance-and-a-pen-on-the-table-to-plan.jpg?s=612x612&w=0&k=20&c=mG6en8p_CVh8IMIovhB11KC0nQFYlyxjIV7e7S6Q2g0=" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Vallie's Estate</h4>
-                      <small>Built using HTML, and CSS</small>
-                      <p className="card-content__text">Displays the business operations of a real estate company by the name Vallie's Estate.</p>
-                      <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/TryRealEstate/" target="_blank">
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/TryRealEstate" target="_blank">
-                          View Repo
-                        </a></p>
                       </div>
                     </div>
                   </div>
