@@ -64,8 +64,8 @@ function Project(){
                       <div className="card-content">
                         <h4 className="card-content__title">French Community</h4>
                         <small>Built using ReactJs, emailJS, MailChimp</small>
-                        <p className="card-content__text">An application developed to connect users and visitors
-                         to a french society based in Nairobi: for learning, team building, translation, and team building</p>
+                        <p className="card-content__text">A website application connecting users and visitors
+                        to a french society based in Nairobi</p>
                         <div className='view-button'>
                         <p>
                           <a href="https://sean-code.github.io/french-community/" target="_blank">
