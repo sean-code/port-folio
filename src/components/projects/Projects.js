@@ -90,10 +90,10 @@ function Project(){
                       <small>Built using React JS, CSS, Ruby On Rails (backend)</small>
                       <p className="card-content__text">Full stack application that users can hire cars and make payments via Debit Card or via M-Pesa</p>
                       <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/#home" target="_blank">
+                        <p><a href="http://sean-code.github.io/cars-website" target="_blank">
                           View App
                           </a></p>
-                        <p><a href="https://github.com/sean-code/cars" target="_blank">
+                        <p><a href="https://github.com/sean-code/cars-website" target="_blank">
                           View Repo
                         </a></p>
                       </div>
