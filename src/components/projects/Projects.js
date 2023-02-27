@@ -31,6 +31,7 @@ function Project(){
                     </div>
                   </div> */}
 
+
                   <div className="card">
                       <div className="card-preview">
                         <img src="https://media.istockphoto.com/id/1287186696/photo/food-delivery-app-order-with-phone-online-mobile-service-for-take-away-burger-and-pizza.jpg?b=1&s=170667a&w=0&k=20&c=rpyHqkxeuH5P4xdFFcvE-bjet3GMdGo7qwUoswFwlXU=&resize=400x250" alt="placeholder" className="card-preview__img" />
@@ -49,6 +50,31 @@ function Project(){
                         <p>
                           <a href="https://github.com/sean-code/Vitamu-Foods/tree/main" target="_blank">
                           View Repo
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="card">
+                      <div className="card-preview">
+                        <img src="https://media.istockphoto.com/id/1466409042/photo/woman-donating-by-smartphone.jpg?b=1&s=170667a&w=0&k=20&c=52KF9Y2fNQ1ReA7nTct75JXbc55ZsCJooCTzaY1dNos=" alt="placeholder" className="card-preview__img" />
+                      </div>
+                      <div className="card-content">
+                        <h4 className="card-content__title">French Community</h4>
+                        <small>Built using ReactJs, emailJS, MailChimp</small>
+                        <p className="card-content__text">An application developed to connect users and visitors
+                         to a french society based in Nairobi: for learning, team building, translation, and team building</p>
+                        <div className='view-button'>
+                        <p>
+                          <a href="https://sean-code.github.io/french-community/" target="_blank">
+                            View App
+                          </a>
+                        </p>
+                        <p>
+                          <a href="https://github.com/sean-code/french-community/tree/cascade" target="_blank">
+                            View Repo
                           </a>
                         </p>
                       </div>
