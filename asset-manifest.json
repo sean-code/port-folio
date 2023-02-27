@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/port-folio/static/css/main.ef619b47.css",
-    "main.js": "/port-folio/static/js/main.26b2a23c.js",
+    "main.js": "/port-folio/static/js/main.bb6eb666.js",
     "static/media/profile1.png": "/port-folio/static/media/profile1.8d0562c6e17af4584c4f.png",
     "static/media/color-sharp.png": "/port-folio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/port-folio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
-    "static/media/Resume.pdf": "/port-folio/static/media/Resume.73aa3c591eabfc945b0f.pdf",
+    "static/media/Resumee.pdf": "/port-folio/static/media/Resumee.f747b48aa9dfe2dcb76e.pdf",
     "static/media/CentraNo2-Bold.ttf": "/port-folio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/port-folio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/port-folio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -24,10 +24,10 @@
     "static/media/twitter.svg": "/port-folio/static/media/twitter.a7f68ee410ab03095735626a3ec79ce6.svg",
     "static/media/mail.svg": "/port-folio/static/media/mail.6be2bab72258175fe17cce11a84145f4.svg",
     "main.ef619b47.css.map": "/port-folio/static/css/main.ef619b47.css.map",
-    "main.26b2a23c.js.map": "/port-folio/static/js/main.26b2a23c.js.map"
+    "main.bb6eb666.js.map": "/port-folio/static/js/main.bb6eb666.js.map"
   },
   "entrypoints": [
     "static/css/main.ef619b47.css",
-    "static/js/main.26b2a23c.js"
+    "static/js/main.bb6eb666.js"
   ]
 }
