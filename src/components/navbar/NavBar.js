@@ -17,27 +17,16 @@ export const NavBar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      const home = document.getElementById('home');
-      const about = document.getElementById('about');
-      const skills = document.getElementById('skills');
-      const projects = document.getElementById('projects');
-  
-      const sections = [home, about, skills, projects];
-  
-      const activeSection = sections.find((section) => {
-        const sectionTop = section.offsetTop - 80; // offset by navbar height
-        const sectionBottom = sectionTop + section.offsetHeight;
-  
-        return window.scrollY >= sectionTop && window.scrollY < sectionBottom;
-      });
-  
-      setActiveLink(activeSection ? activeSection.id : 'home');
-    };
-  
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-  
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
