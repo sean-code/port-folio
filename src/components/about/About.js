@@ -26,7 +26,7 @@ export const About = () => {
   };
 
   return (
-    <section className="skill" id="skills" style={{marginBottom: '10%'}}>
+    <section className="skill" id="about" style={{marginBottom: '10%'}}>
         <div className="container">
             <div className="row">
                 <div className="col-12">
