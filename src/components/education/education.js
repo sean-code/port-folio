@@ -4,45 +4,29 @@ import CardGroup from 'react-bootstrap/CardGroup';
 function Education() {
   return (
     <CardGroup>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+      <Card style={{marginRight:'8px'}}>
+        <Card.Img variant="top" src="https://media.istockphoto.com/id/891698738/photo/mortar-and-degree.jpg?s=612x612&w=0&k=20&c=OBPBQicp4iU7HmCRBEr8SVcAB3iRF79xF0dh5y3L4DY=" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
+          <Card.Title>Bachelor of Technology</Card.Title>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
+      </Card>
+      <Card style={{marginRight:'8px'}}>
+        <Card.Img variant="top" src="https://media.istockphoto.com/id/1399470424/vector/luxury-certificate-of-appreciation-template-with-red-and-gold-color-multipurpose-certificate.jpg?s=612x612&w=0&k=20&c=dGHpqfFSiyQr1N0RTmf0gOL9Nn0tld-w4YqjnACuBgw=" />
+        <Card.Body>
+          <Card.Title>Diploma in Computer Science</Card.Title>
+        </Card.Body>
+      </Card>
+      <Card  style={{marginRight:'8px'}}>
+        <Card.Img variant="top" src="https://media.istockphoto.com/id/891698738/photo/mortar-and-degree.jpg?s=612x612&w=0&k=20&c=OBPBQicp4iU7HmCRBEr8SVcAB3iRF79xF0dh5y3L4DY=" />
+        <Card.Body>
+          <Card.Title>Certificate in Software Engineering</Card.Title>
+        </Card.Body>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src="https://media.istockphoto.com/id/1399470424/vector/luxury-certificate-of-appreciation-template-with-red-and-gold-color-multipurpose-certificate.jpg?s=612x612&w=0&k=20&c=dGHpqfFSiyQr1N0RTmf0gOL9Nn0tld-w4YqjnACuBgw=" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
-          </Card.Text>
+          <Card.Title>Certificate in Network Fundamentals</Card.Title>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
     </CardGroup>
   );

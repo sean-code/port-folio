@@ -1,6 +1,7 @@
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "./img/color-sharp.png";
 import './About.css';
+import Education from '../education/education';
 
 
 
@@ -37,10 +38,7 @@ export const About = () => {
                           started this career path.<br />I now curate experiences with technology
                         </p>
                         <h2>Education</h2>
-                          <li>Bachelor of Technology</li>
-                          <li>Diploma in Computer Science</li>
-                          <li>Cert. Software Engineering</li>
-                          <li>Cert. Network Fundamentals</li>
+                        <Education />
                     </div>
                 </div>
             </div>
