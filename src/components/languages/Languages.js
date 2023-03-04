@@ -14,7 +14,7 @@ import {
 
 export const Languages = () => {
   return (
-    <section className="project" id="project">
+    <section className="project" id="tools">
       <Container>
         <Row>
           <Col size={12}>
