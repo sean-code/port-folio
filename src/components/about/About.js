@@ -35,7 +35,9 @@ export const About = () => {
                         <h2>About</h2>
                         <p>
                           Hello, I'm John S. Nganga Kangethe. I fell in love with programming and
-                          started this career path.<br />I now curate experiences with technology
+                          started this career path.<br/>
+                          Building a strong foundation of fundamental concepts and continuously practicing to
+                          improve my skills helps me become a successful and confident software developer.
                         </p>
                         <h2>Education</h2>
                         <Education />
