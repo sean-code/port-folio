@@ -22,7 +22,7 @@ export const Languages = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2> Tools and Languages </h2>
-                <p>My Programming languages proficiency, tools, and professional skillset includes and/or not limited to:</p>
+                <p>My programming languages proficiency, tools, and professional skillset includes and/or not limited to:</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

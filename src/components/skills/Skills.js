@@ -36,7 +36,7 @@ export const Skills = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
                         <p>
-                          I can't stop learning new things; the more, the merrier, the better.
+                        I can't help but continue to learn new things; the more I learn, the merrier I feel and the better I become.
                         </p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">

@@ -32,12 +32,14 @@ export const About = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>About</h2>
+                        <h2>About Me</h2>
                         <p>
-                          Hello, I'm John S. Nganga Kangethe. I fell in love with programming and
-                          started this career path.<br/>
-                          Building a strong foundation of fundamental concepts and continuously practicing to
+                          Hello, I am John Nganga Kangethe. I fell in love with programming and
+                          started this career path. Building a strong foundation of fundamental concepts and continuously practicing to
                           improve my skills helps me become a successful and confident software developer.
+                        <br/>
+                        An interesting fact about me is that I am a night owl and I find that I am more productive during the calm of the night.
+                        To help myself sleep, I listen to white noise and drink almond milk.
                         </p>
                         <h2>Education</h2>
                         <Education />

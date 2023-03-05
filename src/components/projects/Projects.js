@@ -246,7 +246,7 @@ function Project(){
                   <div className="card">
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1446047204/photo/user-buying-movie-tickets-online.jpg?b=1&s=170667a&w=0&k=20&c=Dq98OAYI13Ba1b8NXdVotWPqsAonxb61s-q0prfHArc=" alt='ticket-thumbnail'/>
-                      </div>
+                    </div>
                     <div className="card-content">
                       <h4 className="card-content__title">Cinema Tickets API</h4>
                       <small>Built using Ruby on Rails, Procfile, Sinatra, Railway </small>
