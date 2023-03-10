@@ -69,7 +69,7 @@ export const Home = () => {
                         Download Resume
                     </a>
                   </button>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={27} /></button>
               </div>}
             </TrackVisibility>
           </Col>
