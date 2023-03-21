@@ -4,8 +4,8 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Languages.css';
 import { 
-  SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, SiAngular,
-  SiTypescript, SiSass, SiRuby, SiRubyonrails, SiPython,
+  SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, SiVuedotjs, SiAngular,
+  SiTypescript, SiSass, SiRuby, SiRubyonrails, SiPython, SiFlask,
   SiSqlite, SiPostgresql, SiMysql, SiFigma, SiMiro,
   SiUbuntu, SiWindows, SiMacos, SiGithub, SiNetlify,
   SiHeroku, SiVercel, SiMicrosoftazure
@@ -64,6 +64,10 @@ export const Languages = () => {
                           <p>Reactjs</p>
                         </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
+                          <SiVuedotjs />
+                          <p>Vue</p>
+                        </Col>
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiAngular />
                           <p>Angular</p>
                         </Col>
@@ -97,12 +101,16 @@ export const Languages = () => {
                           <p>Python</p>
                         </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
+                          <SiFlask />
+                          <p>Flask</p>
+                        </Col>
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiSqlite />
-                          <p>SQLITE</p>
+                          <p>SQLITE3</p>
                         </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiPostgresql />
-                          <p>Postgres</p>
+                          <p>PostgreSQL</p>
                         </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiMysql />
@@ -115,7 +123,7 @@ export const Languages = () => {
                       <Row>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiUbuntu />
-                          <p>Linux Ubuntu</p>
+                          <p>Ubuntu</p>
                         </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiWindows />
