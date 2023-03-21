@@ -3,13 +3,13 @@ import colorSharp2 from "./img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Languages.css';
-import { 
+import {
   SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, SiVuedotjs, SiAngular,
   SiTypescript, SiSass, SiRuby, SiRubyonrails, SiPython, SiFlask,
-  SiSqlite, SiPostgresql, SiMysql, SiFigma, SiMiro,
+  SiSqlite, SiPostgresql, SiMysql, SiFigma, SiMiro, SiAdobeindesign,
   SiUbuntu, SiWindows, SiMacos, SiGithub, SiNetlify,
   SiHeroku, SiVercel, SiMicrosoftazure
- } from 'react-icons/si'
+} from 'react-icons/si'
 
 
 export const Languages = () => {
@@ -38,7 +38,7 @@ export const Languages = () => {
                                 {/* Display Tabs */}
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                      <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiJavascript />
                           <p>Javascript</p>
@@ -61,8 +61,10 @@ export const Languages = () => {
                         </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiReact />
-                          <p>Reactjs</p>
+                          <p>React JS</p>
                         </Col>
+                      </Row>
+                      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiVuedotjs />
                           <p>Vue</p>
@@ -82,6 +84,10 @@ export const Languages = () => {
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiMiro />
                           <p>Miro</p>
+                        </Col>
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
+                          <SiAdobeindesign />
+                          <p>Adobe Design</p>
                         </Col>
                       </Row>
                     </Tab.Pane>
