@@ -15,7 +15,7 @@ import {
 export const Languages = () => {
   return (
     <section className="project" id="tools">
-      <Container>
+      <Container style={{backgroundColor:'#151515', borderRadius:'70px', padding:'8%'}}>
         <Row>
           <Col size={12}>
             <TrackVisibility>
