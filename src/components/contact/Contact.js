@@ -99,6 +99,7 @@ export const Contact = () => {
                       <textarea rows="6" name="message" required value={message} onChange={handleMessage} placeholder="Message"></textarea>
                       <button type="submit"><span>Send</span></button>
                     </Col>
+                    <ToastContainer />
                   </Row>
                 </form>
               </div>}
