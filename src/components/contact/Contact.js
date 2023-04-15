@@ -5,6 +5,8 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Contact.css';
 import { send } from "emailjs-com";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -25,11 +27,14 @@ export const Contact = () => {
         'RNmyh5prDgdsS6W8n'
       )
       .then((response) => {
-        alert("Message Was Successfully Sent");
+        // alert("Message Was Successfully Sent"); Transition from using Alert to using Toastification
         console.log('message sent', response.status, response.text);
+        toast.success("Success! Nganga will be in touch soon");
+
       })
       .catch((err) => {
         console.log('failed', err)
+        toast.error("Not sent! Please try again later")
       })
       // Clear Form After Send
       set_sender_name1('');
@@ -61,6 +66,7 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
+      <ToastContainer />
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
