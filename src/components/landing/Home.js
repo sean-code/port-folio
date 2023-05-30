@@ -62,7 +62,7 @@ export const Home = () => {
                 <h1 style={{fontSize:'40px'}}><span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
                   <button className="resume">
-                    <a href='https://drive.google.com/file/d/1XkCxHC6_24iXibz0hkgn6Rt8eL22C6tV/view?usp=sharing' target='_blank'style={{'fontSize':'16px' }}>
+                    <a href='https://drive.google.com/file/d/1-Y2CnpqoHZqVUvFGIEUKSVQOji5xquvR/view?usp=drive_link' target='_blank'style={{'fontSize':'16px' }}>
                         View Resume
                     </a>
                     <a href={CV} download target='_blank' style={{'fontSize':'16px' }}>
