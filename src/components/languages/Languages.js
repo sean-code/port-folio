@@ -4,11 +4,11 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Languages.css';
 import {
-  SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, SiVuedotjs, SiAngular,
-  SiTypescript, SiSass, SiRuby, SiRubyonrails, SiPython, SiFlask,
+  SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, SiVuedotjs, SiVuetify, SiAngular,
+  SiTypescript, SiSass, SiRuby, SiRubyonrails, SiPython, SiFlask, SiRailway, SiDocker,
   SiSqlite, SiPostgresql, SiMysql, SiFigma, SiMiro, SiAdobeindesign,
   SiUbuntu, SiWindows, SiMacos, SiGithub, SiNetlify,
-  SiHeroku, SiVercel, SiMicrosoftazure
+  SiHeroku, SiVercel, SiMicrosoftazure, SiVisualstudio, SiAtom, SiFirebase
 } from 'react-icons/si'
 
 
@@ -43,7 +43,7 @@ export const Languages = () => {
                           <SiJavascript />
                           <p>Javascript</p>
                         </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons"> 
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiHtml5 />
                           <p>HTML5</p>
                         </Col>
@@ -63,11 +63,15 @@ export const Languages = () => {
                           <SiReact />
                           <p>React JS</p>
                         </Col>
-                      </Row>
-                      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiVuedotjs />
                           <p>Vue</p>
+                        </Col>
+                      </Row>
+                      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
+                          <SiVuetify />
+                          <p>Vuetify</p>
                         </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiAngular />
@@ -89,44 +93,70 @@ export const Languages = () => {
                           <SiAdobeindesign />
                           <p>Adobe Design</p>
                         </Col>
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
+                          <SiFirebase />
+                          <p>Firebase</p>
+                        </Col>
                       </Row>
                     </Tab.Pane>
                                     {/* Second Tab */}
                     <Tab.Pane eventKey="second">
-                      <Row>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiRuby />
-                          <p>Ruby</p>
-                        </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiRubyonrails />
-                          <p>Ruby on Rails</p>
-                        </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiPython />
-                          <p>Python</p>
-                        </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiFlask />
-                          <p>Flask</p>
-                        </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiSqlite />
-                          <p>SQLITE3</p>
-                        </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiPostgresql />
-                          <p>PostgreSQL</p>
-                        </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiMysql />
-                          <p>MYSQL</p>
-                        </Col>
+                      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiRuby />
+                            <p>Ruby</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiRubyonrails />
+                            <p>Ruby on Rails</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiPython />
+                            <p>Python</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiFlask />
+                            <p>Flask</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiSqlite />
+                            <p>SQLITE3</p>
+                          </Col>
+                        </Row>
+                        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiPostgresql />
+                            <p>PostgreSQL</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiMysql />
+                            <p>MYSQL</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiRailway />
+                            <p>Railway</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiDocker />
+                            <p>Docker</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiFirebase />
+                            <p>Firebase</p>
+                          </Col>
                       </Row>
                     </Tab.Pane>
                                     {/* Third tab */}
                     <Tab.Pane eventKey="third">
-                      <Row>
+                      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
+                              <SiVisualstudio />
+                              <p>Visual Studiio</p>
+                        </Col>
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiAtom />
+                            <p>Atom</p>
+                        </Col>
                         <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiUbuntu />
                           <p>Ubuntu</p>
@@ -139,15 +169,16 @@ export const Languages = () => {
                           <SiMacos />
                           <p>Mac OS</p>
                         </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiGithub />
-                          <p>GitHub</p>
-                        </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
-                          <SiNetlify />
-                          <p>Netlify</p>
-                        </Col>
-                        <Col xs={3} md={4} lg={true} className="tech-icons">
+                        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiGithub />
+                            <p>GitHub</p>
+                          </Col>
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiNetlify />
+                            <p>Netlify</p>
+                          </Col>
+                           <Col xs={3} md={4} lg={true} className="tech-icons">
                           <SiHeroku />
                           <p>Heroku</p>
                         </Col>
@@ -159,6 +190,7 @@ export const Languages = () => {
                           <SiMicrosoftazure />
                           <p>Microsoft Azure</p>
                         </Col>
+                      </Row>
                       </Row>
                     </Tab.Pane>
                   </Tab.Content>
