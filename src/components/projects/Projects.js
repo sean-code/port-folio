@@ -85,6 +85,48 @@ function Project(){
                   </div>
             </Col>
 
+
+            <Col md='4' sm='6'>
+              <div className="card">
+                    <div className="card-preview">
+                      <img src="https://media.istockphoto.com/id/1191380434/vector/shopping.jpg?s=612x612&w=0&k=20&c=ZeXBVhp4PbsylkDMXai_5UBOmz-sbB1RAU5-JxUPGrI=" alt="placeholder" className="card-preview__img" /></div>
+                    <div className="card-content">
+                      <h4 className="card-content__title">XO Commerce Store</h4>
+                      <small>Built using Vuetify, Vue, Firebase, Tailwind CSS </small>
+                      <p className="card-content__text">An Online E-commerce Store that Emulates Jumia, has Authentication system, Item Search, Cart Functionality, and Seamless Payment System</p>
+                      <div className='view-button'>
+                        <p><a href="https://xo-commerce.vercel.app/" target="_blank">
+                          View App
+                          </a></p>
+                        <p><a href="https://github.com/sean-code/Xo-Commerce" target="_blank">
+                          View Repo
+                        </a></p>
+                      </div>
+                    </div>
+                  </div>
+            </Col>
+
+
+            <Col md='4' sm='6'>
+            <div className="card">
+                    <div className="card-preview">
+                      <img src="https://media.istockphoto.com/id/1131809387/photo/concept-online-payment-mobile-technology-hand-of-female-using-smartphone-touching-pay-button.jpg?s=612x612&w=0&k=20&c=i_xw7yOo7n2bnzPqlgifipyiaI5vcbcK5E8-09XObwg=" alt="placeholder" className="card-preview__img" /></div>
+                    <div className="card-content">
+                      <h4 className="card-content__title">103 e-Commerce Store</h4>
+                      <small>Built using Vue, SASS, Tailwind CSS</small>
+                      <p className="card-content__text">Digital platform that enables users to browse and purchase products or services directly from their mobile devices or computers. It provides a convenient and user-friendly interface for customers to explore</p>
+                      <div className='view-button'>
+                        <p><a href="https://vue-103.vercel.app/" target="_blank">
+                          View App
+                          </a></p>
+                        <p><a href="https://github.com/sean-code/Vue-103-shop" target="_blank">
+                          View Repo
+                        </a></p>
+                      </div>
+                    </div>
+                  </div>
+            </Col>
+
             <Col md='4' sm='6'>
                 <div className="card">
                     <div className="card-preview">
@@ -109,13 +151,13 @@ function Project(){
 
             <Col md='4' sm='6'>
               <div className="card">
-                <div className="card">
+                <div className="card" style={{padding: '200px'}}>
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1371000384/photo/model-homes-home-loans-home-equity-loans-home-model-insurance-and-a-pen-on-the-table-to-plan.jpg?s=612x612&w=0&k=20&c=mG6en8p_CVh8IMIovhB11KC0nQFYlyxjIV7e7S6Q2g0=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Vallie's Estate</h4>
-                      <small>Built using HTML, and CSS</small>
-                      <p className="card-content__text">Displays the business operations of a real estate company by the name Vallie's Estate.</p>
+                      <small>Built using HTML, SCSS, Figma</small>
+                      <p className="card-content__text">Website Application that displays the business operations of a real estate company by the name Vallie's Estate.</p>
                       <div className='view-button'>
                         <p><a href="https://sean-code.github.io/TryRealEstate/" target="_blank">
                           View App
@@ -268,7 +310,7 @@ function Project(){
             </Col>
 
             <Col md='4' sm='6'>
-            <div className="card">
+              <div className="card">
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1391720775/photo/woman-using-computer-on-table-with-new-email-message-on-laptop-communication-connection.jpg?b=1&s=170667a&w=0&k=20&c=wsQQvAn0UujKadfw5OVNikLGc_r4-o9ee1l63iXdhh4=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
@@ -286,8 +328,6 @@ function Project(){
                       </div>
                     </div>
                   </div>
-
-
             </Col>
 
             {/* <Col md='4' sm='6'>
