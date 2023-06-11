@@ -1,38 +1,20 @@
 import './Projects.css';
+import { Container, Row, Col } from 'reactstrap';
 
 
 function Project(){
     return (
       <>
-        <div className='main-main' id='projects'>
-          <h1 className='project-title'>Projects</h1>
-          <main className='main-container'>
-            <article>
-              <section className="section-portfolio">
-                <div className="portfolio-container">
-                  
-                  
-                  {/* <div className="card">
-                    <div className="card-preview">
-                      <img src="https://i.pinimg.com/564x/7e/c1/11/7ec111864f7539dce5362ccf235b61a4.jpg" alt="placeholder" className="card-preview__img" />
-                    </div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Music Life+</h4>
-                      <small>Built using HTML, db.json, JavaScript, CSS, Bootstrap</small>
-                      <p className="card-content__text">A full-stack website application that allows a user to search for music lyrics and leave a review</p>
-                      <div className='view-button'>
-                        <p><a href="https://music-life-by-sean.netlify.app/" target="_blank">
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/Music-Life-Project" target="_blank">
-                          View Repo
-                          </a></p>
-                      </div>
-                    </div>
-                  </div> */}
+      <main>
 
 
-                  <div className="card">
+      <div className='main-main' id='projects'>
+        <h1 className='project-title'>Projects</h1>
+        <Container className='main-container'>
+          {/* <Row style={{marginLeft:'200px'}}> */}
+          <Row style={{marginLeft:'200px'}} className='row'>
+            <Col md='4' sm='6'>
+              <div className="card">
                       <div className="card-preview">
                         <img src="https://media.istockphoto.com/id/1287186696/photo/food-delivery-app-order-with-phone-online-mobile-service-for-take-away-burger-and-pizza.jpg?b=1&s=170667a&w=0&k=20&c=rpyHqkxeuH5P4xdFFcvE-bjet3GMdGo7qwUoswFwlXU=&resize=400x250" alt="placeholder" className="card-preview__img" />
                       </div>
@@ -55,9 +37,10 @@ function Project(){
                       </div>
                     </div>
                   </div>
+            </Col>
 
-
-                  <div className="card">
+            <Col md='4' sm='6'>
+              <div className="card">
                       <div className="card-preview">
                         <img src="https://media.istockphoto.com/id/1466409042/photo/woman-donating-by-smartphone.jpg?b=1&s=170667a&w=0&k=20&c=52KF9Y2fNQ1ReA7nTct75JXbc55ZsCJooCTzaY1dNos=" alt="placeholder" className="card-preview__img" />
                       </div>
@@ -80,15 +63,16 @@ function Project(){
                       </div>
                     </div>
                   </div>
+            </Col>
 
-
-                  <div className="card">
+            <Col md='4' sm='6'>
+              <div className="card">
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/467103541/photo/car-rental-sign.jpg?s=612x612&w=0&k=20&c=pjd-9j9Q2SttZHyARb7VEnWMRvA3XHgywGg7gwIq3vQ=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Car Rental</h4>
-                      <small>Built using React JS, CSS, Ruby On Rails (backend)</small>
-                      <p className="card-content__text">Full stack application that users can hire cars and make payments via Debit Card or via M-Pesa</p>
+                      <small>Built using React JS, CSS, Ruby On Rails</small>
+                      <p className="card-content__text">Full stack application that users can hire cars and make payments via Debit Card/M-Pesa</p>
                       <div className='view-button'>
                         <p><a href="http://sean-code.github.io/cars-website" target="_blank">
                           View App
@@ -99,8 +83,10 @@ function Project(){
                       </div>
                     </div>
                   </div>
+            </Col>
 
-                  <div className="card">
+            <Col md='4' sm='6'>
+                <div className="card">
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1223790224/photo/interface-of-video-distribution-service-subscription-service-streaming-video-communication.jpg?s=612x612&w=0&k=20&c=h854WiwSGwreSAGHhJWA-rSHjgjGKXI5C2JE_QzgGDM=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
@@ -119,8 +105,11 @@ function Project(){
                     </div>
                     </div>
                   </div>
+            </Col>
 
-                  <div className="card">
+            <Col md='4' sm='6'>
+              <div className="card">
+                <div className="card">
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1371000384/photo/model-homes-home-loans-home-equity-loans-home-model-insurance-and-a-pen-on-the-table-to-plan.jpg?s=612x612&w=0&k=20&c=mG6en8p_CVh8IMIovhB11KC0nQFYlyxjIV7e7S6Q2g0=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
@@ -137,8 +126,12 @@ function Project(){
                       </div>
                     </div>
                   </div>
+              </div>
+            </Col>
 
-                  <div className="card">
+            <Col md='4' sm='6'>
+              <div className="card">
+                <div className="card">
                     <div className="card-preview">
                       <img src="https://cdn.dribbble.com/users/1508697/screenshots/5982299/media/5f4678715c4592134ed1dafa26379695.png?compress=1&resize=400x250" alt="placeholder" className="card-preview__img" />
                       </div>
@@ -160,9 +153,10 @@ function Project(){
                       </div>
                     </div>
                   </div>
-
-
-                  <div className="card">
+              </div>
+            </Col>
+            <Col md='4' sm='6'>
+              <div className="card">
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1412860559/photo/woman-playing-tic-tac-toe-game-on-green-chalkboard-top-view.jpg?s=612x612&w=0&k=20&c=RUrmvRAbQqXPBdC8EnksBQZYzxjx9sznfDTy3Jkyqkk=&resize=30x90" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
@@ -179,28 +173,11 @@ function Project(){
                           </a></p>
                       </div>
                     </div>
-                  </div>
+                </div>
+            </Col>
 
-                  <div className="card">
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1401202177/vector/man-and-woman-head-silhouettes-avatar-profile-icons-avatar-profile-picture-icon-set.jpg?s=612x612&w=0&k=20&c=OY87cmC1Zm0Ic_4ZA8KhiRn6tVHG-xJy5Ni5TpEtm28=" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title"> Display Profile Card</h4>
-                      <small>Built using HTML, CSS, SCSS, SASS</small>
-                      <p className="card-content__text">A personal profile card  that lets users check 
-                    me out on Social Media platforms and even reach out to me via messaging </p>
-                    <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/profile-card/" target="_blank">
-                          View App
-                        </a></p>
-                        <p><a href="https://github.com/sean-code/profile-card" target="_blank">
-                          View Repo
-                        </a></p>
-                    </div>
-                    </div>
-                  </div>
-
-                  <div className="card">
+            <Col md='4' sm='6'>
+            <div className="card">
                     <div className="card-preview">
                       <img src="https://images.unsplash.com/photo-1556707752-481d500a2c58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VwZXJoZXJvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
@@ -222,9 +199,10 @@ function Project(){
                       </div>
                     </div>
                   </div>
+            </Col>
 
-
-                  <div className="card">
+            <Col md='4' sm='6'>
+                <div className="card">
                     <div className="card-preview">
                       <img src="https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8QmFja2VuZCUyMEFQSXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
@@ -241,9 +219,10 @@ function Project(){
                           </a></p>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="card">
+                </div>
+            </Col>
+            <Col md='4' sm='6'>
+            <div className="card">
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1446047204/photo/user-buying-movie-tickets-online.jpg?b=1&s=170667a&w=0&k=20&c=Dq98OAYI13Ba1b8NXdVotWPqsAonxb61s-q0prfHArc=" alt='ticket-thumbnail'/>
                     </div>
@@ -265,8 +244,31 @@ function Project(){
                       </div>
                     </div>
                   </div>
+            </Col>
 
-                  <div className="card">
+            <Col md='4' sm='6'>
+              <div className="card">
+                      <div className="card-preview">
+                        <img src="https://media.istockphoto.com/id/1391720775/photo/woman-using-computer-on-table-with-new-email-message-on-laptop-communication-connection.jpg?b=1&s=170667a&w=0&k=20&c=wsQQvAn0UujKadfw5OVNikLGc_r4-o9ee1l63iXdhh4=" alt="placeholder" className="card-preview__img" /></div>
+                      <div className="card-content">
+                        <h4 className="card-content__title">Personal Notes API</h4>
+                        <small>Built using Ruby on Rails, PostgreSQL</small>
+                        <p className="card-content__text">An API that allows users to create, read, update and delete notes.
+                        It has a login system, where users can register and log in, and the notes are saved to a PostgreSQL database</p>
+                        <div className='view-button'>
+                          {/* <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
+                          View App
+                          </a></p> */}
+                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
+                          View Repo
+                        </a></p>
+                      </div>
+                    </div>
+                  </div>
+            </Col>
+
+            <Col md='4' sm='6'>
+            <div className="card">
                     <div className="card-preview">
                       <img src="https://media.istockphoto.com/id/1391720775/photo/woman-using-computer-on-table-with-new-email-message-on-laptop-communication-connection.jpg?b=1&s=170667a&w=0&k=20&c=wsQQvAn0UujKadfw5OVNikLGc_r4-o9ee1l63iXdhh4=" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
@@ -285,12 +287,21 @@ function Project(){
                     </div>
                   </div>
 
-                </div>
-              </section>
-            </article>
-          </main>
-        </div>
-      </>
+
+            </Col>
+
+            {/* <Col md='4' sm='6'>
+              <div className="card">
+
+              </div>
+            </Col> */}
+
+            </Row>
+
+        </Container>
+      </div>
+      </main>
+    </>
       );
 }
 
