@@ -3,6 +3,25 @@ import { Container, Row, Col } from 'reactstrap';
 
 
 function Project(){
+
+
+
+  const handleLinkClick = (e) => {
+    e.preventDefault();
+    const confirmation = window.confirm("Are you sure you want to access this link?");
+    if (confirmation) {
+      window.open(e.target.href, "_blank");
+    }
+  };
+
+  const consentClick = (e) => {
+    e.preventDefault();
+    const confirmation = window.confirm("Please do not access the project for maliciuous use. Unauthorized cloning and/or malicious use is subject to prosecution!!");
+    if (confirmation) {
+      window.open(e.target.href, "_blank");
+    }
+  };
+
     return (
       <>
       <main>
@@ -25,12 +44,12 @@ function Project(){
                         view and order meals from Vitamu Meals Restaurant</p>
                         <div className='view-button'>
                         <p>
-                          <a href="https://sean-code.github.io/Vitamu-Foods/" target="_blank">
+                          <a href="https://sean-code.github.io/Vitamu-Foods/" target="_blank"  onClick={handleLinkClick}>
                           View App
                           </a>
                         </p>
                         <p>
-                          <a href="https://github.com/sean-code/Vitamu-Foods/tree/main" target="_blank">
+                          <a href="https://github.com/sean-code/Vitamu-Foods/tree/main" target="_blank" onClick={consentClick}>
                           View Repo
                           </a>
                         </p>
@@ -51,12 +70,12 @@ function Project(){
                         to a french society based in Nairobi</p>
                         <div className='view-button'>
                         <p>
-                          <a href="https://sean-code.github.io/french-community/" target="_blank">
+                          <a href="https://sean-code.github.io/french-community/" target="_blank" onClick={handleLinkClick}>
                             View App
                           </a>
                         </p>
                         <p>
-                          <a href="https://github.com/sean-code/french-community/tree/cascade" target="_blank">
+                          <a href="https://github.com/sean-code/french-community/tree/cascade" target="_blank" onClick={consentClick}>
                             View Repo
                           </a>
                         </p>
@@ -74,10 +93,10 @@ function Project(){
                       <small>Built using React JS, CSS, Ruby On Rails</small>
                       <p className="card-content__text">Full stack application that users can hire cars and make payments via Debit Card/M-Pesa</p>
                       <div className='view-button'>
-                        <p><a href="http://sean-code.github.io/cars-website" target="_blank">
+                        <p><a href="http://sean-code.github.io/cars-website" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a></p>
-                        <p><a href="https://github.com/sean-code/cars-website" target="_blank">
+                        <p><a href="https://github.com/sean-code/cars-website" target="_blank" onClick={consentClick}>
                           View Repo
                         </a></p>
                       </div>
@@ -95,10 +114,10 @@ function Project(){
                       <small>Built using Vuetify, Vue, Firebase, Tailwind CSS </small>
                       <p className="card-content__text">An Online E-commerce Store that Emulates Jumia, has Authentication system, Item Search, Cart Functionality, and Seamless Payment System</p>
                       <div className='view-button'>
-                        <p><a href="https://xo-commerce.vercel.app/" target="_blank">
+                        <p><a href="https://xo-commerce.vercel.app/" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a></p>
-                        <p><a href="https://github.com/sean-code/Xo-Commerce" target="_blank">
+                        <p><a href="https://github.com/sean-code/Xo-Commerce" target="_blank" onClick={consentClick}>
                           View Repo
                         </a></p>
                       </div>
@@ -116,10 +135,10 @@ function Project(){
                       <small>Built using Vue, SASS, Tailwind CSS</small>
                       <p className="card-content__text">Digital platform that enables users to browse and purchase products or services directly from their mobile devices or computers. It provides a convenient and user-friendly interface for customers to explore</p>
                       <div className='view-button'>
-                        <p><a href="https://vue-103.vercel.app/" target="_blank">
+                        <p><a href="https://vue-103.vercel.app/" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a></p>
-                        <p><a href="https://github.com/sean-code/Vue-103-shop" target="_blank">
+                        <p><a href="https://github.com/sean-code/Vue-103-shop" target="_blank" onClick={consentClick}>
                           View Repo
                         </a></p>
                       </div>
@@ -136,11 +155,11 @@ function Project(){
                       <small>Built using React js, Redux, react node, OMDB, CSS, Bootstrap</small>
                       <p className="card-content__text">A website application that provides a user with the ability to search all categories of movies</p>
                     <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/scholathon/#/" target="_blank">
+                        <p><a href="https://sean-code.github.io/scholathon/#/" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a>
                         </p>
-                        <p><a href="https://github.com/sean-code/Movie-Search" target="_blank">
+                        <p><a href="https://github.com/sean-code/Movie-Search" target="_blank" onClick={consentClick}>
                           View Repo
                           </a>
                         </p>
@@ -159,10 +178,10 @@ function Project(){
                       <small>Built using HTML, SCSS, Figma</small>
                       <p className="card-content__text">Website Application that displays the business operations of a real estate company by the name Vallie's Estate.</p>
                       <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/TryRealEstate/" target="_blank">
+                        <p><a href="https://sean-code.github.io/TryRealEstate/" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a></p>
-                        <p><a href="https://github.com/sean-code/TryRealEstate" target="_blank">
+                        <p><a href="https://github.com/sean-code/TryRealEstate" target="_blank" onClick={consentClick}>
                           View Repo
                         </a></p>
                       </div>
@@ -183,12 +202,12 @@ function Project(){
                       <p className="card-content__text">Displays professionally created UI, adopted from Avengers, Marvel's comic </p>
                       <div className='view-button'>
                         <p>
-                          <a href="https://sean-code.github.io/Marvel-UI/" target="_blank">
+                          <a href="https://sean-code.github.io/Marvel-UI/" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a>
                         </p>
                         <p>
-                          <a href="https://github.com/sean-code/Marvel-UI/" target="_blank">
+                          <a href="https://github.com/sean-code/Marvel-UI/" target="_blank" onClick={consentClick}>
                           View Repo
                           </a>
                         </p>
@@ -207,10 +226,10 @@ function Project(){
                       <p className="card-content__text">
                       A classic game that contributes to children's developmental growth </p>
                       <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/tic-tac/" target="_blank">
+                        <p><a href="https://sean-code.github.io/tic-tac/" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a></p>
-                        <p><a href="https://github.com/sean-code/tic-tac/" target="_blank">
+                        <p><a href="https://github.com/sean-code/tic-tac/" target="_blank" onClick={consentClick}>
                           View Repo
                           </a></p>
                       </div>
@@ -229,12 +248,12 @@ function Project(){
                       </p>
                       <div className='view-button'>
                         <p>
-                          <a href="https://theboys-production.up.railway.app/heroes" target="_blank">
+                          <a href="https://theboys-production.up.railway.app/heroes" target="_blank" onClick={handleLinkClick}>
                             View App
                           </a>
                         </p>
                         <p>
-                          <a href="https://github.com/sean-code/Superheroes-Back-end" target="_blank">
+                          <a href="https://github.com/sean-code/Superheroes-Back-end" target="_blank" onClick={consentClick}>
                             View Repo
                           </a>
                         </p>
@@ -253,10 +272,10 @@ function Project(){
                       <p className="card-content__text">
                       A backend that contains hundreds of cars with their reviews and ratings. The data is displayed in form of JSON. It can be consumed using any kind of Frontend</p>
                       <div className='view-button'>
-                        <p><a href="https://carreview-production.up.railway.app/cars" target="_blank">
+                        <p><a href="https://carreview-production.up.railway.app/cars" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a></p>
-                        <p><a href="https://github.com/sean-code/carreview" target="_blank">
+                        <p><a href="https://github.com/sean-code/carreview" target="_blank" onClick={consentClick}>
                           View Repo
                           </a></p>
                       </div>
@@ -274,12 +293,12 @@ function Project(){
                       <p className="card-content__text">A backend that allows users to book tickets for the current showing movies at a local movie theater</p>
                       <div className='view-button'>
                         <p>
-                          <a href="https://theater-production.up.railway.app/movies" target="_blank">
+                          <a href="https://theater-production.up.railway.app/movies" target="_blank" onClick={handleLinkClick}>
                           View App
                           </a>
                         </p>
                         <p>
-                          <a href="https://github.com/sean-code/Theater" target="_blank">
+                          <a href="https://github.com/sean-code/Theater" target="_blank" onClick={consentClick}>
                           View Repo
                           </a>
                         </p>
@@ -301,7 +320,7 @@ function Project(){
                           {/* <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
                           View App
                           </a></p> */}
-                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
+                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank" onClick={consentClick}>
                           View Repo
                         </a></p>
                       </div>
@@ -322,7 +341,7 @@ function Project(){
                         {/* <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
                           View App
                           </a></p> */}
-                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
+                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank" onClick={consentClick}>
                           View Repo
                         </a></p>
                       </div>
