@@ -6,7 +6,7 @@ import TrackVisibility from 'react-on-screen';
 import profile from './assets/img/profile1.png';
 import CV from './assets/Resumee.pdf';
 import './Home.css';
-import { useHistory } from "react-router-dom";
+
 
 export const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -70,7 +70,7 @@ export const Home = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1 style={{fontSize:'30px'}}>{`Howdy, I'm John Nganga`}<br/></h1>
-                <h1 style={{fontSize:'40px'}}><span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1 style={{fontSize:'40px'}}><span className="txt-rotate" dataperiod="12000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
                   <button className="resume">
                     <a href='https://drive.google.com/file/d/1-Y2CnpqoHZqVUvFGIEUKSVQOji5xquvR/view?usp=drive_link' target='_blank'style={{'fontSize':'16px' }}>
