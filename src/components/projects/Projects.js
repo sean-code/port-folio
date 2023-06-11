@@ -31,7 +31,7 @@ function Project(){
         <h1 className='project-title'>Projects</h1>
         <Container className='main-container'>
           {/* <Row style={{marginLeft:'200px'}}> */}
-          <Row style={{marginLeft:'200px'}} className='row'>
+          <Row style={{marginLeft:'50px'}} className='row'>
             <Col md='4' sm='6'>
               <div className="card">
                       <div className="card-preview">
