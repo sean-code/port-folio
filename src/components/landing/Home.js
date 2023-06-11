@@ -6,6 +6,7 @@ import TrackVisibility from 'react-on-screen';
 import profile from './assets/img/profile1.png';
 import CV from './assets/Resumee.pdf';
 import './Home.css';
+import { useHistory } from "react-router-dom";
 
 export const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -49,6 +50,16 @@ export const Home = () => {
     }
   }
 
+
+
+
+
+  function handleLinker(){
+    // router.push("/contact")
+    console.log("Clicked");
+
+  }
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -69,7 +80,10 @@ export const Home = () => {
                         Download Resume
                     </a>
                   </button>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={27} /></button>
+                    {/* <button onClick={() => console.log('connect')}> */}
+                    <button onClick={() => handleLinker()}>
+                      Let’s Connect <ArrowRightCircle size={27} />
+                    </button>
               </div>}
             </TrackVisibility>
           </Col>
