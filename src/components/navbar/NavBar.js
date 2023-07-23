@@ -37,7 +37,25 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" style={{width:'140px', height:'34px'}}/>
+            {/* <img src={logo} alt="Logo" style={{width:'140px', height:'34px'}}/> */}
+            <span className="logo-text">
+              {/* Wrap each letter of the name in a span element */}
+              <span>&lt;</span>
+              <span>&nbsp;</span>
+              <span>J</span>
+              <span>o</span>
+              <span>h</span>
+              <span>n</span>
+              <span>&nbsp;</span>
+              <span>S</span>
+              <span>e</span>
+              <span>a</span>
+              <span>n</span>
+              <span>&nbsp;</span>
+              <span>/</span>
+              <span>&gt;</span>
+            </span>
+
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

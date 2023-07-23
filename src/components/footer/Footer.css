@@ -78,4 +78,45 @@
     letter-spacing: 0.5px;
     margin-top: 20px;
   }
-  
+
+
+
+/* Logo */
+@keyframes flickerAnimation {
+  0%, 50% {
+    opacity: 0.8;
+    color: #fff;
+  }
+  100% {
+    opacity:1; /* You can adjust the opacity level during the flicker */
+  }
+}
+
+.logo-text {
+  font-family: 'Your-Imported-Font', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #a136f8;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Add flicker animation to the span elements inside .logo-text */
+.logo-text span {
+  animation: flickerAnimation 3s infinite; /* Adjust the animation duration as needed */
+  display: inline-block; /* Ensure each letter is in its own line */
+}
+
+/* Apply different animation delays to the spans for flickering separately */
+.logo-text span:nth-child(odd) {
+  animation-delay: 0.7s; /* Adjust the delay to create a staggered effect for the first name */
+}
+
+.logo-text span:nth-child(even) {
+  animation-delay: 0.1s; /* Adjust the delay to create a staggered effect for the second name */
+}
+
+
+
