@@ -5,10 +5,10 @@ import TrackVisibility from 'react-on-screen';
 import './Languages.css';
 import {
   SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiReact, SiVuedotjs, SiVuetify, SiAngular,
-  SiTypescript, SiSass, SiRuby, SiRubyonrails, SiPython, SiFlask, SiRailway, SiDocker,
+  SiTypescript, SiSass, SiRuby, SiRubyonrails, SiPython, SiFlask, SiRailway, SiDocker, SiNodedotjs, SiPrisma,
   SiSqlite, SiPostgresql, SiMysql, SiFigma, SiMiro, SiAdobeindesign,
   SiUbuntu, SiWindows, SiMacos, SiGithub, SiNetlify,
-  SiHeroku, SiVercel, SiMicrosoftazure, SiVisualstudio, SiAtom, SiFirebase
+  SiHeroku, SiVercel, SiMicrosoftazure, SiVisualstudio, SiAtom, SiFirebase, SiSequelize
 } from 'react-icons/si'
 
 
@@ -102,6 +102,12 @@ export const Languages = () => {
                                     {/* Second Tab */}
                     <Tab.Pane eventKey="second">
                       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+
+                      <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiNodedotjs />
+                            <p>Node Js</p>
+                      </Col>
+
                           <Col xs={3} md={4} lg={true} className="tech-icons">
                             <SiRuby />
                             <p>Ruby</p>
@@ -114,16 +120,30 @@ export const Languages = () => {
                             <SiPython />
                             <p>Python</p>
                           </Col>
+
                           <Col xs={3} md={4} lg={true} className="tech-icons">
                             <SiFlask />
                             <p>Flask</p>
                           </Col>
+
+
                           <Col xs={3} md={4} lg={true} className="tech-icons">
                             <SiSqlite />
                             <p>SQLITE3</p>
                           </Col>
                         </Row>
                         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+
+                        <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiPrisma />
+                            <p>Prisma ORM</p>
+                          </Col>
+
+                          <Col xs={3} md={4} lg={true} className="tech-icons">
+                            <SiSequelize />
+                            <p>Sequelize ORM</p>
+                          </Col>
+                          
                           <Col xs={3} md={4} lg={true} className="tech-icons">
                             <SiPostgresql />
                             <p>PostgreSQL</p>
