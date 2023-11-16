@@ -310,17 +310,18 @@ function Project(){
             <Col md='4' sm='6'>
               <div className="card">
                       <div className="card-preview">
-                        <img src="https://media.istockphoto.com/id/1391720775/photo/woman-using-computer-on-table-with-new-email-message-on-laptop-communication-connection.jpg?b=1&s=170667a&w=0&k=20&c=wsQQvAn0UujKadfw5OVNikLGc_r4-o9ee1l63iXdhh4=" alt="placeholder" className="card-preview__img" /></div>
+                        <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=600" alt="placeholder" className="card-preview__img" /></div>
                       <div className="card-content">
-                        <h4 className="card-content__title">Personal Notes API</h4>
-                        <small>Built using Ruby on Rails, PostgreSQL</small>
-                        <p className="card-content__text">An API that allows users to create, read, update and delete notes.
-                        It has a login system, where users can register and log in, and the notes are saved to a PostgreSQL database</p>
+                        <h4 className="card-content__title">Perfumes Collection  API</h4>
+                        <small>Built using Nodejs, Prisma ORM, Sequelize ORM, MYSQL</small>
+                        <p className="card-content__text">An API that allows users to create, read, update and delete Perfumes.
+                        It has a login system, where users can register and log in, and the perfumes are saved to a MYSQL database</p>
                         <div className='view-button'>
-                          {/* <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
+                          <p><a href="https://www.postman.com/vlapp-emmerce/workspace/odour-perfumes/collection/26841432-2a54e5f4-4a02-4f5d-a3c8-15945bf80a14?action=share&creator=26841432" 
+                            target="_blank">
                           View App
-                          </a></p> */}
-                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank" onClick={consentClick}>
+                          </a></p>
+                        <p><a href="https://github.com/sean-code/perfumes-NGR" target="_blank" onClick={consentClick}>
                           View Repo
                         </a></p>
                       </div>
@@ -331,7 +332,7 @@ function Project(){
             <Col md='4' sm='6'>
               <div className="card">
                     <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1391720775/photo/woman-using-computer-on-table-with-new-email-message-on-laptop-communication-connection.jpg?b=1&s=170667a&w=0&k=20&c=wsQQvAn0UujKadfw5OVNikLGc_r4-o9ee1l63iXdhh4=" alt="placeholder" className="card-preview__img" /></div>
+                      <img src="https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg?auto=compress&cs=tinysrgb&w=600" alt="placeholder" className="card-preview__img" /></div>
                     <div className="card-content">
                       <h4 className="card-content__title">Personal Notes API</h4>
                       <small>Built using Ruby on Rails, PostgreSQL</small>
