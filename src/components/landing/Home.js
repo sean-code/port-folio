@@ -4,7 +4,7 @@ import { ArrowRightCircle, Type } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import profile from './assets/img/profile1.png';
-import CV from './assets/Resume.pdf';
+import CV from './assets/John_Resume.pdf';
 import './Home.css';
 
 
@@ -73,11 +73,22 @@ export const Home = () => {
                 <h1 style={{fontSize:'40px'}}><span className="txt-rotate" dataperiod="12000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
                   <button className="resume">
-                    <a href='https://drive.google.com/file/d/1d2C7KLZVUZ4UmzrNFEoZEYC0lyeMIEgJ/view?usp=sharing' target='_blank'style={{'fontSize':'16px' }}>
-                        View Resume
+                    <a
+                      href='https://drive.google.com/file/d/18pGPXRJ6q3uEEAutw3o-cU9SiVVlRVK6/view?usp=sharing'
+                      target='_blank'
+                      style={{ 'fontSize': '16px' }}
+                      className="home_button"
+                    >
+                      View Resume
                     </a>
-                    <a href={CV} download target='_blank' style={{'fontSize':'16px' }}>
-                        Download Resume
+                    <a
+                      href={CV}
+                      download
+                      target='_blank'
+                      style={{ 'fontSize': '16px' }}
+                      className="home_button"
+                    >
+                      Download Resume
                     </a>
                   </button>
                     {/* <button onClick={() => console.log('connect')}> */}
@@ -101,3 +112,16 @@ export const Home = () => {
     </section>
   )
 }
+
+
+
+// export function Home (){
+
+//   return(
+//     <section>
+
+//     </section>
+//   )
+// }
+
+

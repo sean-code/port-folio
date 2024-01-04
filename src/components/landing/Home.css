@@ -38,15 +38,44 @@
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    padding: 10px;
+    padding: 14px;
     margin-right: 10px;
 
   }
-  .resume a:hover{
-    background: #fff;
-    color: #000;
+
+   .home_button {
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 34px;
+    font-size: 18px;
+    margin-left: 18px;
+    position: relative;
+    overflow: hidden;
   }
   
+  .home_button::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .home_button:hover::before {
+    width: 100%;
+  }
+  
+  .home_button:hover {
+    color: #121212;
+  }
+
+
+
   .banner button {
     color: #fff;
     font-weight: 700;
