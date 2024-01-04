@@ -97,7 +97,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" name="message" required value={message} onChange={handleMessage} placeholder="Message"></textarea>
-                      <button type="submit"><span>Send</span></button>
+                      <button type="submit" className="send-button"><span>Send</span></button>
                     </Col>
                     <ToastContainer />
                   </Row>
