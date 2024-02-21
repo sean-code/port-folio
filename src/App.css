@@ -84,3 +84,18 @@ p.danger {
 
 
 
+
+
+/* Chat Section */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  z-index: 1000; /* Ensure it's above other content */
+  cursor: pointer;
+}
+
+.chat-icon img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
