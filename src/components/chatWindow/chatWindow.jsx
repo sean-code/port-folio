@@ -7,7 +7,6 @@ import { styled } from '@mui/material/styles';
 import Chip from '@mui/material/Chip';
 
 
-
 const CustomCard = styled(Card)(({ theme }) => ({
     backgroundColor: '#FAFAFAFA',
     position: 'fixed',
