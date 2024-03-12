@@ -91,12 +91,12 @@ p.danger {
   position: fixed;
   bottom: 20px;
   right: 100px;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000; 
   cursor: pointer;
 }
 
 .chat-icon img {
-  width: 60px; /* Adjust size as needed */
+  width: 100px; 
   height: auto;
   border-radius: 50%;
 }

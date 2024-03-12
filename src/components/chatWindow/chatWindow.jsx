@@ -46,8 +46,6 @@ const ChatWindow = ({ toggleChat, showChat }) => {
                 {/* Your chat bot conversations go here */}
                 <div className="chat-window" style={{textAlign: 'center'}}>
                 <Chip size="medium" color='secondary' variant="outlined" label="Quickchat AI Coming Soon...">
-
-                    
                 </Chip>
                 </div>
             </CardContent>
