@@ -7,6 +7,8 @@ import profile from './assets/img/profile1.png';
 import CV from './assets/John_Resume.pdf';
 import './Home.css';
 
+import Skeleton from '@mui/material/Skeleton';
+
 
 export const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -14,8 +16,12 @@ export const Home = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer", "Full Stack Developer", "UI/UX Designer", "Open Source Contributor", "Bioinformatician"];
+  const toRotate = ["Software Engineer", "Full Stack Developer", "UI/UX Designer", "Open Source Contributor", "Bioinformatician"];
   const period = 500;
+
+
+
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -54,7 +60,7 @@ export const Home = () => {
 
 
 
-  function handleLinker(){
+  function handleLinker() {
     // router.push("/contact")
     console.log("Clicked");
 
@@ -67,10 +73,10 @@ export const Home = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1 style={{fontSize:'30px'}}>{`Howdy, I'm John Nganga`}<br/></h1>
-                <h1 style={{fontSize:'40px'}}><span className="txt-rotate" dataperiod="12000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1 style={{ fontSize: '30px' }}>{`Howdy, I'm John Nganga`}<br /></h1>
+                  <h1 style={{ fontSize: '40px' }}><span className="txt-rotate" dataperiod="12000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
                   <button className="resume">
                     <a
@@ -91,20 +97,36 @@ export const Home = () => {
                       Download Resume
                     </a>
                   </button>
-                    {/* <button onClick={() => console.log('connect')}> */}
-                    <button onClick={() => handleLinker()}>
-                      Let’s Connect <ArrowRightCircle size={27} />
-                    </button>
-              </div>}
+                  {/* <button onClick={() => console.log('connect')}> */}
+                  <button onClick={() => handleLinker()}>
+                    Let’s Connect <ArrowRightCircle size={27} />
+                  </button>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
+
+
+          {/* Add Skeleton Loader */}
             <TrackVisibility>
-              {({ isVisible }) =>
+              {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={profile} alt="Header Img"
-                  style={{height:'360px', width: '360px', borderRadius: '50%'}} />
-                </div>}
+                  {!imageLoaded && (
+                    <Skeleton variant="circular" width={360} height={360} animation="wave" />
+                  )}
+                  <img
+                    src={profile}
+                    alt="SeanImg"
+                    onLoad={() => setImageLoaded(true)}
+                    style={{
+                      display: imageLoaded ? 'block' : 'none', 
+                      height: '360px',
+                      width: '360px',
+                      borderRadius: '50%',
+                    }}
+                  />
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
