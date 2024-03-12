@@ -96,6 +96,7 @@ p.danger {
 }
 
 .chat-icon img {
-  width: 50px; /* Adjust size as needed */
+  width: 60px; /* Adjust size as needed */
   height: auto;
+  border-radius: 50%;
 }

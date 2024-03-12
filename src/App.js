@@ -9,6 +9,7 @@ import { Footer } from "./components/footer/Footer";
 import Project from './components/projects/Projects';
 import { About } from './components/about/About';
 import { useState } from 'react';
+import ChatWindow  from './components/chatWindow/chatWindow';
 
 const App = () => {
 
@@ -33,7 +34,7 @@ const App = () => {
           alt="Chat Icon"
           />
       </div>
-      {/* {showChat && <YourChatComponent />} Replace YourChatComponent with your actual chat component */}
+      <ChatWindow showChat={showChat} toggleChat={toggleChat} />
     </div>
   );
 }
