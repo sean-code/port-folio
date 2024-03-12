@@ -108,6 +108,7 @@ export const Home = () => {
 
 
           {/* Add Skeleton Loader */}
+          
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
