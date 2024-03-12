@@ -43,7 +43,7 @@ export const Footer = () => {
               <a href="https://www.instagram.com/its_ngangasean" target={'_blank'}><img src={navIcon3} alt="Icon" /></a>
               <a href="https://t.me/sean_code" target={"_blank"}><img src={telegram} alt="Icon" /></a>
             </div>
-            <p>Copyright 2023. All Rights Reserved</p>
+            <p>© Copyright 2024. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
