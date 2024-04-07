@@ -80,7 +80,7 @@ export const Home = () => {
                   <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
                   <button className="resume">
                     <a
-                      href='https://drive.google.com/file/d/18pGPXRJ6q3uEEAutw3o-cU9SiVVlRVK6/view?usp=sharing'
+                      href='https://drive.google.com/file/d/16SCZUk74ZRAqRLFvqdGMCvmE_nqwsUSF/view?usp=sharing'
                       target='_blank'
                       style={{ 'fontSize': '16px' }}
                       className="home_button"
