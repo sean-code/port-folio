@@ -1,40 +1,102 @@
-/************ Skills Css ************/
 .skill {
-    padding: 0 0 50px 0;
-    position: relative;
-  }
-  .skill-bx {
-    background: #151515;
-    border-radius: 64px;
-    text-align: center;
-    padding: 60px 50px;
-    margin-top: -60px;
-  }
-  .skill h2 {
-      font-size: 45px;
-      font-weight: 700;
-  }
-  .skill p {
-      color: #B8B8B8;
-      font-size: 18px;
-      letter-spacing: 0.8px;
-      line-height: 1.5em;
-      margin: 14px 0 75px 0;
-  }
-  .skill-slider {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-  }
-  .skill-slider .item img {
-    width: 50%;
-    margin: 0 auto 15px auto;
-  }
-  .background-image-left {
-    top: 28%;
-    position: absolute;
-    bottom: 0;
-    width: 40%;
-    z-index: -4;
+  position: relative;
 }
+
+
+
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  padding: clamp(16px, 3vw, 24px);
   
+}
+
+.skills-title {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  text-align: center;
+}
+
+.skills-blurb {
+  margin: 0 auto 18px;
+  text-align: center;
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+/* Carousel container */
+.skill-slider {
+  padding: 6px 4px;
+}
+
+/* Each slide item */
+.skill-slide {
+  padding: 8px;
+}
+
+/* Card look */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #0f1117;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  padding: 16px 14px;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.28);
+  border-color: #7D329A;
+}
+
+/* Meter circle */
+.skill-meter-wrap {
+  width: clamp(92px, 10vw, 120px);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+}
+.skill-meter {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 10px rgba(0,0,0,.25));
+}
+
+/* Title */
+.skill-name {
+  font-size: clamp(14px, 2vw, 16px);
+  margin: 0;
+  text-align: center;
+  color: #dbe4f0;
+  letter-spacing: 0.2px;
+}
+
+/* Background accent */
+.background-image-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min(420px, 40vw);
+  opacity: .25;
+  pointer-events: none;
+}
+
+/* Accessibility */
+.skill-card:focus-within,
+.skill-card:focus {
+  outline: 2px solid #22d3ee;
+  outline-offset: 3px;
+  border-radius: 14px;
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+  .skill-bx { padding: 16px; }
+  .background-image-left { display: none; }
+}

@@ -128,3 +128,25 @@
   .edu-head { align-items: flex-start; }
   .edu-logo { display: none; }
 }
+
+
+
+
+
+/* Hover Effects */
+.edu-card {
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: #e8ebf0;
+  max-width: 600px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Hover effect */
+.edu-card:hover {
+  transform: translateY(-4px); /* slight lift */
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  border-color: #7D329A; /* subtle cyan border accent */
+}

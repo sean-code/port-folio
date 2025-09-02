@@ -26,7 +26,7 @@ export const Home = () => {
 
   function handleConnect() {
     window.location.href =
-      "mailto:john.kangethe@coyotes.usd.edu?subject=Let’s%20Connect";
+      "mailto:ngangajohn536@gmail.com?subject=Let’s%20Connect";
   }
 
   return (

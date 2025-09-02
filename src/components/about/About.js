@@ -27,11 +27,11 @@ export const About = () => {
   };
 
   return (
-    <section className="skill" id="about" style={{ marginBottom: '10%' }}>
+    <section className="skills" id="about" style={{ marginBottom: '10%' }}>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn">
+            <div className="skill-bxs wow zoomIn">
               <h2>About Me</h2>
               <p>
                 I am John Nganga Kangethe, a <strong>Computer Science Researcher</strong> and <strong>Software Engineer</strong> specializing in
