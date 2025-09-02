@@ -1,114 +1,102 @@
-import { useState, useEffect } from "react";
+import { useMemo, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle, Type } from 'react-bootstrap-icons';
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
-import profile from './assets/img/profile1.png';
-import CV from './assets/John_Resume.pdf';
-import './Home.css';
-
-import Skeleton from '@mui/material/Skeleton';
-
+import { ArrowRightCircle } from "react-bootstrap-icons";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
+import profile from "./assets/img/profile1.png";
+import CV from "./assets/John_Resume.pdf";
+import "./Home.css";
+import Skeleton from "@mui/material/Skeleton";
+import RoleTypewriter from "../roles/RolesRotator.jsx";
 
 export const Home = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = ["Software Engineer", "Full Stack Developer", "UI/UX Designer", "Open Source Contributor", "Bioinformatician"];
-  const period = 500;
-
-
+  // Future-proof, researcher-first roles
+  const roles = useMemo(
+    () => [
+      "CS Graduate Researcher",
+      "Full Stack Engineer",
+      "Information Retrieval Specialist",
+      "Bioinformatics NLP",
+      "Open Source Contributor"
+    ],
+    []
+  );
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text])
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(250);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  }
-
-
-
-
-
-  function handleLinker() {
-    // router.push("/contact")
-    console.log("Clicked");
-
+  function handleConnect() {
+    window.location.href =
+      "mailto:john.kangethe@coyotes.usd.edu?subject=Let’s%20Connect";
   }
 
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="home" aria-label="Home / Landing">
       <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+        <Row className="align-items-center g-4">
+          <Col xs={12} md={7} xl={7}>
+            <TrackVisibility once partialVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={isVisible ? "animate__animated animate__fadeIn" : ""}
+                >
                   <span className="tagline">Welcome to my Portfolio</span>
+
                   <h1 style={{ fontSize: '30px' }}>{`Howdy, I'm John Nganga`}<br /></h1>
-                  <h1 style={{ fontSize: '40px' }}><span className="txt-rotate" dataperiod="12000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p> <i>A tech-enthusiast who curates experience with technology</i>.</p>
-                  <button className="resume">
-                    <a
-                      href='https://drive.google.com/file/d/16SCZUk74ZRAqRLFvqdGMCvmE_nqwsUSF/view?usp=sharing'
-                      target='_blank'
-                      style={{ 'fontSize': '16px' }}
-                      className="home_button"
+
+                  <h2 className="hero-role" style={{ fontSize: '40px' }}>
+                    <RoleTypewriter
+                      style={{ fontSize: '30px' }}
+                      items={roles}
+                      typeSpeed={70}
+                      deleteSpeed={45}
+                      holdTime={900}
+                    />
+                  </h2>
+
+                  <p className="hero-blurb">
+                    I am a researcher and software engineer specializing in{" "}
+                    <strong>Machine Learning</strong>,{" "}
+                    <strong>Information Retrieval</strong>,{" "}
+                    <strong>Informatics</strong>, and <strong>AI</strong>. I
+                    design and build research-grade prototypes and production
+                    systems with a strong focus on rigorous evaluation,
+                    reliability, and clear communication.
+                  </p>
+
+                  <div className="cta-row" role="group" aria-label="Primary actions">
+                    <button className="resume">
+                      <a
+                        href='https://drive.google.com/file/d/16SCZUk74ZRAqRLFvqdGMCvmE_nqwsUSF/view?usp=sharing'
+                        target='_blank'
+                        style={{ 'fontSize': '16px' }}
+                        className="home_button"
+                      >
+                        View Resume
+                      </a>
+                      <a
+                        href={CV}
+                        download
+                        target='_blank'
+                        style={{ 'fontSize': '16px' }}
+                        className="home_button"
+                      >
+                        Download Resume
+                      </a>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleConnect}
+                      className="btn linkish"
                     >
-                      View Resume
-                    </a>
-                    <a
-                      href={CV}
-                      download
-                      target='_blank'
-                      style={{ 'fontSize': '16px' }}
-                      className="home_button"
-                    >
-                      Download Resume
-                    </a>
-                  </button>
-                  {/* <button onClick={() => console.log('connect')}> */}
-                  <button onClick={() => handleLinker()}>
-                    Let’s Connect <ArrowRightCircle size={27} />
-                  </button>
-                </div>}
+                      Let’s Connect <ArrowRightCircle size={25} aria-hidden />
+                    </button>
+                  </div>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
 
-
-          {/* Add Skeleton Loader */}
-          
+          <Col xs={12} md={5} xl={5}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
@@ -120,7 +108,7 @@ export const Home = () => {
                     alt="SeanImg"
                     onLoad={() => setImageLoaded(true)}
                     style={{
-                      display: imageLoaded ? 'block' : 'none', 
+                      display: imageLoaded ? 'block' : 'none',
                       height: '360px',
                       width: '360px',
                       borderRadius: '50%',
@@ -133,18 +121,5 @@ export const Home = () => {
         </Row>
       </Container>
     </section>
-  )
-}
-
-
-
-// export function Home (){
-
-//   return(
-//     <section>
-
-//     </section>
-//   )
-// }
-
-
+  );
+};

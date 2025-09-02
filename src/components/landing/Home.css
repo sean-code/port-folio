@@ -2,12 +2,14 @@
 /************ Banner Css ************/
 .banner {
     margin-top: 0;
-    padding: 260px 0 100px 0;
+    padding: clamp(200px, 40vw, 44px) 0;
     background-image: url('./assets/img/color-sharp2.png');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+
   .banner .tagline {
     font-weight: 700;
     letter-spacing: 0.8px;
@@ -122,3 +124,19 @@
       width: 20px;
     }
 }
+
+
+
+
+/* Typewriter caret */
+.typewriter-caret {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+
