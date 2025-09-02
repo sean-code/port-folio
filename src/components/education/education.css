@@ -148,5 +148,5 @@
 .edu-card:hover {
   transform: translateY(-4px); /* slight lift */
   box-shadow: 0 6px 18px rgba(0,0,0,.25);
-  border-color: #7D329A; /* subtle cyan border accent */
+  border-color: #7D329A; 
 }
