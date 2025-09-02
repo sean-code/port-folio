@@ -11,7 +11,7 @@
 /* Timeline scaffold */
 .timeline {
   position: relative;
-  padding-left: 16px;
+  padding-left: 1px;
   max-width: 720px;      /* cap total width */
   margin: 0 auto;        /* center in page */
 }
@@ -23,7 +23,7 @@
   left: 11px;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, rgba(255,255,255,.2), rgba(255,255,255,.06));
+  background: linear-gradient(180deg, #38192E, #221646);
 }
 
 /* Each item */
@@ -52,10 +52,10 @@
 
 /* Card container */
 .edu-card {
-  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  background: linear-gradient(180deg, #151515, rgba(255,255,255,.02));
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 14px;
-  padding: 14px 16px;
+  padding: 14px 18px;
   color: #e8ebf0;
   max-width: 600px;    /* narrower card */
 }

@@ -39,7 +39,7 @@ export const About = () => {
                 <strong> Bioinformatics</strong>. My work bridges rigorous academic research with
                 practical engineering, where I design research-grade prototypes and deploy
                 production systems. I am motivated by curiosity, problem solving, and a commitment
-                to building reliable and interpretable technologies.
+                to building reliable technologies.
               </p>
 
               {/* <Education /> */}
