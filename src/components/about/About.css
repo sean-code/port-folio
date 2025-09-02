@@ -1,0 +1,179 @@
+/* Section */
+.education {
+  margin-top: 18px;
+}
+.education-title {
+  font-size: clamp(22px, 3vw, 28px);
+  margin: 0 0 12px;
+}
+
+/* ===== Rule-of-Thirds Timeline =====
+   lg and up: 1fr (left rail) / 2fr (content)
+   mobile: single column
+*/
+.timeline-grid {
+  position: relative;
+  display: grid;
+  gap: 14px;
+}
+
+/* Each item row becomes a grid on lg+ */
+.timeline-row {
+  display: grid;
+  gap: 10px;
+}
+
+/* Left rail (third) + Right content (two-thirds) */
+@media (min-width: 992px) {
+  .timeline-row {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+}
+
+/* Vertical line runs through the entire list (behind items) */
+.timeline-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  left: clamp(10px, 16px, 18px); /* mobile fallback line position */
+  background: linear-gradient(180deg, rgba(255,255,255,.22), rgba(255,255,255,.06));
+  pointer-events: none;
+}
+
+/* On lg+, place the line at the right edge of the left third */
+@media (min-width: 992px) {
+  .timeline-grid::before {
+    left: calc((100% / 3)); /* end of the first third */
+  }
+}
+
+/* Left rail cell */
+.timeline-left {
+  position: relative;
+  min-height: 24px;
+}
+
+/* Marker (sits on the vertical line) */
+.timeline-marker {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #22d3ee;
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow: 0 0 0 6px rgba(34,211,238,.25);
+  transform: translateX(clamp(4px, 12px, 16px));
+}
+
+/* On lg+, snap the marker to the thirds line precisely */
+@media (min-width: 992px) {
+  .timeline-marker {
+    left: calc((100vw - 100%) / 2 + (100% / 3)); /* aligns with the global thirds line */
+    transform: translateX(-6px);
+  }
+}
+
+/* Right two-thirds column */
+.timeline-right {
+  /* keeps the card from being too wide */
+  max-width: min(64ch, 820px);      /* CARD WIDTH CAP */
+}
+
+/* Center the right column visually on huge screens */
+@media (min-width: 1400px) {
+  .timeline-right {
+    max-width: min(68ch, 880px);
+  }
+}
+
+/* Card */
+.edu-card {
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: #e8ebf0;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+/* Header row */
+.edu-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+/* Title/meta */
+.edu-title-wrap { min-width: 0; }
+.edu-degree {
+  font-size: clamp(16px, 2.4vw, 20px);
+  margin: 0 0 4px;
+  line-height: 1.25;
+}
+.edu-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #b7c3d5;
+}
+.edu-dot { opacity: .6; }
+.edu-school { font-weight: 600; }
+.edu-location { opacity: .9; }
+
+/* Logo (optional) */
+.edu-logo {
+  width: clamp(28px, 5vw, 40px);
+  height: clamp(28px, 5vw, 40px);
+  object-fit: contain;
+  opacity: .95;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.25));
+}
+
+/* Footer row */
+.edu-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+  margin-top: 10px;
+}
+.edu-year {
+  font-weight: 700;
+  color: #9fc6cf;
+  background: rgba(34,211,238,.1);
+  border: 1px solid rgba(34,211,238,.3);
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+.edu-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.edu-badge {
+  --bs-badge-font-size: 0.78rem;
+  background: #0f1722 !important;
+  border: 1px solid rgba(255,255,255,.12);
+  color: #cdd7e5;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 991.98px) {
+  .timeline-right {
+    max-width: 100%;
+  }
+  .edu-logo { display: none; } /* optional hide for tiny screens */
+}
+
+/* Print-friendly */
+@media print {
+  .timeline-grid::before,
+  .timeline-marker { background: #000 !important; box-shadow: none !important; }
+  .edu-card { background: #fff; color: #000; border-color: #000; }
+  .edu-badge, .edu-year { border-color: #000; color: #000 !important; }
+}

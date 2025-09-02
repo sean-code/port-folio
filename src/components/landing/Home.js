@@ -13,7 +13,7 @@ export const Home = () => {
   // Future-proof, researcher-first roles
   const roles = useMemo(
     () => [
-      "CS Graduate Researcher",
+      "Graduate Researcher",
       "Full Stack Engineer",
       "Information Retrieval Specialist",
       "Bioinformatics NLP",
@@ -54,13 +54,8 @@ export const Home = () => {
                   </h2>
 
                   <p className="hero-blurb">
-                    I am a researcher and software engineer specializing in{" "}
-                    <strong>Machine Learning</strong>,{" "}
-                    <strong>Information Retrieval</strong>,{" "}
-                    <strong>Informatics</strong>, and <strong>AI</strong>. I
-                    design and build research-grade prototypes and production
-                    systems with a strong focus on rigorous evaluation,
-                    reliability, and clear communication.
+                    I am a CS researcher and software engineer specializing in <strong>Machine Learning</strong>, 
+                    <strong> Deep Learning</strong>, <strong> Information Retrieval</strong>, <strong>Data Analysis</strong>, and <strong>AI</strong>.
                   </p>
 
                   <div className="cta-row" role="group" aria-label="Primary actions">
@@ -88,7 +83,7 @@ export const Home = () => {
                       onClick={handleConnect}
                       className="btn linkish"
                     >
-                      Let’s Connect <ArrowRightCircle size={25} aria-hidden />
+                      Let’s Connect <ArrowRightCircle size={35} aria-hidden />
                     </button>
                   </div>
                 </div>
