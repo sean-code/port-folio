@@ -6,7 +6,7 @@ const EDU = [
     degree: "M.S. in Computer Science (Artificial Intelligence)",
     school: "University of South Dakota",
     location: "Vermillion, SD, USA",
-    year: "2025 — 2027 (exp.)",
+    year: "2025 — ",
     highlights: ["Machine Learning", "Information Retrieval", "Data Visualization"],
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqya--4ZlTUduqCupnrStRJJLr3tvtq2BZ7A&s",
   },
@@ -31,7 +31,7 @@ const EDU = [
     school: "Flatiron School",
     location: "New York, USA",
     year: "2023",
-    highlights: ["Full-Stack Dev", "APIs", "Testing"],
+    highlights: ["Full Stack Dev", "APIs", "Testing"],
     logo: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/8/original/flatironschool.png",
   },
   {
