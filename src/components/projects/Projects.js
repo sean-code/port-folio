@@ -1,368 +1,301 @@
-import './Projects.css';
-import { Container, Row, Col } from 'reactstrap';
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { Container, Row, Col } from "reactstrap";
+import "./Projects.css";
 
-
-function Project(){
-
-
-
-  const handleLinkClick = (e) => {
-    e.preventDefault();
-    const confirmation = window.confirm("Are you sure you want to access this link?");
-    if (confirmation) {
-      window.open(e.target.href, "_blank");
-    }
-  };
-
-  const consentClick = (e) => {
-    e.preventDefault();
-    const confirmation = window.confirm("Please do not access the project for maliciuous use. Unauthorized cloning and/or malicious use is subject to prosecution!!");
-    if (confirmation) {
-      window.open(e.target.href, "_blank");
-    }
-  };
-
-    return (
-      <>
-      <main>
-
-
-      <div className='main-main' id='projects'>
-        <h1 className='project-title'>Projects</h1>
-        <Container className='main-container'>
-          {/* <Row style={{marginLeft:'200px'}}> */}
-          <Row style={{marginLeft:'50px'}} className='row'>
-            <Col md='4' sm='6'>
-              <div className="card">
-                      <div className="card-preview">
-                        <img src="https://media.istockphoto.com/id/1287186696/photo/food-delivery-app-order-with-phone-online-mobile-service-for-take-away-burger-and-pizza.jpg?b=1&s=170667a&w=0&k=20&c=rpyHqkxeuH5P4xdFFcvE-bjet3GMdGo7qwUoswFwlXU=&resize=400x250" alt="placeholder" className="card-preview__img" />
-                      </div>
-                      <div className="card-content">
-                        <h4 className="card-content__title">Vitamu Meals App</h4>
-                        <small>Built using JavaScript, SCSS, HTML</small>
-                        <p className="card-content__text">An application professionally created to allow its users
-                        view and order meals from Vitamu Meals Restaurant</p>
-                        <div className='view-button'>
-                        <p>
-                          <a href="https://sean-code.github.io/Vitamu-Foods/" target="_blank"  onClick={handleLinkClick}>
-                          View App
-                          </a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/sean-code/Vitamu-Foods/tree/main" target="_blank" onClick={consentClick}>
-                          View Repo
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-              <div className="card">
-                      <div className="card-preview">
-                        <img src="https://media.istockphoto.com/id/1466409042/photo/woman-donating-by-smartphone.jpg?b=1&s=170667a&w=0&k=20&c=52KF9Y2fNQ1ReA7nTct75JXbc55ZsCJooCTzaY1dNos=" alt="placeholder" className="card-preview__img" />
-                      </div>
-                      <div className="card-content">
-                        <h4 className="card-content__title">French Community</h4>
-                        <small>Built using ReactJs, emailJS, MailChimp</small>
-                        <p className="card-content__text">A website application connecting users and visitors
-                        to a french society based in Nairobi</p>
-                        <div className='view-button'>
-                        <p>
-                          <a href="https://sean-code.github.io/french-community/" target="_blank" onClick={handleLinkClick}>
-                            View App
-                          </a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/sean-code/french-community/tree/cascade" target="_blank" onClick={consentClick}>
-                            View Repo
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-              <div className="card">
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/467103541/photo/car-rental-sign.jpg?s=612x612&w=0&k=20&c=pjd-9j9Q2SttZHyARb7VEnWMRvA3XHgywGg7gwIq3vQ=" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Car Rental</h4>
-                      <small>Built using React JS, CSS, Ruby On Rails</small>
-                      <p className="card-content__text">Full stack application that users can hire cars and make payments via Debit Card/M-Pesa</p>
-                      <div className='view-button'>
-                        <p><a href="http://sean-code.github.io/cars-website" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/cars-website" target="_blank" onClick={consentClick}>
-                          View Repo
-                        </a></p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-
-            <Col md='4' sm='6'>
-              <div className="card">
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1191380434/vector/shopping.jpg?s=612x612&w=0&k=20&c=ZeXBVhp4PbsylkDMXai_5UBOmz-sbB1RAU5-JxUPGrI=" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">XO Commerce Store</h4>
-                      <small>Built using Vuetify, Vue, Firebase, Tailwind CSS </small>
-                      <p className="card-content__text">An Online E-commerce Store that Emulates Jumia, has Authentication system, Item Search, Cart Functionality, and Seamless Payment System</p>
-                      <div className='view-button'>
-                        <p><a href="https://xo-commerce.vercel.app/" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/Xo-Commerce" target="_blank" onClick={consentClick}>
-                          View Repo
-                        </a></p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-
-            <Col md='4' sm='6'>
-            <div className="card">
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1131809387/photo/concept-online-payment-mobile-technology-hand-of-female-using-smartphone-touching-pay-button.jpg?s=612x612&w=0&k=20&c=i_xw7yOo7n2bnzPqlgifipyiaI5vcbcK5E8-09XObwg=" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">103 e-Commerce Store</h4>
-                      <small>Built using Vue, SASS, Tailwind CSS</small>
-                      <p className="card-content__text">Digital platform that enables users to browse and purchase products or services directly from their mobile devices or computers. It provides a convenient and user-friendly interface for customers to explore</p>
-                      <div className='view-button'>
-                        <p><a href="https://vue-103.vercel.app/" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/Vue-103-shop" target="_blank" onClick={consentClick}>
-                          View Repo
-                        </a></p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-                <div className="card">
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1223790224/photo/interface-of-video-distribution-service-subscription-service-streaming-video-communication.jpg?s=612x612&w=0&k=20&c=h854WiwSGwreSAGHhJWA-rSHjgjGKXI5C2JE_QzgGDM=" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Movie Search App</h4>
-                      <small>Built using React js, Redux, react node, OMDB, CSS, Bootstrap</small>
-                      <p className="card-content__text">A website application that provides a user with the ability to search all categories of movies</p>
-                    <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/scholathon/#/" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a>
-                        </p>
-                        <p><a href="https://github.com/sean-code/Movie-Search" target="_blank" onClick={consentClick}>
-                          View Repo
-                          </a>
-                        </p>
-                    </div>
-                    </div>
-                  </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-              <div className="card">
-                <div className="card" style={{padding: '200px'}}>
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1371000384/photo/model-homes-home-loans-home-equity-loans-home-model-insurance-and-a-pen-on-the-table-to-plan.jpg?s=612x612&w=0&k=20&c=mG6en8p_CVh8IMIovhB11KC0nQFYlyxjIV7e7S6Q2g0=" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Vallie's Estate</h4>
-                      <small>Built using HTML, SCSS, Figma</small>
-                      <p className="card-content__text">Website Application that displays the business operations of a real estate company by the name Vallie's Estate.</p>
-                      <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/TryRealEstate/" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/TryRealEstate" target="_blank" onClick={consentClick}>
-                          View Repo
-                        </a></p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-              <div className="card">
-                <div className="card">
-                    <div className="card-preview">
-                      <img src="https://cdn.dribbble.com/users/1508697/screenshots/5982299/media/5f4678715c4592134ed1dafa26379695.png?compress=1&resize=400x250" alt="placeholder" className="card-preview__img" />
-                      </div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Marvel Stars UI</h4>
-                      <small>Built using JavaScript, SASS, HTML, CSS </small>
-                      <p className="card-content__text">Displays professionally created UI, adopted from Avengers, Marvel's comic </p>
-                      <div className='view-button'>
-                        <p>
-                          <a href="https://sean-code.github.io/Marvel-UI/" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/sean-code/Marvel-UI/" target="_blank" onClick={consentClick}>
-                          View Repo
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </Col>
-            <Col md='4' sm='6'>
-              <div className="card">
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1412860559/photo/woman-playing-tic-tac-toe-game-on-green-chalkboard-top-view.jpg?s=612x612&w=0&k=20&c=RUrmvRAbQqXPBdC8EnksBQZYzxjx9sznfDTy3Jkyqkk=&resize=30x90" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Tic Tac Game</h4>
-                      <small>Built using React JS, CSS </small>
-                      <p className="card-content__text">
-                      A classic game that contributes to children's developmental growth </p>
-                      <div className='view-button'>
-                        <p><a href="https://sean-code.github.io/tic-tac/" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/tic-tac/" target="_blank" onClick={consentClick}>
-                          View Repo
-                          </a></p>
-                      </div>
-                    </div>
-                </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-            <div className="card">
-                    <div className="card-preview">
-                      <img src="https://images.unsplash.com/photo-1556707752-481d500a2c58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VwZXJoZXJvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Superheroes API</h4>
-                      <small>Ruby on Rails, Postgres, Railway</small>
-                      <p className="card-content__text">An API comprising superheroes and their powers, adopted from TV show THE BOYS
-                      </p>
-                      <div className='view-button'>
-                        <p>
-                          <a href="https://theboys-production.up.railway.app/heroes" target="_blank" onClick={handleLinkClick}>
-                            View App
-                          </a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/sean-code/Superheroes-Back-end" target="_blank" onClick={consentClick}>
-                            View Repo
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-                <div className="card">
-                    <div className="card-preview">
-                      <img src="https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8QmFja2VuZCUyMEFQSXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Cars API</h4>
-                      <small>Ruby on Rails, Postgres, Railway</small>
-                      <p className="card-content__text">
-                      A backend that contains hundreds of cars with their reviews and ratings. The data is displayed in form of JSON. It can be consumed using any kind of Frontend</p>
-                      <div className='view-button'>
-                        <p><a href="https://carreview-production.up.railway.app/cars" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/carreview" target="_blank" onClick={consentClick}>
-                          View Repo
-                          </a></p>
-                      </div>
-                    </div>
-                </div>
-            </Col>
-            <Col md='4' sm='6'>
-            <div className="card">
-                    <div className="card-preview">
-                      <img src="https://media.istockphoto.com/id/1446047204/photo/user-buying-movie-tickets-online.jpg?b=1&s=170667a&w=0&k=20&c=Dq98OAYI13Ba1b8NXdVotWPqsAonxb61s-q0prfHArc=" alt='ticket-thumbnail'/>
-                    </div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Cinema Tickets API</h4>
-                      <small>Built using Ruby on Rails, Procfile, Sinatra, Railway </small>
-                      <p className="card-content__text">A backend that allows users to book tickets for the current showing movies at a local movie theater</p>
-                      <div className='view-button'>
-                        <p>
-                          <a href="https://theater-production.up.railway.app/movies" target="_blank" onClick={handleLinkClick}>
-                          View App
-                          </a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/sean-code/Theater" target="_blank" onClick={consentClick}>
-                          View Repo
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-              <div className="card">
-                      <div className="card-preview">
-                        <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=600" alt="placeholder" className="card-preview__img" /></div>
-                      <div className="card-content">
-                        <h4 className="card-content__title">Perfumes Collection  API</h4>
-                        <small>Built using Nodejs, Prisma ORM, Sequelize ORM, MYSQL</small>
-                        <p className="card-content__text">An API that allows users to create, read, update and delete Perfumes.
-                        It has a login system, where users can register and log in, and the perfumes are saved to a MYSQL database</p>
-                        <div className='view-button'>
-                          <p><a href="https://www.postman.com/vlapp-emmerce/workspace/odour-perfumes/collection/26841432-2a54e5f4-4a02-4f5d-a3c8-15945bf80a14?action=share&creator=26841432" 
-                            target="_blank">
-                          View App
-                          </a></p>
-                        <p><a href="https://github.com/sean-code/perfumes-NGR" target="_blank" onClick={consentClick}>
-                          View Repo
-                        </a></p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-            <Col md='4' sm='6'>
-              <div className="card">
-                    <div className="card-preview">
-                      <img src="https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg?auto=compress&cs=tinysrgb&w=600" alt="placeholder" className="card-preview__img" /></div>
-                    <div className="card-content">
-                      <h4 className="card-content__title">Personal Notes API</h4>
-                      <small>Built using Ruby on Rails, PostgreSQL</small>
-                      <p className="card-content__text">An API that allows users to create, read, update and delete notes.
-                      It has a login system, where users can register and log in, and the notes are saved to a PostgreSQL database</p>
-                      <div className='view-button'>
-                        {/* <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank">
-                          View App
-                          </a></p> */}
-                        <p><a href="https://github.com/sean-code/scholathon-notes-backend/" target="_blank" onClick={consentClick}>
-                          View Repo
-                        </a></p>
-                      </div>
-                    </div>
-                  </div>
-            </Col>
-
-            {/* <Col md='4' sm='6'>
-              <div className="card">
-
-              </div>
-            </Col> */}
-
-            </Row>
-
-        </Container>
-      </div>
-      </main>
-    </>
-      );
+function RepoBadge({ children }) {
+  return <span className="repo-badge">{children}</span>;
 }
 
-export default Project;
+function ProjectCard({ cover, title, summary, stack = [], repo }) {
+  return (
+    <article className="proj-card">
+      <div className="proj-media">
+        <img src={cover} alt="" loading="lazy" decoding="async" />
+        <div className="proj-media-overlay" />
+      </div>
+
+      <div className="proj-body">
+        <h3 className="proj-title">{title}</h3>
+
+        {stack?.length > 0 && (
+          <div className="proj-tags">
+            {stack.map((t, i) => (
+              <RepoBadge key={i}>{t}</RepoBadge>
+            ))}
+          </div>
+        )}
+
+        <p className="proj-summary">{summary}</p>
+
+        <div className="proj-actions">
+          <a
+            className="btn-ghost"
+            href={repo}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label={`${title} repository (opens in new tab)`}
+          >
+            View Repository
+          </a>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function ProjectsModal({ open, onClose, items = [] }) {
+  const closeRef = useRef(null);
+
+  // Close on ESC
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e) => e.key === "Escape" && onClose();
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, onClose]);
+
+  // Focus the close button when opened
+  useEffect(() => {
+    if (open && closeRef.current) closeRef.current.focus();
+  }, [open]);
+
+  // Lock body scroll while modal is open
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev || "";
+    };
+  }, [open]);
+
+  if (!open) return null;
+
+  return (
+    <div
+      id="more-projects"
+      className="proj-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="More projects"
+    >
+      {/* Backdrop */}
+      <div className="proj-modal__backdrop" role="presentation" onClick={onClose} />
+
+      <div className="proj-modal__panel" role="document">
+        <header className="proj-modal__head">
+          <h3 className="proj-modal__title">More Projects</h3>
+          <button
+            ref={closeRef}
+            className="proj-modal__close btn-ghost sm"
+            onClick={onClose}
+            aria-label="Close"
+            title="Close"
+          >
+            X
+          </button>
+        </header>
+
+        <div className="proj-more-grid">
+          {items.map((p, i) => (
+            <article key={i} className="proj-more-item">
+              <div className="mini-media">
+                <img src={p.cover} alt="" loading="lazy" decoding="async" />
+              </div>
+              <div className="mini-info">
+                <div className="proj-more-title">{p.title}</div>
+
+                {p.stack?.length ? (
+                  <div className="proj-more-tags">
+                    {p.stack.map((t, j) => (
+                      <RepoBadge key={j}>{t}</RepoBadge>
+                    ))}
+                  </div>
+                ) : null}
+
+                <a
+                  className="btn-ghost sm"
+                  href={p.repo}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label={`Open repository for ${p.title}`}
+                >
+                  Repository
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+      
+      </div>
+    </div>
+  );
+}
+
+export default function Project() {
+  // ===== Featured (3 on page) =====
+  const FEATURED = useMemo(
+    () => [
+      {
+        title: "Signature Car Rental SaaS",
+        summary:
+          "Booking engine with deterministic availability, admin metrics, PDF receipts, and secure auth.",
+        stack: ["Vue 3", "Node/Prisma", "Stripe/M-Pesa", "Railway"],
+        cover:
+          "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1600&auto=format&fit=crop",
+        repo: "https://github.com/sean-code/cars-website",
+      },
+      {
+        title: "Regex, Rules & Detectors",
+        summary:
+          "Precision regex + version capture for technology detection with curated regression tests.",
+        stack: ["Regex", "JavaScript", "OSS"],
+        cover:
+          "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
+        repo: "https://github.com/sean-code/Wappalyzer",
+      },
+      {
+        title: "BioNLP Extractor (Prostate Cancer WIP)",
+        summary:
+          "Pipeline for biomedical text: ingest → preprocess → entity cues → lightweight classifier with F1-oriented evaluation.",
+        stack: ["Python", "scikit-learn", "spaCy"],
+        cover:
+          "https://images.unsplash.com/photo-1585435465945-bef5a93f8849?q=80&w=1600&auto=format&fit=crop",
+        repo: "https://github.com/sean-code",
+      },
+    ],
+    []
+  );
+
+  // ===== More (overlay) — includes IMAGES + repo only =====
+  const MORE = useMemo(
+    () => [
+      {
+        title: "XO Commerce Store",
+        stack: ["Vue", "Firebase", "Tailwind"],
+        repo: "https://github.com/sean-code/Xo-Commerce",
+        cover:
+          "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop",
+      },
+      // {
+      //   title: "Movie Search",
+      //   stack: ["React", "Redux", "OMDb"],
+      //   repo: "https://github.com/sean-code/Movie-Search",
+      //   cover:
+      //     "https://images.unsplash.com/photo-1517602302552-471fe67acf66?q=80&w=1200&auto=format&fit=crop",
+      // },
+      {
+        title: "Vitamu Meals App",
+        stack: ["JS", "SCSS", "HTML"],
+        repo: "https://github.com/sean-code/Vitamu-Foods",
+        cover:
+          "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop",
+      },
+      {
+        title: "Superheroes API",
+        stack: ["Rails", "Postgres", "Railway"],
+        repo: "https://github.com/sean-code/Superheroes-Back-end",
+        cover:
+          "https://i0.wp.com/www.myunusualjourneys.com/wp-content/uploads/2017/01/superheroes.jpg?resize=1280%2C640&ssl=1",
+      },
+      {
+        title: "Cars API",
+        stack: ["Rails", "Postgres", "Railway"],
+        repo: "https://github.com/sean-code/carreview",
+        cover:
+          "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1200&auto=format&fit=crop",
+      },
+      {
+        title: "Perfumes API",
+        stack: ["Node", "Prisma", "MySQL"],
+        repo: "https://github.com/sean-code/perfumes-NGR",
+        cover:
+          "https://cdn.mos.cms.futurecdn.net/VzUqgr8pfbNcfXrpzeVBPE.jpg",
+      },
+      {
+        title: "Personal Notes API",
+        stack: ["Rails", "Postgres"],
+        repo: "https://github.com/sean-code/scholathon-notes-backend",
+        cover:
+          "https://cdn.shopify.com/s/files/1/1832/9339/files/thankyou_grande.jpg?v=1535231698",
+      },
+      {
+        title: "French Community",
+        stack: ["React", "EmailJS"],
+        repo: "https://github.com/sean-code/french-community",
+        cover:
+          "https://upload.wikimedia.org/wikipedia/commons/0/09/Standard_of_the_French_Community.svg",
+      },
+      {
+        title: "Marvel Stars UI",
+        stack: ["JS", "SASS", "HTML"],
+        repo: "https://github.com/sean-code/Marvel-UI/",
+        cover:
+          "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/CCC3F8712F781DC1ECDDC406924EF0569A30DB0F0BF628CA9EAF60B97C9ABC4B/compose?aspectRatio=1.78&format=webp&width=1600",
+      },
+      {
+        title: "Cinema Tickets API",
+        stack: ["Rails", "Sinatra"],
+        repo: "https://github.com/sean-code/Theater",
+        cover:
+          "https://i.pinimg.com/736x/48/b0/cb/48b0cbc8995d8a1f945c8762e7943e7a.jpg",
+      },
+    ],
+    []
+  );
+
+  const [open, setOpen] = useState(false);
+
+  // Helper: detect mobile at click-time
+  const isMobile = () =>
+    typeof window !== "undefined" &&
+    window.matchMedia &&
+    window.matchMedia("(max-width: 640px)").matches;
+
+  const handleViewMore = () => {
+    if (isMobile()) {
+      // mobile → go to GitHub repos
+      window.open("https://github.com/sean-code?tab=repositories", "_blank", "noopener,noreferrer");
+    } else {
+      // tablet/desktop → open modal
+      setOpen(true);
+    }
+  };
+
+  return (
+    <section className="projects" id="projects">
+      <Container>
+        <header className="projects-head">
+          <h2 className="projects-title">Projects</h2>
+          <p className="projects-sub">
+            Select work that shows research-grade thinking and production engineering.
+          </p>
+        </header>
+
+        <Row className="g-4 proj-grid">
+          {FEATURED.map((p, i) => (
+            <Col key={i} xs="12" md="6" lg="4">
+              <ProjectCard {...p} />
+            </Col>
+          ))}
+        </Row>
+
+        <div className="projects-foot">
+          <button
+            className="btn-ghost"
+            onClick={handleViewMore}
+            aria-haspopup={!isMobile() ? "dialog" : undefined}
+            aria-controls={!isMobile() ? "more-projects" : undefined}
+            aria-expanded={!isMobile() ? open : undefined}
+          >
+            View More Projects
+          </button>
+        </div>
+      </Container>
+
+      {/* Modal is still mounted; we just never open it on mobile */}
+      <ProjectsModal open={open} onClose={() => setOpen(false)} items={MORE} />
+    </section>
+  );
+}
