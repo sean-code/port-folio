@@ -54,7 +54,7 @@ export const Home = () => {
                   </h2>
 
                   <p className="hero-blurb">
-                    I am a CS researcher and software engineer specializing in <strong>Machine Learning</strong>, 
+                    Explicitly a <strong>CS Researcher</strong> and <strong>Software Engineer</strong> specializing in <strong>Machine Learning</strong>, 
                     <strong> Deep Learning</strong>, <strong> Information Retrieval</strong>, <strong>Data Analysis</strong>, and <strong>AI</strong>.
                   </p>
 
