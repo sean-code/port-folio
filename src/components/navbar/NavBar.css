@@ -164,31 +164,7 @@ nav.navbar {
     }
   }
 
-  .logo-text {
-    font-family: 'Your-Imported-Font', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: #a136f8;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-  }
-
-  /* Add flicker animation to the span elements inside .logo-text */
-  .logo-text span {
-    animation: flickerAnimation 3s infinite; /* Adjust the animation duration as needed */
-    display: inline-block; /* Ensure each letter is in its own line */
-  }
-
-  /* Apply different animation delays to the spans for flickering separately */
-  .logo-text span:nth-child(odd) {
-    animation-delay: 0.2s; /* Adjust the delay to create a staggered effect for the first name */
-  }
-
-  .logo-text span:nth-child(even) {
-    animation-delay: 0.4s; /* Adjust the delay to create a staggered effect for the second name */
-  }
+ 
 
 
 

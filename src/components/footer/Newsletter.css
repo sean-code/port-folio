@@ -1,0 +1,80 @@
+/* ===== Newsletter highlight band (footer strip) ===== */
+
+.newsletter {
+  margin: clamp(12px, 2vw, 20px) 0 clamp(16px, 3vw, 24px);
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-bx {
+  position: relative;
+  overflow: hidden;
+
+  /* Sleeker, lighter gradient band */
+  background:
+    linear-gradient(90deg, rgba(125, 50, 154, 0.09), rgba(34, 211, 238, 0));
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 14px;
+  padding: clamp(12px, 2.5vw, 18px) clamp(18px, 4vw, 32px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .28);
+  color: #ffffff;
+
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 6px;
+  max-width: 820px;     /* narrower so it doesn’t look bloated */
+  margin: 0 auto;
+}
+
+/* Accent bar */
+.nlr-accent {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, #22d3ee, #7D329A);
+  opacity: .8;
+}
+
+/* Shine sweep */
+.nlr-shine {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(900px 300px at -15% -30%, rgba(255,255,255,.15), transparent 70%);
+  pointer-events: none;
+}
+
+/* Typography */
+.nlr-text {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: clamp(15px, 2.4vw, 20px);
+  max-width: 70ch;
+  color: #f3f6fb;
+}
+
+.nlr-author {
+  margin: 0;
+  font-weight: 500;
+  opacity: .9;
+  font-size: clamp(13px, 2vw, 15px);
+  color: #d1dbeb;
+}
+
+/* Hover effect */
+@media (hover: hover) and (pointer: fine) {
+  .newsletter-bx {
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .newsletter-bx:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,.25);
+    box-shadow: 0 14px 34px rgba(0,0,0,.34);
+  }
+}
+
+/* Mobile tidy */
+@media (max-width: 420px) {
+  .newsletter-bx { border-radius: 10px; padding: 12px 14px; }
+}

@@ -1,0 +1,110 @@
+/* ===== About Section (mobile-first, fully fluid) ===== */
+
+
+.about {
+  position: relative;
+  color: #e8ebf0;
+
+  /* tighter vertical spacing */
+  margin-top: clamp(1px, 2vw, 20px);  /* lift section closer to previous one */
+  padding-top: clamp(16px, 2.5vw, 24px); /* smaller top padding inside */
+  padding-bottom: clamp(20px, 3vw, 28px); /* keep bottom breathing */
+}
+
+
+/* Decorative background image */
+.about-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min(420px, 40vw);
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: -1;
+}
+@media (max-width: 560px) {
+  .about-bg { display: none; }
+}
+
+/* Main content cards */
+.about-box,
+.about-aside {
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: clamp(16px, 3vw, 22px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+/* Title + text */
+.about-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  margin: 0 0 6px;
+  text-align: center;
+}
+.about-blurb {
+  margin: 0;
+  line-height: 1.65;
+  color: #b9c6d9;
+  max-width: 68ch;
+}
+
+/* Aside (right column) */
+.aside-title {
+  font-size: clamp(18px, 2.6vw, 22px);
+  margin: 0 0 10px;
+}
+.about-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #c7d4e7;
+  display: grid;
+  gap: 8px;
+}
+
+/* Education wrapper spacing */
+.about-edu {
+  margin-top: clamp(18px, 4vw, 28px);
+}
+
+/* Interactions (subtle lift) */
+.about-box:hover,
+.about-aside:hover {
+  transform: translateY(-2px);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  border-color: #7D329A;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+
+/* Focus styles (keyboard a11y) */
+.about-box:focus-within,
+.about-aside:focus-within {
+  outline: 2px solid #22d3ee;
+  outline-offset: 3px;
+  border-radius: 16px;
+}
+
+/* ===== Optional: unifying styles reused by Education (kept minimal) ===== */
+
+/* Ensure the Education section inside About doesn’t blow out width */
+.about .education,
+.about .timeline,
+.about .timeline-grid {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+/* Center the Education heading if your Education component has one */
+.about .education-title {
+  text-align: center;
+}
+
+
+
+@media (min-width: 1024px) {
+  .about {
+    margin-top: 10px;
+    padding-top: 18px;
+  }
+}

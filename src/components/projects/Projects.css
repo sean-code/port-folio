@@ -1,173 +1,381 @@
-
-
-/*
-This is a common way to prevent content touching the side of the screen e.g. mobile phones
-*/
-.main-main{
-  background:rgba(0, 0, 0, 0.6) url('./img/color-sharp.png');
-  background-blend-mode: darken;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+/* ===== Section scaffold ===== */
+.projects {
+  position: relative;
+  padding: clamp(24px, 4vw, 48px) 0 clamp(28px, 5vw, 56px);
+  background:
+    radial-gradient(1200px 700px at 0% -10%, rgba(34, 211, 238, .12), transparent 60%),
+    #0b0c0f;
+  color: #e8ebf0;
 }
 
-.main-container {
-  /* max-width: max-content; */
-  margin-left: 20px;
-  color: #fafafa;
-  padding: 0.2em;
-}
-
-article {
-  margin: 0 auto;
-}
-
-.project-title .project-subtitle h3 h4 {
-  font-weight: 300;
-}
-
-.project-title {
-  font-size: 45px;
-	font-weight: 700;
+.projects-head {
   text-align: center;
-  color: white;
+  margin-bottom: 14px;
 }
 
-.project-subtitle {
-  font-size: 20px;
-  color: rgba(173, 44, 242, 0.898);
+.projects-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  margin: 0 0 6px;
+  text-align: center;
 }
 
-/*
-Most well designed websites use lots of spacing to make content easier to consume. It will ultimately depend on the design you want/need to achieve
-*/
-.main-container p {
-  line-height: 1.1;
-  font-size: 20px;
+.projects-sub {
+  color: #b7c3d5;
+  margin: 0;
 }
 
-.card-preview > img {
-  display: block;
-  max-width: 100%;
-}
-
-.portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,   minmax(250px, 1fr));
-  gap: 2.5em;
-}
-
-/*CARD-STYLES*/
-.card {
-  background: rgba(71, 53, 80, 0.319);
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-  padding: 1px !important;
-  opacity: 0.93 !important;
-  color: rgba(255, 255, 255, 0.802);
-}
-
-.card-preview {
+/* ===== Featured cards ===== */
+.proj-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .02));
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 16px;
   overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
-.card-preview__img {
-  transition: 0.2s;
+.proj-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, .28);
+  border-color: #7D329A;
 }
 
-.card:hover .card-preview__img,
-.card:focus .card-preview__img {
-  transform: scale(1.1);
+/* media */
+.proj-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #0f1117;
 }
 
-.card-content {
-  padding: 1em;
+.proj-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.03);
+  transition: transform .4s ease;
 }
 
-.card-content__title {
-  color: rgba(218, 184, 237, 0.898);
-  font-size: 1.7em;
-  font-weight: 600;
-  margin: 0.5em 0 1em;
+.proj-card:hover .proj-media img {
+  transform: scale(1.08);
 }
 
-.card-content__text{
-  font-size: 1.4em;
+.proj-media-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .0));
 }
 
-.view-button{
+/* body */
+.proj-body {
+  padding: 14px 14px 16px;
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.proj-title {
+  font-size: clamp(18px, 2.8vw, 22px);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.proj-summary {
+  color: #c8d3e4;
+  line-height: 1.55;
+  margin: 6px 0 6px;
+}
+
+.proj-tags {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
-.view-button p a{
+.repo-badge {
+  font-size: 12px;
+  color: #cdd7e5;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: rgba(255, 255, 255, .05);
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+/* actions */
+.proj-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ===== Uniform button (ghost → white fill L→R) ===== */
+.btn-ghost {
+  --border: rgba(255, 255, 255, .16);
+  --text: #ffffff;
+  --fill: #ffffff;
+  --fill-text: #0b0c0f;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  /* border-radius: 999px; */
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--text) !important;
+  /* defeat anchor defaults */
   text-decoration: none;
-  font-size: 1.2rem;
+  background: transparent;
+  font-weight: 700;
+  letter-spacing: .2px;
+  transition: color .25s ease, border-color .25s ease, transform .25s ease;
+  overflow: hidden;
+  cursor: pointer;
+  isolation: isolate;
+  /* ensure ::before sits under text */
+}
+
+.btn-ghost * {
+  color: inherit;
+}
+
+.btn-ghost svg {
+  fill: currentColor;
+}
+
+/* avoid purple visited on anchors */
+a.btn-ghost:visited {
+  color: var(--text) !important;
+}
+
+/* sliding fill – ONLY on hover/active (not focus) */
+.btn-ghost::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--fill);
+  transform: translateX(-101%);
+  transition: transform .35s ease;
+  z-index: -1;
+}
+
+.btn-ghost:hover::before,
+.btn-ghost:active::before {
+  transform: translateX(0);
+}
+
+/* flip text to black ONLY on hover/active */
+.btn-ghost:hover,
+.btn-ghost:active,
+a.btn-ghost:hover,
+a.btn-ghost:active {
+  color: var(--fill-text) !important;
+  border-color: var(--fill);
+  transform: translateY(-2px);
+}
+
+/* focus keeps accessible outline but does NOT change text color */
+.btn-ghost:focus,
+.btn-ghost:focus-visible,
+a.btn-ghost:focus,
+a.btn-ghost:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+  color: var(--text) !important;
+  /* stay white while focused */
+  border-color: var(--border);
+  transform: none;
+  /* no lift on focus */
+}
+
+/* size variant */
+.btn-ghost.sm {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+
+
+/* View more */
+.projects-foot {
+  display: grid;
+  place-items: center;
+  margin-top: clamp(14px, 3vw, 24px);
+}
+
+/* ===== Modal overlay ===== */
+.proj-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+  /* below any nav overlays if you have them */
+  display: grid;
+  place-items: center;
+}
+
+.proj-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .68);
+  /* darker = clearer dim */
+  z-index: 1;
+  /* sits behind the panel */
+}
+
+.proj-modal__panel {
+  position: relative;
+  z-index: 2;
+  /* above backdrop, below everything else */
+  width: min(1000px, 90vw);
+  max-height: 86vh;
+  /* slightly shorter so it breathes */
+  overflow: clip;
+  background: #0b0c0f;
+  color: #e8ebf0;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, .40);
+  /* reduced elevation */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin-top: 40px;
+}
+
+.proj-modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.proj-modal__title {
+  margin: 0;
+  font-size: 2.0rem;
+  font-weight: 700;
+}
+
+/* Close button uses the same ghost style for consistency */
+/* Larger static close button (no hover effects) */
+.proj-modal__close {
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  border-radius: 6px;        /* rectangular look */
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.25);
+  background: transparent;
+  color: #e8ebf0;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/* Kill ghost hover/active transitions for the close button */
+.proj-modal__close:hover,
+.proj-modal__close:focus,
+.proj-modal__close:active {
+  color: #e8ebf0 !important;
+  background: transparent !important;
+  border-color: rgba(255,255,255,.25) !important;
+  transform: none !important;
+}
+
+/* Disable the ::before white fill from btn-ghost */
+.proj-modal__close::before {
+  display: none !important;
+}
+
+/* Body + foot */
+.proj-modal__body {
+  padding: 14px;
+  overflow: auto;
+}
+
+.proj-modal__foot {
+  padding: 12px 14px;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* More projects grid (with images) */
+.proj-more-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 900px) {
+  .proj-more-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .proj-more-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.proj-more-item {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 12px;
+  padding: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .02));
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.proj-more-item:hover {
+  transform: translateY(-2px);
+  border-color: #7D329A;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, .28);
+}
+
+.mini-media {
+  width: 112px;
+  height: 84px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0f1117;
+}
+
+.mini-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mini-info {
+  display: grid;
+  align-content: center;
+  gap: 6px;
+}
+
+.proj-more-title {
   font-weight: 800;
-  color: rgba(232, 186, 237, 0.918);
-  padding: 7px;
-  border: 1px solid rgba(139, 25, 205, 0.898);
-  border-radius: 5px;
-
+  font-size: 1rem;
 }
 
-small{
-  font-size: 1.6rem;
-  color: rgba(218, 184, 237, 0.898);
+.proj-more-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
-
-
-/* Optimizing Media Queries */
-
-
-@media (min-width: 1200px) and (max-width: 1300px){
-  .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,   minmax(280px, 1fr));
-    gap: 1.8em;
-  }
+/* Container grid tidy on featured row */
+.proj-grid {
+  margin-top: 8px;
 }
-
-
-@media (min-width: 1301px) and (max-width: 1400px){
-  .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,   minmax(275px, 1fr));
-    gap: 1.8em;
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 2000px){
-  .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,   minmax(350px, 1fr));
-    gap: 1.8em;
-  }
-
-}
-
-
-
-/* Media Queries Additional */
-
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-@media (min-width: 576px) {
-  .row {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .card {
-    width: 100%;
-    max-width: 500px;
-  }
-}
-

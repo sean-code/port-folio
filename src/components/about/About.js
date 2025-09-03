@@ -3,51 +3,55 @@ import colorSharp from "./img/color-sharp.png";
 import './About.css';
 import Education from '../education/education';
 
-
-
 export const About = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
   return (
-    <section className="skill" id="about" style={{marginBottom: '10%'}}>
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>About Me</h2>
-                        <p>
-                          Hello, I am John Nganga Kangethe. I fell in love with programming and
-                          started this career path. Building a strong foundation of fundamental concepts and continuously practicing to
-                          improve my skills helps me become a successful and confident software developer.
-                        <br/>
-                        An interesting fact about me is that I am a night owl and I find that I am more productive during the calm of the night.
-                        To help myself sleep, I listen to white noise and drink almond milk.
-                        </p>
-                        <h2>Education</h2>
-                        <Education />
-                    </div>
-                </div>
+    <section id="about" className="about" aria-label="About John Nganga Kangethe">
+      <div className="container">
+        <div className="row g-4">
+          {/* Left: About copy */}
+          <div className="col-12 col-lg-7">
+            <div className="about-box">
+              <h2 className="about-title">About Me</h2>
+              <p className="about-blurb">
+                I am John Nganga Kangethe, a USA-based <strong>Computer Science researcher</strong> and
+                <strong> software engineer</strong> specializing in
+                <strong> Machine Learning</strong>, <strong> Information Retrieval</strong>,
+                <strong> Data Science</strong>, and <strong> Bioinformatics</strong>.
+                My work bridges rigorous academic research with practical engineering—building
+                research-grade prototypes and delivering production-ready systems. I value
+                <em> clarity in evaluation, reliability,</em> and <em> interpretable results</em>.
+              </p>
+
             </div>
+          </div>
+
+          {/* Right: Focus areas (stacks under on mobile) */}
+          <div className="col-12 col-lg-5">
+            <aside className="about-aside" aria-label="Focus areas">
+              <h3 className="aside-title">Focus Areas</h3>
+              <ul className="about-list">
+                <li><strong>Engineering:</strong> Full-stack applications, regex detectors, UI/UX design, and scalable APIs &amp; microservices.</li>
+                <li><strong>Research &amp; Data:</strong> Machine Learning, Information Retrieval, Bioinformatics, and applied Data Science.</li>
+                <li><strong>Cloud &amp; Systems:</strong> Cloud infrastructure (Oracle), SQL/NoSQL databases, and CI/CD DevOps pipelines.</li>
+                <li><strong>Cutting Edge:</strong> Transformers and emerging Mamba architectures, with a focus on reliable AI systems.</li>
+              </ul>
+            </aside>
+
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+
+        {/* Education block */}
+        <div className="row">
+          <div className="col-12">
+            <div className="about-edu">
+              <Education />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Decorative background */}
+      <img className="about-bg" src={colorSharp} alt="" aria-hidden="true" />
     </section>
-  )
-}
+  );
+};
