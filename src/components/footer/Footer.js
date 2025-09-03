@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
+import { Newsletter } from "./MailchimpForm";
 import logo from "./img/logo.jpg";
 import github from "./img/github.svg"
 import navIcon1 from "./img/nav-icon1.svg";
@@ -14,7 +14,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <MailchimpForm />
+          <Newsletter />
           <Col size={12} sm={6}>
             {/* <img src={logo} alt="Logo" style={{width:'200px', height:'40px', borderRadius:'10px'}} /> */}
             <span className="logo-text">
@@ -26,10 +26,14 @@ export const Footer = () => {
               <span>h</span>
               <span>n</span>
               <span>&nbsp;</span>
-              <span>S</span>
-              <span>e</span>
+              <span>K</span>
               <span>a</span>
               <span>n</span>
+              <span>g</span>
+              <span>e</span>
+              <span>t</span>
+              <span>h</span>
+              <span>e</span>
               <span>&nbsp;</span>
               <span>/</span>
               <span>&gt;</span>
