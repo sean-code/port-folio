@@ -9,7 +9,7 @@
   }
  .newsletter-bx {
   position: relative;
-  background: linear-gradient(90deg, #7d329a4d, #22d3ee44);
+  background: linear-gradient(90deg, #7d329a93, #22d3ee7e);
   border-radius: 18px;                       /* modern, not pill-shaped */
   color: #fafafa;
   padding: clamp(18px, 4vw, 28px) clamp(20px, 6vw, 40px); /* less bulky */

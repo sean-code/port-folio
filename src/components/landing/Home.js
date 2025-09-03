@@ -41,7 +41,7 @@ export const Home = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
 
-                  <h1 style={{ fontSize: '30px' }}>{`Howdy, I'm John Kangethe`}<br /></h1>
+                  <h1 className="LandingIntro" style={{ fontSize: '26px' }}>{`Howdy, I'm John Kangethe`}<br /></h1>
 
                   <h2 className="hero-role" style={{ fontSize: '38px' }}>
                     <RoleTypewriter

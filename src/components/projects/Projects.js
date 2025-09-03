@@ -138,12 +138,12 @@ export default function Project() {
   const FEATURED = useMemo(
     () => [
       {
-        title: "Signature Car Rental SaaS",
+        title: "Car Rental SaaS",
         summary:
           "Booking engine with deterministic availability, admin metrics, PDF receipts, and secure auth.",
         stack: ["Vue 3", "Node/Prisma", "Stripe/M-Pesa", "Railway"],
         cover:
-          "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1600&auto=format&fit=crop",
+          "https://www.enterprise.com/en/exotic-car-rental/_jcr_content/root/container/container/container_1060086341/teaser.coreimg.jpeg/1708936909048/explore-our-vehicles-1920x1080-vehicles.jpeg",
         repo: "https://github.com/sean-code/cars-website",
       },
       {

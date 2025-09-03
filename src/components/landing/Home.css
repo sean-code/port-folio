@@ -139,4 +139,16 @@
 }
 
 
+/* Reduce role title font size for small screens */
+@media (max-width: 480px) {
+  .LandingIntro{
+    font-size: 22px !important; /* adjust size for mobile */
+    line-height: 1.2;
+  }
+  .hero-role {
+    font-size: 22px !important; /* adjust size for mobile */
+    line-height: 1.2;
+  }
+}
+
 
