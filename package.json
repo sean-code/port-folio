@@ -16,7 +16,6 @@
     "bootstrap": "^5.3.0",
     "email-js": "^2.0.2",
     "emailjs-com": "^3.2.0",
-    "gh-pages": "^4.0.0",
     "hashrouter": "^1.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
@@ -37,11 +36,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -64,6 +61,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "body-parser": "^1.20.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "gh-pages": "^6.3.0"
   }
 }
