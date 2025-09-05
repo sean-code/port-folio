@@ -120,6 +120,9 @@
   /* Media Queries */
 
   @media (max-width: 460px){
+    .banner {
+      margin-top: 30px;
+    }
     .banner img {
       width: 20px;
     }
