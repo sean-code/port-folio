@@ -30,7 +30,7 @@ export const About = () => {
             <aside className="about-aside" aria-label="Focus areas">
               <h3 className="aside-title">Focus Areas</h3>
               <ul className="about-list">
-                <li><strong>Engineering:</strong> Full-stack applications, regex detectors, UI/UX design, and scalable APIs &amp; microservices.</li>
+                <li><strong>Engineering:</strong> Full stack applications, web3 development, UI/UX design, regex detectors, and scalable APIs &amp; microservices.</li>
                 <li><strong>Research &amp; Data:</strong> Machine Learning, Information Retrieval, Bioinformatics, and applied Data Science.</li>
                 <li><strong>Cloud &amp; Systems:</strong> Cloud infrastructure (Oracle), SQL/NoSQL databases, and CI/CD DevOps pipelines.</li>
                 <li><strong>Cutting Edge:</strong> Transformers and emerging Mamba architectures, with a focus on reliable AI systems.</li>
