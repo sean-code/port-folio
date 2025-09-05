@@ -72,3 +72,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 https://storage.googleapis.com/quickchat-files/appquickchat/media/chat_avatars/custom_widget_9cletrxgr8_bd2ba647.gif
+
+
+
+Homepage - gh-pages
+// "homepage": "http://sean-code.github.io/port-folio",
