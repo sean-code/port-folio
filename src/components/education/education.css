@@ -8,20 +8,20 @@
   margin: 0 0 6px;
   text-align: center;
 }
-
 /* Timeline scaffold */
 .timeline {
   position: relative;
-  padding-left: 1px;
-  max-width: 720px;      /* cap total width */
-  margin: 0 auto;        /* center in page */
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 100px;   /* more breathing room so line sits closer to cards */
 }
+
 
 .timeline::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 11px;
+  left: 80px;            /* line closer to cards */
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, #38192E, #221646);
@@ -29,37 +29,69 @@
 
 /* Each item */
 .timeline-item {
+  display: flex;
+  align-items: flex-start;
   margin: 0;
-  padding: 10px 0 16px 0;
+  padding: 16px 0;
 }
 
 /* Marker column */
 .timeline-marker-col {
-  width: 24px;
+  flex: 0 0 40px;
   display: flex;
   justify-content: center;
-  padding-right: 0 !important;
+  position: relative;
+  z-index: 2;
 }
 
 .timeline-marker {
-  width: 12px;
-  height: 12px;
-  margin-top: 10px;
-  border-radius: 999px;
+  width: 14px;
+  height: 14px;
+  margin-top: 6px;
+  border-radius: 50%;
   background: #211545;
   box-shadow: 0 0 0 6px rgba(34, 211, 238, .25);
   border: 1px solid rgba(255,255,255,.35);
 }
 
-/* Card container */
+/* Card container (center the cards) */
+.timeline-content {
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center; /* centers the .edu-card inside the row */
+}
+
 .edu-card {
-  background: linear-gradient(180deg, #151515, rgba(255,255,255,.02));
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 14px;
-  padding: 14px 18px;
+  padding: 14px 16px;
   color: #e8ebf0;
-  max-width: 600px;    /* narrower card */
+  max-width: 600px;
+  width: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  margin: 0 auto; /* extra safety to keep it centered */
 }
+
+/* Responsive: for small screens, line goes back to edge */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 0;
+  }
+  .timeline::before {
+    left: 12px;
+  }
+  .timeline-marker-col {
+    flex: 0 0 24px;
+    justify-content: flex-start;
+  }
+  .timeline-content {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+}
+
 
 /* Header row */
 .edu-head {
