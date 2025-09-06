@@ -91,13 +91,19 @@
 
 .logo-text {
   font-family: 'Your-Imported-Font', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #a136f8;
   text-decoration: none;
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
+}
+/* Mobile Screen Flicker */
+@media (max-width: 420px) {
+  .logo-text {
+    font-size: 10px; /* Adjust the font size for smaller screens */
+  }
 }
 
 /* Add flicker animation to the span elements inside .logo-text */

@@ -1,74 +1,106 @@
 .contact {
-    background: rgba(0, 0, 0, 0.3)url('./img/color-sharp.png');
-    padding: 60px 0 200px 0;
-    background-blend-mode: darken;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .contact img {
-    width: 92%;
-  }
-  .contact h2 {
-      font-size: 45px;
-      font-weight: 700;
-      margin-bottom: 30px;
-  }
-  .contact form input, .contact form textarea {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.345);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    color: #fff;
-    margin: 0 0 8px 0;
-    padding: 18px 26px;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    transition: 0.3s ease-in-out;
-  }
-  .contact form input:focus, .contact form textarea:focus {
-    background: rgba(255, 255, 255, 0.752);
-    color: #121212;
-  }
-  .contact form input::placeholder, .contact form textarea::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-  }
-  .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-    color: #121212;
-    opacity: 0.8;
-  }
-  .contact form button {
-    font-weight: 700;
-    color: rgb(44, 39, 39);
-    background-color: #fff;
-    padding: 14px 48px;
-    font-size: 18px;
-    margin-top: 25px;
-    border-radius: 0;
-    position: relative;
-    transition: 0.3s ease-in-out;
-  }
-  .contact form button span {
-    z-index: 1;
-    position: relative;
-  }
-  .contact form button:hover {
-    color: rgba(255, 255, 255, 0.894);
-  }
-  .contact form button::before {
-    content: "";
-    background: #41033bac;
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    transition: 0.3s ease-in-out;
-  }
-  .contact form button:hover::before {
-    width: 100%;
-  }
+  background: rgba(0, 0, 0, 0.3) url('./img/color-sharp.png');
+  padding: 60px 0 200px 0;
+  background-blend-mode: darken;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact img {
+  width: 92%;
+}
+
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.345);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  background: rgba(255, 255, 255, 0.752);
+  color: #121212;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+
+/* ===== Send button (ghost style, consistent site-wide) ===== */
+.contact form .send-button {
+  --border: rgba(255, 255, 255, .16);
+  --text: #ffffff;
+  --fill: #ffffff;
+  --fill-text: #0b0c0f;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 48px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  border: 1px solid #fff;
+  color: var(--text);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: color .25s ease, border-color .25s ease, transform .25s ease;
+  isolation: isolate;
+}
+
+.contact form .send-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.contact form .send-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--fill);
+  transform: translateX(-101%);
+  transition: transform .35s ease;
+  z-index: 0;
+}
+
+.contact form .send-button:hover::before,
+.contact form .send-button:focus-visible::before {
+  transform: translateX(0);
+}
+
+.contact form .send-button:hover,
+.contact form .send-button:focus-visible {
+  color: var(--fill-text);
+  border-color: var(--fill);
+  transform: translateY(-2px);
+}
+
+
