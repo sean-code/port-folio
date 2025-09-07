@@ -4,7 +4,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import profile from "./assets/img/profile1.png";
-import CV from "./assets/John_Resume.pdf";
+import CV from "./assets/Resume.pdf";
 import "./Home.css";
 import Skeleton from "@mui/material/Skeleton";
 import RoleTypewriter from "../roles/RolesRotator.jsx";
@@ -54,7 +54,7 @@ export const Home = () => {
                   </h2>
 
                   <p className="hero-blurb">
-                    Explicitly a <strong>CS Researcher</strong> and <strong>Software Engineer</strong> specializing in <strong>Machine Learning</strong>, 
+                    Explicitly a <strong>CS Researcher</strong> and <strong>Software Engineer</strong> specializing in <strong>Machine Learning</strong>,
                     <strong> Deep Learning</strong>, <strong> Information Retrieval</strong>, <strong>Data Analysis</strong>, and <strong>AI</strong>.
                   </p>
 
@@ -68,6 +68,13 @@ export const Home = () => {
                       >
                         View Resume
                       </a>
+                      {/* <a
+                        href={CV}
+                        download
+                        target='_blank'
+                        style={{ 'fontSize': '16px' }}
+                        className="home_button"
+                      > */}
                       <a
                         href={CV}
                         download
