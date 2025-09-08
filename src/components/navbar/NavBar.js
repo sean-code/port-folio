@@ -54,14 +54,14 @@ export const NavBar = () => {
                 <a href='https://github.com/sean-code' target={"_blank"}>
                   <img src={github} alt="github" />
                 </a>
-                <a href="https://www.linkedin.com/in/john-sean-nganga" target={'_blank'}>
+                <a href="https://https://www.linkedin.com/in/johnkangethe" target={'_blank'}>
                   <img src={navIcon1} alt="linkedin" />
                 </a>
                 <a href='https://www.twitter.com/nganga_sea' target={"_blank"}>
                   <img src={twitter} alt="twitter" />
                 </a>
                 <a href='https://www.instagram.com/its_ngangasean' target={"_blank"}>
-                  <img src={instagram} alt="instagram" />
+                  <img src={instagram} alt="instagram-johnkangethe" />
                 </a>
                 <a href="https://t.me/sean_code" target={"_blank"}><img src={telegram} alt="telegram" /></a>
               </div>
