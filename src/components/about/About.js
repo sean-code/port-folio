@@ -13,11 +13,11 @@ export const About = () => {
             <div className="about-box">
               <h2 className="about-title">About Me</h2>
               <p className="about-blurb">
-                I am John Nganga Kangethe, a USA-based <strong>Computer Science researcher</strong> and
+                I am John Nganga Kangethe, a <strong>Computer Science researcher</strong> and
                 <strong> software engineer</strong> specializing in
                 <strong> Machine Learning</strong>, <strong> Information Retrieval</strong>,
                 <strong> Data Science</strong>, and <strong> Bioinformatics</strong>.
-                My work bridges rigorous academic research with practical engineering—building
+                My work bridges rigorous academic research with practical engineerUSAing—building
                 research-grade prototypes and delivering production-ready systems. I value
                 <em> clarity in evaluation, reliability,</em> and <em> interpretable results</em>.
               </p>
