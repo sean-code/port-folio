@@ -7,15 +7,15 @@ import "./Languages.css";
 // Icons
 import {
   // Frontend
-  SiJavascript, SiTypescript, SiReact, SiVuedotjs, SiAngular, SiHtml5, SiCss3, SiSass, SiBootstrap, SiVuetify, SiFigma, SiMiro,
+  SiJavascript, SiReact, SiVuedotjs, SiAngular, SiAntdesign, SiHtml5, SiCss3, SiSass, SiBootstrap, SiVuetify, SiFigma, SiMiro,
   // Backend
-  SiNodedotjs, SiPython, SiFastapi, SiFlask, SiRubyonrails, SiRuby,
+  SiNodedotjs, SiPython, SiFastapi, SiDjango, SiFlask, SiRubyonrails, SiRuby,
   // Data & Infra
   SiPostgresql, SiMysql, SiSqlite, SiPrisma, SiSequelize, SiDocker, SiAmazonaws, SiFirebase, SiPlanetscale, SiRailway,
   // Tools & Platforms
   SiGithub, SiVercel, SiNetlify, SiMicrosoftazure, SiUbuntu, SiWindows, SiMacos, SiVisualstudio, SiAdobeindesign, SiHeroku,
   // ML/AI & DS (these exist in react-icons)
-  SiPandas, SiNumpy, SiScikitlearn, SiJupyter
+  SiPytorch, SiPandas, SiNumpy, SiScikitlearn, SiJupyter, SiGooglecolab
 } from "react-icons/si";
 
 function TechCard({ icon: Icon, label, badge }) {
@@ -38,27 +38,28 @@ export const Languages = () => {
     mlai: {
       title: "ML / AI",
       items: [
+        { icon: SiPytorch, label: "PyTorch" },
         { icon: SiPython, label: "Python" },
-        { icon: SiScikitlearn, label: "scikit-learn" },
+        { icon: SiScikitlearn, label: "Scikit-Learn" },
         { icon: SiPandas, label: "pandas" },
         { icon: SiNumpy, label: "NumPy" },
         { icon: SiJupyter, label: "Jupyter" },
-        { icon: SiFastapi, label: "FastAPI (serving)" }
+        { icon: SiGooglecolab, label: "Google Colab" }
       ]
     },
     frontend: {
       title: "Frontend",
       items: [
         { icon: SiJavascript, label: "JavaScript" },
-        { icon: SiTypescript, label: "TypeScript" },
-        { icon: SiReact, label: "React" },
-        { icon: SiVuedotjs, label: "Vue" },
+        { icon: SiVuedotjs, label: "Vue", badge: "pro" },
+        { icon: SiReact, label: "React", badge: "pro" },
+        { icon: SiAntdesign, label: "Naive UI", badge: "Pro" },
+        { icon: SiVuetify, label: "Vuetify", badge: "pro" },
         { icon: SiAngular, label: "Angular" },
         { icon: SiHtml5, label: "HTML5" },
         { icon: SiCss3, label: "CSS3" },
         { icon: SiSass, label: "Sass" },
         { icon: SiBootstrap, label: "Bootstrap" },
-        { icon: SiVuetify, label: "Vuetify" },
         { icon: SiFigma, label: "Figma", badge: "Design" },
         { icon: SiMiro, label: "Miro", badge: "Collab" }
       ]
@@ -69,28 +70,19 @@ export const Languages = () => {
         { icon: SiNodedotjs, label: "Node.js" },
         { icon: SiPython, label: "Python" },
         { icon: SiFastapi, label: "FastAPI" },
+        { icon: SiDjango, label: "Django" },
         { icon: SiFlask, label: "Flask" },
         { icon: SiRuby, label: "Ruby" },
         { icon: SiRubyonrails, label: "Rails" },
         { icon: SiPrisma, label: "Prisma ORM", badge: "Preferred" },
-        { icon: SiSequelize, label: "Sequelize ORM" }
+        { icon: SiSequelize, label: "Sequelize ORM" },
+        { icon: SiPostgresql, label: "PostgreSQL" },
+        { icon: SiMysql, label: "MySQL" },
+        { icon: SiSqlite, label: "SQLite3" },
       ]
     },
     datainfra: {
-      title: "Data & Infra",
-      items: [
-        { icon: SiPostgresql, label: "PostgreSQL" },
-        { icon: SiMysql, label: "MySQL" },
-        { icon: SiSqlite, label: "SQLite" },
-        { icon: SiPlanetscale, label: "PlanetScale" },
-        { icon: SiFirebase, label: "Firebase" },
-        { icon: SiRailway, label: "Railway" },
-        { icon: SiDocker, label: "Docker" },
-        { icon: SiAmazonaws, label: "AWS" }
-      ]
-    },
-    tools: {
-      title: "Tools & Platforms",
+      title: "Platforms & Infra",
       items: [
         { icon: SiGithub, label: "GitHub", badge: "OSS" },
         { icon: SiVercel, label: "Vercel" },
@@ -101,9 +93,19 @@ export const Languages = () => {
         { icon: SiWindows, label: "Windows" },
         { icon: SiMacos, label: "macOS" },
         { icon: SiVisualstudio, label: "VS Code" },
-        { icon: SiAdobeindesign, label: "InDesign" }
+        { icon: SiAdobeindesign, label: "InDesign" },
+        { icon: SiPlanetscale, label: "PlanetScale" },
+        { icon: SiFirebase, label: "Firebase" },
+        { icon: SiRailway, label: "Railway" },
+        { icon: SiDocker, label: "Docker" },
+        { icon: SiAmazonaws, label: "AWS" }
       ]
     }
+    // tools: {
+    //   title: "Tools & ",
+    //   items: [
+    //   ]
+    // }
   };
 
   return (
@@ -124,8 +126,8 @@ export const Languages = () => {
                       <Nav.Item><Nav.Link eventKey="mlai">ML/AI</Nav.Link></Nav.Item>
                       <Nav.Item><Nav.Link eventKey="frontend">Frontend</Nav.Link></Nav.Item>
                       <Nav.Item><Nav.Link eventKey="backend">Backend</Nav.Link></Nav.Item>
-                      <Nav.Item><Nav.Link eventKey="datainfra">Data & Infra</Nav.Link></Nav.Item>
-                      <Nav.Item><Nav.Link eventKey="tools">Tools & Platforms</Nav.Link></Nav.Item>
+                      <Nav.Item><Nav.Link eventKey="datainfra">Platforms & Infra</Nav.Link></Nav.Item>
+                      {/* <Nav.Item><Nav.Link eventKey="tools">Tools & </Nav.Link></Nav.Item> */}
                     </Nav>
 
                     <Tab.Content className={isVisible ? "animate__animated animate__slideInUp" : ""}>
