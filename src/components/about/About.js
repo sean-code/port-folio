@@ -17,8 +17,8 @@ export const About = () => {
                 <strong> software engineer</strong> specializing in
                 <strong> Machine Learning</strong>, <strong> Information Retrieval</strong>,
                 <strong> Data Science</strong>, and <strong> Bioinformatics</strong>.
-                My work bridges rigorous academic research with practical engineerUSAing—building
-                research-grade prototypes and delivering production-ready systems. I value
+                My work bridges rigorous academic research with practical engineering, building
+                research-grade prototypes, and delivering production-ready systems. I value
                 <em> clarity in evaluation, reliability,</em> and <em> interpretable results</em>.
               </p>
 
