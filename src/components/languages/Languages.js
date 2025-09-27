@@ -40,8 +40,8 @@ export const Languages = () => {
       items: [
         { icon: SiPytorch, label: "PyTorch" },
         { icon: SiPython, label: "Python" },
-        { icon: SiScikitlearn, label: "Scikit-Learn" },
-        { icon: SiPandas, label: "pandas" },
+        { icon: SiScikitlearn, label: "scikit-learn" },
+        { icon: SiPandas, label: "Pandas" },
         { icon: SiNumpy, label: "NumPy" },
         { icon: SiJupyter, label: "Jupyter" },
         { icon: SiGooglecolab, label: "Google Colab" }
@@ -82,7 +82,7 @@ export const Languages = () => {
       ]
     },
     datainfra: {
-      title: "Platforms & Infra",
+      title: "Infra.",
       items: [
         { icon: SiGithub, label: "GitHub", badge: "OSS" },
         { icon: SiVercel, label: "Vercel" },
