@@ -40,7 +40,7 @@ export const Languages = () => {
       items: [
         { icon: SiPytorch, label: "PyTorch" },
         { icon: SiPython, label: "Python" },
-        { icon: SiScikitlearn, label: "Scikit-Learn" },
+        { icon: SiScikitlearn, label: "scikit-learn" },
         { icon: SiPandas, label: "pandas" },
         { icon: SiNumpy, label: "NumPy" },
         { icon: SiJupyter, label: "Jupyter" },
