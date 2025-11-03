@@ -126,7 +126,7 @@ export const Languages = () => {
                       <Nav.Item><Nav.Link eventKey="mlai">ML/AI</Nav.Link></Nav.Item>
                       <Nav.Item><Nav.Link eventKey="frontend">Frontend</Nav.Link></Nav.Item>
                       <Nav.Item><Nav.Link eventKey="backend">Backend</Nav.Link></Nav.Item>
-                      <Nav.Item><Nav.Link eventKey="datainfra">Platforms & Infra</Nav.Link></Nav.Item>
+                      <Nav.Item><Nav.Link eventKey="datainfra">Infra.</Nav.Link></Nav.Item>
                       {/* <Nav.Item><Nav.Link eventKey="tools">Tools & </Nav.Link></Nav.Item> */}
                     </Nav>
 
