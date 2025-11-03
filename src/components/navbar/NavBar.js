@@ -54,7 +54,7 @@ export const NavBar = () => {
                 <a href='https://github.com/sean-code' target={"_blank"}>
                   <img src={github} alt="github" />
                 </a>
-                <a href="https://https://www.linkedin.com/in/johnkangethe" target={'_blank'}>
+                <a href="https://www.linkedin.com/in/johnkangethe" target={'_blank'}>
                   <img src={navIcon1} alt="linkedin" />
                 </a>
                 <a href='https://www.twitter.com/nganga_sea' target={"_blank"}>

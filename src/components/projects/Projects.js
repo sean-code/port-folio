@@ -127,7 +127,7 @@ function ProjectsModal({ open, onClose, items = [] }) {
           ))}
         </div>
 
-      
+
       </div>
     </div>
   );
@@ -138,13 +138,13 @@ export default function Project() {
   const FEATURED = useMemo(
     () => [
       {
-        title: "Car Rental SaaS",
+        title: "AeroSearch - Aviation Accident Narrative Retrieval (NTSB based IR)",
         summary:
-          "Booking engine with deterministic availability, admin metrics, PDF receipts, and secure auth.",
-        stack: ["Vue 3", "Node/Prisma", "Stripe/M-Pesa", "Railway"],
+          "An intelligent search engine that mines aviation accident narratives from the NTSB database. Features Boolean, proximity, and BM25 retrieval models for precise query matching, built with a modular NLP pipeline, for research insights in safety analytics.",
+        stack: ["Python", "BM25", "Streamlit", "NLP"],
         cover:
-          "https://www.enterprise.com/en/exotic-car-rental/_jcr_content/root/container/container/container_1060086341/teaser.coreimg.jpeg/1708936909048/explore-our-vehicles-1920x1080-vehicles.jpeg",
-        repo: "https://github.com/sean-code/cars-website",
+          "https://media.istockphoto.com/id/1197813891/photo/plane-crash-plane-on-fire-and-smoke-fear-of-air-travel-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=erNDwWMwAsmMjgM0gQ9YfX5oOg4txzu6kwrW_4uIwdw=",
+        repo: "https://github.com/sean-code/Information-Retrieval-Storage",
       },
       {
         title: "Regex, Rules & Detectors",
