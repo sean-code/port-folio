@@ -7,7 +7,7 @@ import "./Languages.css";
 // Icons
 import {
   // Frontend
-  SiJavascript, SiReact, SiVuedotjs, SiAngular, SiAntdesign, SiHtml5, SiCss3, SiSass, SiBootstrap, SiVuetify, SiFigma, SiMiro,
+  SiJavascript, SiReact, SiVuedotjs, SiStreamlit, SiAngular, SiAntdesign, SiHtml5, SiCss3, SiSass, SiBootstrap, SiVuetify, SiFigma, SiMiro,
   // Backend
   SiNodedotjs, SiPython, SiFastapi, SiDjango, SiFlask, SiRubyonrails, SiRuby,
   // Data & Infra
@@ -15,7 +15,7 @@ import {
   // Tools & Platforms
   SiGithub, SiVercel, SiNetlify, SiMicrosoftazure, SiUbuntu, SiWindows, SiMacos, SiVisualstudio, SiAdobeindesign, SiHeroku,
   // ML/AI & DS (these exist in react-icons)
-  SiPytorch, SiPandas, SiNumpy, SiScikitlearn, SiJupyter, SiGooglecolab
+  SiPytorch, SiPandas, SiNumpy, SiScikitlearn, SiJupyter, SiGooglecolab, SiKeras, SiSpyderide
 } from "react-icons/si";
 
 function TechCard({ icon: Icon, label, badge }) {
@@ -44,7 +44,9 @@ export const Languages = () => {
         { icon: SiPandas, label: "Pandas" },
         { icon: SiNumpy, label: "NumPy" },
         { icon: SiJupyter, label: "Jupyter" },
-        { icon: SiGooglecolab, label: "Google Colab" }
+        { icon: SiGooglecolab, label: "Google Colab" },
+        { icon: SiKeras, label: "Keras" },
+        { icon: SiSpyderide, label: "Spyder" }
       ]
     },
     frontend: {
@@ -55,6 +57,7 @@ export const Languages = () => {
         { icon: SiReact, label: "React", badge: "pro" },
         { icon: SiAntdesign, label: "Naive UI", badge: "Pro" },
         { icon: SiVuetify, label: "Vuetify", badge: "pro" },
+        { icon: SiStreamlit, label: "Streamlit" },
         { icon: SiAngular, label: "Angular" },
         { icon: SiHtml5, label: "HTML5" },
         { icon: SiCss3, label: "CSS3" },
