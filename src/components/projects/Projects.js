@@ -149,8 +149,8 @@ export default function Project() {
             {
         title: "StudyBuddy: AI Study Assistant",
         summary:
-          "Client-side AI pipeline for extracting key concepts from PDFs/notes and generating flashcards + quizzes, designed to run without a paid backend.",
-        stack: ["Vue 3", "Vuetify", "Web Workers / IndexedDB"],
+          "An in-browser AI study assistant that helps students go from messy notes or PDFs to structured revision materials in minutes. It highlights the most important ideas, then builds flashcards and short quizzes to reinforce recall. Everything runs client-side for privacy and speed, without any account setup.",
+        stack: ["Vue 3", "Vuetify", "Web Workers / IndexedDB", "NLP"],
         cover:
           "https://lwfiles.mycourse.app/67e0a9a3042dc73b07d7549f-public/122ca8f0f85994135c57ababe2caffeb.png",
         repo: "https://github.com/sean-code/StudyBuddy",
@@ -158,7 +158,7 @@ export default function Project() {
       {
         title: "Stroke Prediction ML Model",
         summary:
-          "An end-to-end stroke risk prediction pipeline using structured health data. Cleaned and engineered features, handled missing values and class imbalance, trained baseline + ensemble models, tuned hyperparameters, and explained predictions with SHAP to identify top risk factors. Reported performance with ROC-AUC, precision/recall, and confusion matrix.",
+          "An end-to-end stroke risk prediction pipeline using structured health data. Cleaned and engineered features, handled missing values and class imbalance, trained baseline + ensemble models, tuned hyperparameters, and explained predictions with SHAP to identify top risk factors.",
         stack: ["Python: Pandas, Numpy", "scikit-learn", "SHAP", "Jupyter"],
         cover:
           "https://newdigitals.org/wp-content/uploads/2022/05/strokepreventmlai.png",
