@@ -138,7 +138,7 @@ export default function Project() {
   const FEATURED = useMemo(
     () => [
       {
-        title: "AeroSearch - Aviation Accident Narrative Retrieval (NTSB based IR)",
+        title: "AeroSearch: Aviation Accident Narrative Retrieval (NTSB based IR)",
         summary:
           "An intelligent search engine that mines aviation accident narratives from the NTSB database. Features Boolean, proximity, and BM25 retrieval models for precise query matching, built with a modular NLP pipeline, for research insights in safety analytics.",
         stack: ["Python", "BM25", "Streamlit", "NLP"],
@@ -156,13 +156,13 @@ export default function Project() {
         repo: "https://github.com/sean-code/Wappalyzer",
       },
       {
-        title: "BioNLP Extractor (Prostate Cancer WIP)",
+        title: "Stroke Prediction ML Model",
         summary:
-          "Pipeline for biomedical text: ingest → preprocess → entity cues → lightweight classifier with F1-oriented evaluation.",
-        stack: ["Python", "scikit-learn", "spaCy"],
+          "An end-to-end stroke risk prediction pipeline using structured health data. Cleaned and engineered features, handled missing values and class imbalance, trained baseline + ensemble models, tuned hyperparameters, and explained predictions with SHAP to identify top risk factors. Reported performance with ROC-AUC, precision/recall, and confusion matrix.",
+        stack: ["Python: Pandas, Numpy", "scikit-learn", "SHAP", "Jupyter"],
         cover:
-          "https://images.unsplash.com/photo-1585435465945-bef5a93f8849?q=80&w=1600&auto=format&fit=crop",
-        repo: "https://github.com/sean-code",
+          "https://newdigitals.org/wp-content/uploads/2022/05/strokepreventmlai.png",
+        repo: "https://github.com/sean-code/stroke-prediction-ml", // <-- change to your real repo
       },
     ],
     []
