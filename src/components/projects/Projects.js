@@ -164,6 +164,33 @@ export default function Project() {
           "https://newdigitals.org/wp-content/uploads/2022/05/strokepreventmlai.png",
         repo: "https://github.com/sean-code/stroke-prediction-ml", // <-- change to your real repo
       },
+      {
+        title: "Studdy Buddy: AI Study Assistant",
+        summary:
+          "-",
+        stack: ["-", "-", "-"],
+        cover:
+          "https://lwfiles.mycourse.app/67e0a9a3042dc73b07d7549f-public/122ca8f0f85994135c57ababe2caffeb.png",
+        repo: "https://github.com/sean-code/Wappalyzer",
+      },
+      {
+        title: "Parking / Campus Safety Heatmap",
+        summary:
+          "-",
+        stack: ["-", "-", "-"],
+        cover:
+          "https://img.freepik.com/free-vector/coming-soon-background-with-focus-light-effect-design_1017-27277.jpg?semt=ais_hybrid&w=740&q=80",
+        repo: "https://github.com/sean-code/Wappalyzer",
+      },
+      {
+        title: "Receipt & Expense Intelligence",
+        summary:
+          "-",
+        stack: ["-", "-", "-"],
+        cover:
+          "https://img.freepik.com/free-vector/coming-soon-background-with-focus-light-effect-design_1017-27277.jpg?semt=ais_hybrid&w=740&q=80",
+        repo: "https://github.com/sean-code/Wappalyzer",
+      },
     ],
     []
   );
