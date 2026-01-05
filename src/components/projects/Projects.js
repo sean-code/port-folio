@@ -146,14 +146,14 @@ export default function Project() {
           "https://media.istockphoto.com/id/1197813891/photo/plane-crash-plane-on-fire-and-smoke-fear-of-air-travel-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=erNDwWMwAsmMjgM0gQ9YfX5oOg4txzu6kwrW_4uIwdw=",
         repo: "https://github.com/sean-code/Information-Retrieval-Storage",
       },
-      {
-        title: "Regex, Rules & Detectors",
+            {
+        title: "StudyBuddy: AI Study Assistant",
         summary:
-          "Precision regex + version capture for technology detection with curated regression tests.",
-        stack: ["Regex", "JavaScript", "OSS"],
+          "Client-side AI pipeline for extracting key concepts from PDFs/notes and generating flashcards + quizzes, designed to run without a paid backend.",
+        stack: ["Vue 3", "Vuetify", "Web Workers / IndexedDB"],
         cover:
-          "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
-        repo: "https://github.com/sean-code/Wappalyzer",
+          "https://lwfiles.mycourse.app/67e0a9a3042dc73b07d7549f-public/122ca8f0f85994135c57ababe2caffeb.png",
+        repo: "https://github.com/sean-code/StudyBuddy",
       },
       {
         title: "Stroke Prediction ML Model",
@@ -164,15 +164,13 @@ export default function Project() {
           "https://newdigitals.org/wp-content/uploads/2022/05/strokepreventmlai.png",
         repo: "https://github.com/sean-code/stroke-prediction-ml", // <-- change to your real repo
       },
-      {
-        title: "Studdy Buddy: AI Study Assistant",
+       {
+        title: "Regex, Rules & Detectors",
         summary:
-          "-",
-        stack: ["-", "-", "-"],
-        // cover:
-        //   "https://lwfiles.mycourse.app/67e0a9a3042dc73b07d7549f-public/122ca8f0f85994135c57ababe2caffeb.png",
+          "Precision regex + version capture for technology detection with curated regression tests.",
+        stack: ["Regex", "JavaScript", "OSS"],
         cover:
-          "https://img.freepik.com/free-vector/coming-soon-background-with-focus-light-effect-design_1017-27277.jpg?semt=ais_hybrid&w=740&q=80",
+          "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
         repo: "https://github.com/sean-code/Wappalyzer",
       },
       {
