@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import profile from "./assets/img/profile1.png";
+// import profile from "./assets/img/profile1.png";
+import profile from "../../assets/img/6.png";
 import CV from "./assets/Resume.pdf";
 import "./Home.css";
 import Skeleton from "@mui/material/Skeleton";
@@ -68,13 +69,6 @@ export const Home = () => {
                       >
                         View Resume
                       </a>
-                      {/* <a
-                        href={CV}
-                        download
-                        target='_blank'
-                        style={{ 'fontSize': '16px' }}
-                        className="home_button"
-                      > */}
                       <a
                         href={CV}
                         download
@@ -109,10 +103,16 @@ export const Home = () => {
                     src={profile}
                     alt="SeanImg"
                     onLoad={() => setImageLoaded(true)}
-                    style={{
+                    // style={{
+                    //   display: imageLoaded ? 'block' : 'none',
+                    //   height: '360px',
+                    //   width: '360px',
+                    //   borderRadius: '50%',
+                    // }}
+                     style={{
                       display: imageLoaded ? 'block' : 'none',
-                      height: '360px',
-                      width: '360px',
+                      height: '362px',
+                      width: '320px',
                       borderRadius: '50%',
                     }}
                   />
