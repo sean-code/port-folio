@@ -169,8 +169,10 @@ export default function Project() {
         summary:
           "-",
         stack: ["-", "-", "-"],
+        // cover:
+        //   "https://lwfiles.mycourse.app/67e0a9a3042dc73b07d7549f-public/122ca8f0f85994135c57ababe2caffeb.png",
         cover:
-          "https://lwfiles.mycourse.app/67e0a9a3042dc73b07d7549f-public/122ca8f0f85994135c57ababe2caffeb.png",
+          "https://img.freepik.com/free-vector/coming-soon-background-with-focus-light-effect-design_1017-27277.jpg?semt=ais_hybrid&w=740&q=80",
         repo: "https://github.com/sean-code/Wappalyzer",
       },
       {
