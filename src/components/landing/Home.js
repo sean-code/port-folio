@@ -111,7 +111,7 @@ export const Home = () => {
                     // }}
                      style={{
                       display: imageLoaded ? 'block' : 'none',
-                      height: '360px',
+                      height: '362px',
                       width: '320px',
                       borderRadius: '50%',
                     }}
