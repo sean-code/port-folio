@@ -165,15 +165,13 @@ export default function Project() {
         repo: "https://github.com/sean-code/stroke-prediction-ml", // <-- change to your real repo
       },
       {
-        title: "Studdy Buddy: AI Study Assistant",
+        title: "StudyBuddy: AI Study Assistant",
         summary:
-          "-",
-        stack: ["-", "-", "-"],
-        // cover:
-        //   "https://lwfiles.mycourse.app/67e0a9a3042dc73b07d7549f-public/122ca8f0f85994135c57ababe2caffeb.png",
+          "Client-side AI pipeline for extracting key concepts from PDFs/notes and generating flashcards + quizzes, designed to run without a paid backend.",
+        stack: ["Vue 3", "Vuetify", "Web Workers / IndexedDB"],
         cover:
-          "https://img.freepik.com/free-vector/coming-soon-background-with-focus-light-effect-design_1017-27277.jpg?semt=ais_hybrid&w=740&q=80",
-        repo: "https://github.com/sean-code/Wappalyzer",
+          "https://lwfiles.mycourse.app/67e0a9a3042dc73b07d7549f-public/122ca8f0f85994135c57ababe2caffeb.png",
+        repo: "https://github.com/sean-code/StudyBuddy",
       },
       {
         title: "Parking / Campus Safety Heatmap",
