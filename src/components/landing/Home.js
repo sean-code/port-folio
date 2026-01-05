@@ -103,13 +103,7 @@ export const Home = () => {
                     src={profile}
                     alt="SeanImg"
                     onLoad={() => setImageLoaded(true)}
-                    // style={{
-                    //   display: imageLoaded ? 'block' : 'none',
-                    //   height: '360px',
-                    //   width: '360px',
-                    //   borderRadius: '50%',
-                    // }}
-                     style={{
+                    style={{
                       display: imageLoaded ? 'block' : 'none',
                       height: '362px',
                       width: '320px',
