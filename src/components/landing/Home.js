@@ -62,7 +62,7 @@ export const Home = () => {
                   <div className="cta-row" role="group" aria-label="Primary actions">
                     <button className="resume">
                       <a
-                        href='https://drive.google.com/file/d/1DJUv7Bh009hrueOzLCPzHQq2hjbxfcVj/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1bFzXm-sNqYbwPO_sicSUy3jKIf0jgij-/view?usp=sharing'
                         target='_blank'
                         style={{ 'fontSize': '16px' }}
                         className="home_button"
