@@ -1,5 +1,5 @@
 {
-  "homepage": "https://johnkangethe.me",
+  "homepage": "https://sean-code.github.io/port-folio",
   "name": "port-folio",
   "version": "0.1.0",
   "private": true,
@@ -38,7 +38,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b gh-pages --cname johnkangethe.me"
+    "deploy": "gh-pages -d build -b gh-pages"
   },
   "eslintConfig": {
     "extends": [
